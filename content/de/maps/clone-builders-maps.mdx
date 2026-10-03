@@ -1,0 +1,146 @@
+export const metadata = {
+  title: "Clone-Builder-Maps: Ein vollständiger Leitfaden für das Designen, Testen und Teilen eigener Level",
+  description: "Erfahre, wie Clone-Builder-Maps funktionieren — vom Rasterlayout und Pathing bis zu Playtests und dem Teilen. Praktische Tipps für das Design eigener Level, die Spieler lieben.",
+  category: "maps",
+  date: "2026-10-03",
+}
+
+## Warum Clone-Builder-Maps ernsthaften Designaufwand verdienen
+
+Eine einzige gut gemachte Map kann ein Aufbauspiel noch Jahre nach dem Release am Leben halten. Wenn du schon einmal einen Leveleditor geöffnet, auf ein leeres Raster gestarrt und dich gefragt hast, wo du anfangen sollst, ist dieser Leitfaden zu **Clone-Builder-Maps** genau das Richtige für dich. Gutes Leveldesign geht nicht darum, Fläche zu füllen — es geht darum, Entscheidungen zu formen, und das beginnt lange bevor du die erste Kachel platzierst.
+
+Das Design von **Clone-Builder-Maps** liegt irgendwo zwischen Architektur und Game Design. Du entscheidest, wo Spieler spawnen, wie schnell sie sich ausbreiten, welche Routen sich riskant anfühlen und welche Abkürzungen clever wirken. Triffst du diese Entscheidungen richtig, wird deine Map zu einem Community-Favoriten, der nachgebaut, neu gemischt und weiterempfohlen wird. Triffst du sie falsch, springen Spieler nach einer Runde ab — egal wie poliert deine Grafik ist.
+
+Dieser Leitfaden deckt die komplette Pipeline ab: Planung, Blockouts, Pathing, Balancing, Playtesting und Veröffentlichung. Alles hier gilt, egal ob du in einem Sandbox-Editor, einem kachelbasierten Toolset oder einer vollständigen Modding-Suite baust.
+
+## Was genau sind Clone-Builder-Maps?
+
+Clone-Builder-Maps sind eigene Level, die in Spielen erstellt werden, deren Kernschleife darin besteht, Einheiten und Strukturen zu spawnen, zu duplizieren oder zu befehligen. Das „Clone"-Element ist das mechanische Herz — du produzierst Einheiten aus einer Basis, einem Spawner oder einer Fabrik und schickst sie dann über das Gelände auf ein Ziel zu. Die Map ist das, was diese Schleife interessant macht.
+
+Weil so viel der Herausforderung aus dem Einheitenfluss statt aus reinem Reflex kommt, zählt das Layout mehr als die Optik. Eine saubere, gut lesbare Map mit starken Routen wird fast immer eine schöne Map übertreffen, die Spieler verwirrt.
+
+| Map-Element | Funktion | Häufiger Fehler |
+|---|---|---|
+| Spawn-Zone | Legt fest, wo Einheiten und Spieler starten | Zu klein, was zu früher Enge führt |
+| Hauptroute | Die Hauptstrecke, die Einheiten oder Spieler zurücklegen | Lange, eintönige Abschnitte |
+| Nebenroute | Bietet eine Risiko-gegen-Belohnung-Entscheidung | Identisch mit der Hauptroute |
+| Engstelle | Erzeugt Spannung und defensiven Wert | Zu viele, wodurch jegliches Momentum ins Stocken gerät |
+| Ressourcenknoten | Treibt Expansion und Wirtschaftsentscheidungen voran | In einer einzigen sicheren Ecke gebündelt |
+| Zielbereich | Gibt dem Match eine klare Ziellinie | Schlecht für neue Spieler erkennbar |
+
+### Größe ist wichtiger, als du denkst
+
+Eine häufige Anfängerfalle ist das Bauen in zu großem Maßstab. Überdimensionierte Clone-Builder-Maps fühlen sich leer an, weil Spieler die meiste Zeit mit Laufen statt mit Entscheiden verbringen. Community-Berichte bevorzugen durchweg kompakte Layouts, bei denen auf jedem Bildschirm etwas passiert.
+
+Eine nützliche Regel: Wenn ein Spieler deine Map in weniger als fünfzehn Sekunden durchqueren kann, ist sie wahrscheinlich zu klein. Wenn er mehr als neunzig Sekunden braucht, ohne dass unterwegs etwas Bedeutendes passiert, ist sie mit ziemlicher Sicherheit zu groß.
+
+## Kerndesign-Prinzipien für spielbare Maps
+
+Bevor du auch nur eine einzige Requisite anfasst, entscheide, welches Gefühl die Map erzeugen soll. Angespannt? Chaotisch? Entspannt und kreativ? Jede Layout-Entscheidung sollte diesem Ziel dienen.
+
+| Prinzip | Warum es wichtig ist | Schneller Selbsttest |
+|---|---|---|
+| Lesbarkeit | Spieler müssen sofort sehen, wohin sie gehen müssen | Kann ein Neuling die Route in 5 Sekunden erraten? |
+| Pacing | Abwechselnder Druck und Entlastung halten die Konzentration | Gibt es ruhige Momente zwischen den Kämpfen? |
+| Bedeutungsvolle Wahl | Routen sollten sich in Risiko und Belohnung unterscheiden | Würde ein Veteran anders wählen als ein Anfänger? |
+| Symmetrie-Balance | Verhindert unfaire Spawn-Vorteile | Haben beide Seiten gleichen Zugang zu Schlüsselgelände? |
+| Vertikalität | Fügt taktische Tiefe ohne zusätzliche Kacheln hinzu | Haben hohes und niedriges Gelände beide Vor- und Nachteile? |
+| Klare Orientierungspunkte | Helfen bei der Orientierung und bei Callouts | Können Spieler fünf verschiedene Bereiche benennen? |
+
+### Symmetrie versus Asymmetrie
+
+Perfekte Spiegelsymmetrie ist der sicherste Ausgangspunkt für kompetitive Clone-Builder-Maps. Sie beseitigt Spawn-Bias und macht das Balancing deutlich einfacher, weil jede Änderung, die du vornimmst, gleichermaßen für beide Seiten gilt.
+
+Asymmetrie ist spannender, aber schwerer abzustimmen. Wenn du diesen Weg gehst, halte die *Opportunitätskosten* ausbalanciert statt die Geometrie. Eine Seite könnte eine schnellere Route zur Mitte haben, während die andere leichteren Zugang zu Ressourcen hat. Unterschiedliche Werkzeuge, ähnlicher Gesamtwert.
+
+## Werkzeuge und Workflow: Vom leeren Raster zur fertigen Map
+
+Die meisten Map-Ersteller folgen einer ähnlichen Reihenfolge, unabhängig davon, welchen Editor sie verwenden. Die frühen Phasen zu überspringen ist der schnellste Weg, Wochen mit Details zu verschwenden, die ohnehin gelöscht werden.
+
+| Phase | Ziel | Typischer Zeitanteil |
+|---|---|---|
+| Papierskizze | Das Layoutkonzept festlegen | 5% |
+| Blockout | Den Flow mit Platzhalterformen testen | 25% |
+| Pathing-Durchgang | Routen, Spawns, Ziele platzieren | 15% |
+| Detail-Durchgang | Requisiten, Deckung, Dekoration hinzufügen | 30% |
+| Beleuchtung und Stimmung | Ton und Lesbarkeit festlegen | 10% |
+| Optimierung | Unordnung und Ladeaufwand reduzieren | 10% |
+| Veröffentlichen und iterieren | Feedback sammeln, patchen | 5% |
+
+### Baue zuerst den Blockout — immer
+
+Ein Blockout verwendet einfache Boxen und flache Farben, um Gelände darzustellen. Er sieht hässlich aus, und genau das ist der Punkt. Du willst den Flow beurteilen, ohne von Artwork abgelenkt zu werden.
+
+Spiele deinen Blockout allein durch, bevor du irgendetwas Hübsches hinzufügst. Laufe jede Route ab, stoppe die Zeit für jede einzelne und notiere, wo du dich langweilst oder verwirrt bist. Probleme in dieser Phase zu beheben kostet Minuten. Sie nach dem Detail-Durchgang zu beheben kostet Tage.
+
+### Führe ein Designdokument
+
+Selbst ein kurzes hilft. Notiere die angestrebte Spieleranzahl, Matchdauer, Anzahl der Routen und die Siegbedingung. Wenn du später Feedback bekommst, sagt dir dieses Dokument, ob eine Beschwerde ein Bug oder eine bewusste Designentscheidung ist.
+
+## Schwierigkeit ausbalancieren, ohne Spieler zu frustrieren
+
+Schwierigkeit in Clone-Builder-Maps entsteht durch Druck, nicht durch Bestrafung. Spieler sollten verlieren, weil sie einen erkennbaren Fehler gemacht haben, nicht weil die Map Informationen verborgen oder eine unvermeidbare Welle gespawnt hat.
+
+| Schwierigkeitshebel | Höher drehen | Niedriger drehen |
+|---|---|---|
+| Wellen- oder Einheitendichte | Mehr gleichzeitiger Druck | Weniger, zeitlich verteilte Angriffe |
+| Reisedistanz | Längere exponierte Routen | Kürzere, sicherere Bahnen |
+| Ressourcenknappheit | Weniger Knoten, langsameres Einkommen | Mehr Knoten in Spawn-Nähe |
+| Sichtlinien | Kurze, hinterhaltfreundliche Korridore | Offenes Gelände mit weiten Sichtlinien |
+| Erholungsoptionen | Begrenzte Reparatur oder Wiederaufbau | Großzügige Rückzugspositionen |
+| Zielkomplexität | Mehrere gleichzeitige Ziele | Ein klares Hauptziel |
+
+Ein praktischer Ansatz ist, immer nur einen Hebel zu justieren und das Ergebnis festzuhalten. Drei Variablen gleichzeitig zu ändern macht es unmöglich zu wissen, welche das Balancing kaputt gemacht hat.
+
+### Nutze Schwierigkeitsstufen
+
+Viele erfolgreiche Ersteller veröffentlichen dieselbe Map in leichten, Standard- und schweren Varianten. Das kostet deutlich weniger Aufwand als drei separate Maps zu bauen, und ein einziges Layout kann so ein viel breiteres Publikum bedienen.
+
+## Playtesting, Iteration und das Teilen deiner Arbeit
+
+Dein erster Playtest wird dich demütigen. Das ist normal, und es ist die wertvollste Stunde, die du in irgendein Projekt investieren wirst.
+
+| Playtest-Signal | Was es meist bedeutet | Vorgeschlagene Lösung |
+|---|---|---|
+| Spieler stehen früh still | Layout ist unklar | Orientierungspunkte oder Lichtsignale hinzufügen |
+| Alle nehmen eine Route | Andere Wege sind nicht lohnend | Belohnungen auf ignorierten Routen verbessern |
+| Matches enden zu schnell | Ziel ist zu exponiert | Distanz oder defensives Gelände hinzufügen |
+| Matches ziehen sich | Ziel ist zu stark befestigt | Deckung reduzieren oder eine Flanke öffnen |
+| Neue Spieler verirren sich | Beschilderung ist schwach | Farbe, Höhe und Lichtkontrast nutzen |
+
+### Rekrutiere Tester außerhalb deines Freundeskreises
+
+Freunde sind höflich. Fremde sind ehrlich. Poste deine Arbeit in Community-Foren, Discord-Servern und Subreddits zum Map-Bauen, wo Leute tatsächlich schonungsloses Feedback geben. Stelle gezielte Fragen wie „Welche Route hast du genommen und warum?" statt „Hat es dir gefallen?"
+
+### Wo du veröffentlichen kannst
+
+Beim Teilen hören Clone-Builder-Maps auf, ein privates Hobby zu sein. Plattformen wie der [Steam Workshop](https://steamcommunity.com/workshop/) lassen Ersteller Level hochladen, taggen, Bewertungen sammeln und Updates an alle pushen, die abonniert haben. Diese Feedback-Schleife — veröffentlichen, beobachten, patchen, erneut veröffentlichen — ist der Weg, auf dem Amateur-Maps zu polierten Maps werden.
+
+## Häufige Fehler, die ansonsten gute Maps ruinieren
+
+- **Vor dem Testen dekorieren.** Artwork verdeckt Layoutfehler, statt sie zu beheben.
+- **Performance ignorieren.** Hunderte einzigartige Requisiten können die Framerate auf bescheidener Hardware in die Knie zwingen.
+- **Zu viel Beschilderung.** Wenn du überall Pfeile brauchst, ist das Layout selbst das Problem.
+- **Kein sicherer Lernraum.** Neue Spieler brauchen einen Bereich mit wenig Druck, um die Regeln zu verstehen.
+- **Nach dem Launch aufgeben.** Die meisten Clone-Builder-Maps verbessern sich dramatisch über drei oder vier öffentliche Patches hinweg.
+- **Ein beliebtes Layout exakt kopieren.** Studiere, was funktioniert, und passe es dann an die Mechaniken deines eigenen Spiels an.
+
+Verwende Assets wieder, wo du kannst. Eine kleine, gut geordnete Bibliothek aus Requisiten, Texturen und modularen Teilen macht deine nächste Map schneller zu bauen und stilistisch konsistenter.
+
+## FAQ
+
+### Was genau sind Clone-Builder-Maps?
+
+Es sind eigene Level, die in Spielen erstellt werden, deren Kern darum kreist, Einheiten und Strukturen zu spawnen oder zu duplizieren. Die Map definiert Gelände, Routen, Spawn-Punkte und Ziele und formt direkt, wie sich die Clone- und Bau-Schleife entfaltet.
+
+### Brauche ich Programmiererfahrung, um Clone-Builder-Maps zu erstellen?
+
+Normalerweise nicht. Die meisten modernen Editoren sind visuell und knotenbasiert, sodass du Gelände platzieren, Spawn-Punkte setzen und Ziele konfigurieren kannst, ohne Code zu schreiben. Scripting hilft bei fortgeschrittenen Triggern, ist aber für eine solide erste Map selten erforderlich.
+
+### Wie lange dauert es, eine gute Map zu bauen?
+
+Rechne für ein poliertes Ergebnis mit mehreren Wochen Teilzeitarbeit: ein bis zwei Tage für die Planung, eine Woche für den Blockout und den Rest für Details, Balancing und Playtesting. Den Blockout zu überstürzen ist der häufigste Grund, warum Projekte ins Stocken geraten.
+
+### Wie bekomme ich nützliches Feedback zu Clone-Builder-Maps?
+
+Veröffentliche früh mit einer klaren Beschreibung deiner Absicht und stelle Testern dann gezielte Fragen zu Routenwahl, Pacing und verwirrenden Stellen. Sieh dir wenn möglich Aufzeichnungen an — was Spieler tun, ist weit aussagekräftiger als das, was sie sagen.

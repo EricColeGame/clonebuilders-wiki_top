@@ -1,0 +1,146 @@
+export const metadata = {
+  title: "Clone Builders Maps: A Complete Guide to Designing, Testing, and Sharing Custom Levels",
+  description: "Learn how clone builders maps work — from grid layout and pathing to playtesting and sharing. Practical tips for designing custom levels players love.",
+  category: "maps",
+  date: "2026-10-03",
+}
+
+## Why Clone Builders Maps Deserve Serious Design Effort
+
+A single well-made map can keep a building game alive for years after release. If you have ever opened a level editor, stared at an empty grid, and wondered where to begin, this guide to **clone builders maps** is for you. Great level design is not about filling space — it is about shaping decisions, and that starts long before you place your first tile.
+
+Designing **clone builders maps** sits somewhere between architecture and game design. You are deciding where players spawn, how fast they expand, which routes feel risky, and which shortcuts feel clever. Get those choices right and your map becomes a community favorite that gets remade, remixed, and recommended. Get them wrong and players bounce after one round, no matter how polished your visuals are.
+
+This guide covers the full pipeline: planning, blockouts, pathing, balancing, playtesting, and publishing. Everything here applies whether you build in a sandbox editor, a tile-based toolset, or a full modding suite.
+
+## What Exactly Are Clone Builders Maps?
+
+Clone builders maps are custom levels made inside games where the core loop involves spawning, duplicating, or commanding units and structures. The "clone" element is the mechanical heart — you produce units from a base, a spawner, or a factory, then push them across terrain toward an objective. The map is what makes that loop interesting.
+
+Because so much of the challenge comes from unit flow rather than raw reflex, layout matters more than spectacle. A clean, readable map with strong routes will almost always outperform a beautiful map that confuses players.
+
+| Map Element | What It Does | Common Mistake |
+|---|---|---|
+| Spawn zone | Defines where units and players begin | Too small, causing early crowding |
+| Primary path | The main route units or players travel | Long, featureless stretches |
+| Secondary route | Offers risk-versus-reward choice | Identical to the primary path |
+| Chokepoint | Creates tension and defensive value | Too many, stalling all momentum |
+| Resource nodes | Drives expansion and economy decisions | Clustered in one safe corner |
+| Objective area | Gives the match a clear finish line | Poorly telegraphed to new players |
+
+### Scale Matters More Than You Think
+
+A common beginner trap is building too big. Oversized clone builders maps feel empty because players spend most of their time walking instead of deciding. Community reports consistently favor compact layouts where every screen has something happening.
+
+A useful rule: if a player can cross your map in fewer than fifteen seconds, it is probably too small. If it takes more than ninety seconds with no meaningful event along the way, it is almost certainly too large.
+
+## Core Design Principles for Playable Maps
+
+Before you touch a single prop, decide what emotion the map should produce. Tense? Chaotic? Relaxed and creative? Every layout decision should serve that goal.
+
+| Principle | Why It Matters | Quick Self-Check |
+|---|---|---|
+| Readability | Players must instantly see where to go | Can a newcomer guess the route in 5 seconds? |
+| Pacing | Alternating pressure and relief keeps focus | Are there calm moments between fights? |
+| Meaningful choice | Routes should differ in risk and reward | Would a veteran pick differently than a rookie? |
+| Symmetry balance | Prevents unfair spawn advantages | Do both sides have equal access to key terrain? |
+| Verticality | Adds tactical depth without extra tiles | Do high and low ground both have trade-offs? |
+| Clear landmarks | Helps orientation and callouts | Can players name five distinct areas? |
+
+### Symmetry Versus Asymmetry
+
+Perfect mirror symmetry is the safest starting point for competitive clone builders maps. It removes spawn bias and makes balancing far easier, because any change you make applies equally to both sides.
+
+Asymmetry is more exciting but harder to tune. If you go that route, keep the *opportunity cost* balanced rather than the geometry. One side might have a faster route to the center, while the other has easier access to resources. Different tools, similar total value.
+
+## Tools and Workflow: From Blank Grid to Finished Map
+
+Most map creators follow a similar sequence regardless of the editor they use. Skipping the early stages is the fastest way to waste weeks on details that get deleted anyway.
+
+| Stage | Goal | Typical Time Share |
+|---|---|---|
+| Paper sketch | Lock the layout concept | 5% |
+| Blockout | Test flow with placeholder shapes | 25% |
+| Pathing pass | Place routes, spawns, objectives | 15% |
+| Detail pass | Add props, cover, decoration | 30% |
+| Lighting and mood | Set tone and readability | 10% |
+| Optimization | Reduce clutter and load cost | 10% |
+| Publish and iterate | Gather feedback, patch | 5% |
+
+### Build the Blockout First — Always
+
+A blockout uses simple boxes and flat colors to represent terrain. It looks ugly, and that is the point. You want to judge flow without being distracted by art.
+
+Play your blockout solo before adding anything pretty. Walk every route, time each one, and note where you feel bored or confused. Fixing problems at this stage costs minutes. Fixing them after the detail pass costs days.
+
+### Keep a Design Document
+
+Even a short one helps. Note the intended player count, match length, number of routes, and the win condition. When you get feedback later, this document tells you whether a complaint is a bug or a deliberate design choice.
+
+## Balancing Difficulty Without Frustrating Players
+
+Difficulty in clone builders maps comes from pressure, not punishment. Players should lose because they made a readable mistake, not because the map hid information or spawned an unavoidable wave.
+
+| Difficulty Lever | Turn It Up | Turn It Down |
+|---|---|---|
+| Wave or unit density | More simultaneous pressure | Fewer, spaced-out pushes |
+| Travel distance | Longer exposed routes | Shorter, safer lanes |
+| Resource scarcity | Fewer nodes, slower income | More nodes near spawn |
+| Sight lines | Short, ambush-friendly corridors | Open ground with long views |
+| Recovery options | Limited repair or rebuild | Generous fallback positions |
+| Objective complexity | Multiple simultaneous goals | One clear primary objective |
+
+A practical approach is to tune one lever at a time and record the result. Changing three variables at once makes it impossible to know which one broke the balance.
+
+### Use Difficulty Tiers
+
+Many successful creators publish the same map in easy, standard, and hard variants. This costs far less effort than building three separate maps and it lets one layout serve a much wider audience.
+
+## Playtesting, Iteration, and Sharing Your Work
+
+Your first playtest will humble you. That is normal, and it is the most valuable hour you will spend on any project.
+
+| Playtest Signal | What It Usually Means | Suggested Fix |
+|---|---|---|
+| Players stand still early | Layout is unclear | Add landmarks or lighting cues |
+| Everyone takes one route | Other paths are not rewarding | Improve rewards on ignored routes |
+| Matches end too fast | Objective is too exposed | Add distance or defensive terrain |
+| Matches drag on | Objective is too fortified | Reduce cover or open a flank |
+| New players get lost | Signage is weak | Use color, height, and light contrast |
+
+### Recruit Testers Outside Your Friend Group
+
+Friends are polite. Strangers are honest. Post your work in community forums, Discord servers, and map-making subreddits where people actually give blunt feedback. Ask specific questions like "Which route did you take and why?" instead of "Did you like it?"
+
+### Where to Publish
+
+Sharing is where clone builders maps stop being a private hobby. Platforms such as the [Steam Workshop](https://steamcommunity.com/workshop/) let creators upload levels, tag them, collect ratings, and push updates to everyone who subscribed. That feedback loop — publish, observe, patch, republish — is how amateur maps become polished ones.
+
+## Common Mistakes That Sink Otherwise Good Maps
+
+- **Decorating before testing.** Art hides layout flaws instead of fixing them.
+- **Ignoring performance.** Hundreds of unique props can tank framerates on modest hardware.
+- **Over-signposting.** If you need arrows everywhere, the layout itself is the problem.
+- **No safe learning space.** New players need a low-pressure area to understand the rules.
+- **Abandoning after launch.** Most clone builders maps improve dramatically across three or four public patches.
+- **Copying a popular layout exactly.** Study what works, then adapt it to your own game's mechanics.
+
+Reuse assets where you can. A small, well-arranged library of props, textures, and modular pieces will make your next map faster to build and more consistent in style.
+
+## FAQ
+
+### What are clone builders maps, exactly?
+
+They are custom levels created inside games that revolve around spawning or duplicating units and structures. The map defines terrain, routes, spawn points, and objectives, and it directly shapes how the cloning and building loop plays out.
+
+### Do I need coding experience to make clone builders maps?
+
+Usually not. Most modern editors are visual and node-based, so you can place terrain, set spawn points, and configure objectives without writing code. Scripting helps for advanced triggers, but it is rarely required for a solid first map.
+
+### How long does a good map take to build?
+
+Expect several weeks of part-time work for a polished result: a day or two for planning, a week for the blockout, and the rest for detail, balancing, and playtesting. Rushing the blockout is the most common reason projects stall.
+
+### How do I get useful feedback on clone builders maps?
+
+Publish early with a clear description of your intent, then ask testers targeted questions about route choice, pacing, and confusion points. Watch recordings if possible — what players do is far more informative than what they say.

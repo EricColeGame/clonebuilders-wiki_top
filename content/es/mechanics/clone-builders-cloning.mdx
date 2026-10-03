@@ -1,0 +1,122 @@
+export const metadata = {
+  title: "Clonación de constructores clon explicada: mecánicas centrales, consejos y estrategias ganadoras",
+  description: "Una guía práctica sobre las mecánicas de clonación de constructores clon: cómo funciona la duplicación, cuánto cuesta, qué roles copiar primero y los errores que frenan tu build.",
+  category: "mechanics",
+  date: "2026-10-02",
+}
+
+La clonación de constructores clon es una de las mecánicas más malinterpretadas en los juegos modernos de estrategia, sandbox y supervivencia. A primera vista parece producción gratuita: pulsas un botón, obtienes un duplicado, repites para siempre. En la práctica, es un puzle de recursos con topes estrictos, costes crecientes y ventanas de tiempo que castigan el juego descuidado. Entenderlo importa porque los jugadores que dominan la duplicación producen de forma constante más que los oponentes que nunca tocan la mecánica.
+
+Esta guía desglosa cómo funciona realmente la clonación de constructores clon en todo el género: los distintos modelos de duplicación, la economía que hay detrás, las órdenes de construcción que escalan y las trampas que estancan una partida. Todo lo que sigue está enfocado en mecánicas generales en lugar de un título concreto, para que puedas aplicarlo tanto si juegas a un juego de estrategia en tiempo real con ejércitos, a un sandbox de construcción de bases o a un RPG de colección con un truco de clonación.
+
+## Qué significa en la práctica la clonación de constructores clon
+
+La expresión abarca dos ideas vinculadas. En primer lugar, describe un sistema de juego que te permite duplicar unidades, estructuras o personajes en lugar de producir cada uno desde cero. En segundo lugar, describe a los jugadores que construyen toda su estrategia en torno a ese sistema: los que tratan la primera copia como una plantilla y cada copia posterior como una ventaja.
+
+La mayoría de las implementaciones caen en uno de cuatro modelos, y cada uno limita el progreso de forma distinta.
+
+| Modelo de clonación | Qué se copia | Barrera de coste típica | Dónde lo ves |
+|---|---|---|---|
+| Duplicación de unidades | Unidades de combate, trabajadores, drones | Energía, suministro o tope de población | Estrategia en tiempo real y juegos de ejércitos |
+| Clonación de estructuras o planos | Edificios, cadenas de producción, diseños completos | Tiempo de construcción y materias primas | Sandbox de construcción de bases y automatización |
+| Clonación de personajes | Héroes, tripulación, miembros del equipo | Enfriamientos y moneda rara | Auto-battlers, roguelites, RPG de colección |
+| Clonación propia o de oleadas | El personaje del jugador o el propio generador | Riesgo de perder el original | Supervivencia arcade y tower defense |
+
+La distinción clave es si el clon es *permanente* o *temporal*. Los clones permanentes cambian tu economía para siempre; los clones temporales son herramientas de ráfaga que gastas en un momento concreto. Confundir los dos es la forma más rápida de desperdiciar una partida.
+
+## El bucle central de clonación, paso a paso
+
+Todo constructor clon sigue más o menos el mismo bucle de cinco pasos, por muy diferentes que parezcan las apariencias. Aprender el bucle te permite diagnosticar problemas en lugar de adivinar.
+
+| Paso | Qué haces | Error común |
+|---|---|---|
+| 1. Asegura una fuente | Protege o construye lo que produce clones | Construir clones antes de que la fuente sea defendible |
+| 2. Paga el primer coste | Gasta la copia más barata que jamás conseguirás | Saltarte la primera copia para "ahorrar" recursos |
+| 3. Asigna roles | Da a cada duplicado un trabajo: recolectar, luchar, construir, explorar | Hacer que todos los clones sean idénticos |
+| 4. Escala la producción | Añade copias mientras los costes siguen siendo bajos | Construir en exceso antes de que tus ingresos alcancen el ritmo |
+| 5. Reinvierte o convierte | Transforma los clones sobrantes en mejoras o nuevas fuentes | Acumular clones que se quedan inactivos |
+
+### Por qué el timing vence al volumen
+
+Los informes de la comunidad de jugadores de estrategia y sandbox señalan repetidamente el mismo patrón: el ganador rara vez es la persona con más clones en pantalla. Es la persona que tenía clones *activos* durante la ventana en la que importaban.
+
+Un duplicado producido treinta segundos tarde puede ser peor que no tener duplicado alguno, porque consumió recursos que podrían haber ido a defensa o ingresos. Antes de poner en cola otra copia, hazte una pregunta: ¿qué hará este clon en el próximo minuto? Si la respuesta es "esperar", lo construiste demasiado pronto.
+
+Otras reglas de timing que merece la pena interiorizar:
+
+- **Clona antes de una pelea, no durante ella.** Producir durante el combate normalmente significa que tu fuente está expuesta.
+- **Agrupa tus copias.** Clonar por oleadas te permite absorber picos de coste y mantener un solo ciclo de mejoras.
+- **Detente en el tope, no en cero.** Mantén una reserva para que perder una fuente no acabe con tu partida.
+- **Ajusta el número de clones a tu mantenimiento.** Más copias de las que puedes pagar es una derrota lenta, no rápida.
+
+## Economía de clones: costes, topes y escalado
+
+La clonación de constructores clon vive o muere por la economía. La duplicación casi siempre es barata al principio y cara después, lo que crea una curva que recompensa la agresión temprana y castiga la duda tardía.
+
+| Recurso | Por qué limita la clonación | Prioridad |
+|---|---|---|
+| Energía o maná | Limita cuántas copias pueden estar activas a la vez | Alta: planifícala primero |
+| Tope de población o suministro | Techo máximo de unidades totales, clonadas o no | Alta: mejóralo antes de alcanzarlo |
+| Materias primas | Paga la clonación de estructuras y planos | Media: escala con el control del mapa |
+| Moneda rara o enfriamientos | Limita la clonación de personajes | Media: ahorra para copias de alto valor |
+| Tiempo | El coste oculto detrás de cada clon | La más alta: el único recurso que no puedes farmear |
+
+Un modelo mental útil es la **deuda de clones**. Cada duplicado que creas añade un coste continuo: mantenimiento, atención o espacio. Si la producción de un clon no supera su deuda en una ventana razonable, es una carga. Los jugadores experimentados auditan su plantilla con regularidad y cortan las copias que ya no pagan el alquiler.
+
+También hay una trampa de escalado que merece la pena nombrar. Muchos sistemas tasan cada nuevo clon un poco más alto que el anterior. Eso significa que la décima copia cuesta mucho más que la segunda, aunque haga el mismo trabajo. La solución es diversificar: en lugar de perseguir un clon más, mejora los que ya tienes o invierte en una segunda fuente de producción.
+
+## Órdenes de construcción, roles y tablas de unidades que ganan partidas
+
+Los constructores clon que clonan sin un plan acaban con un montón de unidades idénticas y sin respuesta a un contraataque. Los roles son lo que convierte la cantidad en estrategia.
+
+| Rol del clon | Fortalezas | Debilidades | Cuándo construirlo |
+|---|---|---|---|
+| Recolector | Financia todo lo demás; la copia más segura | Indefenso; atrae incursiones | Las dos o tres primeras copias |
+| Constructor | Amplía territorio y producción | Retorno lento | Cuando los ingresos son estables |
+| Bruto (bruiser) | Absorbe daño; aguanta puntos de estrangulamiento | Caro de reemplazar | Antes de tu primera pelea real |
+| A distancia o apoyo | Castiga a los grupos; potencia la primera línea | Frágil sin una pantalla | Junto a tu segundo bruto |
+| Explorador o saboteador | Revela planes; interrumpe la clonación enemiga | Bajo valor de combate | Antes de cada compromiso importante |
+
+### Una orden de construcción inicial sencilla
+
+Usa esto como esqueleto inicial y ajústalo al ritmo de tu juego:
+
+1. Construye una fuente de producción y defiéndela de inmediato.
+2. Crea dos clones recolectores: las copias más baratas que jamás conseguirás.
+3. Añade un clon constructor para ampliar ingresos o control del mapa.
+4. Añade un clon bruto solo cuando tengas algo que merezca la pena proteger.
+5. Mejora tu fuente antes de crear el sexto clon.
+6. Añade copias de apoyo o a distancia una vez que la primera línea pueda aguantar.
+
+El orden importa más que los números. Los jugadores que siguen una secuencia como esta tienden a alcanzar su pico de poder de mitad de partida antes que los que clonan de forma reactiva.
+
+## Errores comunes de los nuevos constructores clon
+
+La mayoría de los fallos en los sistemas de clonación son predecibles, lo que significa que son corregibles. La siguiente tabla relaciona el síntoma con el hábito subyacente.
+
+| Error | Síntoma | Solución |
+|---|---|---|
+| Clonar demasiado pronto | Economía débil, pérdidas constantes | Termina tu fuente y la primera mejora de ingresos |
+| Clonar unidades idénticas | Sin respuesta a los contras | Asigna al menos tres roles distintos |
+| Ignorar el tope | La producción se estanca en mitad de la pelea | Mejora la capacidad antes de alcanzarla |
+| Acumular clones | Unidades inactivas, mantenimiento desperdiciado | Da a cada clon una orden permanente |
+| Perseguir el clon más nuevo | Costes al alza, eficiencia a la baja | Compara cada nueva copia con una mejora en su lugar |
+| Sin plan de reemplazo | Una incursión acaba con la partida | Mantén una reserva de recursos para reconstruir |
+
+Dos hábitos separan a los jugadores fuertes de los mediocres. El primero es una **lista de comprobación previa a clonar**: fuente defendida, capacidad disponible, rol asignado, reserva intacta. El segundo es una **revisión posterior a la partida**: cuenta cuántos clones construiste y cuántos contribuyeron realmente. La mayoría de los jugadores descubren que un tercio de sus copias nunca hizo un trabajo significativo.
+
+## Preguntas frecuentes
+
+**¿Es la clonación de constructores clon siempre la estrategia más fuerte?**
+No. La duplicación es un multiplicador, y los multiplicadores solo compensan cuando hay algo que multiplicar. Si tus ingresos base o la calidad de tus unidades son débiles, clonar solo escala una posición débil. Construye primero los cimientos, luego duplícalos.
+
+**¿Cuántos clones debería mantener activos a la vez?**
+Usa tu mantenimiento y tu tope como guía en lugar de un número fijo. Una regla práctica de la experiencia de los jugadores: cada clon activo debería generar recursos, mantener terreno o crear presión. Si una copia no hace ninguna de esas cosas, retírala y reinvierte.
+
+**¿Los clones conservan sus mejoras?**
+Eso depende por completo del sistema. Algunos juegos copian el estado actual de una unidad, otros restablecen los clones a su estado base y otros copian las mejoras pero no los buffs temporales. Prueba esto pronto con un solo clon barato: cambia toda tu orden de mejoras.
+
+**¿Cuál es la forma más rápida de mejorar en las mecánicas de clonación?**
+Ejecuta la misma orden de construcción inicial varias veces y anota dónde falla. La repetición te enseña la curva de costes y las ventanas de timing más rápido que leer cualquier guía, y hace obvio el momento en que tu economía se estanca.
+
+La versión corta: trata la clonación de constructores clon como un problema de economía primero y un problema de combate después. Protege la fuente, paga los costes más baratos pronto, da a cada copia un trabajo y corta todo lo que deje de ganarse su sustento.

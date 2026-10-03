@@ -1,0 +1,133 @@
+export const metadata = {
+  title: "IA de creadores de clones explicada: cómo funcionan realmente las mecánicas de unidades duplicadas",
+  description: "Cómo funciona la IA de creadores de clones: mecánicas de unidades duplicadas, consejos de gestión de clones y las métricas que separan las builds fuertes de las débiles.",
+  category: "mechanics",
+  date: "2026-10-02",
+}
+
+## ¿Qué cuenta como un creador de clones?
+
+Un creador de clones parece sencillo sobre el papel: haz copias, asígnales tareas, observa cómo suben los números. Luego chocas con un límite de recursos, la mitad de tus copias se quedan inactivas y toda la maquinaria se detiene en seco. Esa brecha entre la fantasía y la ejecución es donde vive la IA de creadores de clones: la capa de comportamiento que decide qué duplicado hace qué, cuándo y en qué orden. Si aciertas con esa capa, una configuración modesta de IA de creadores de clones puede producir más que una build que lleva el triple de unidades brutas.
+
+El rasgo que define la mecánica no es la copia. Es la delegación. Creas el duplicado, le asignas una tarea y confías en que siga haciéndola mientras piensas en otra cosa.
+
+Eso separa a los creadores de clones de dos mecánicas parecidas. Los invocadores generan unidades temporales que solo existen para un combate. Los multiplicadores pasivos crean bonificaciones sin ningún cuerpo asociado. Los creadores de clones se sitúan entre ambos: copias persistentes, cargas de trabajo reales y una capa de gestión que el jugador tiene que diseñar activamente.
+
+La mayoría de los clones también heredan algo de su fuente: estadísticas, habilidades, equipo o una fracción de los tres. Esa herencia es la verdadera palanca de la mecánica, porque decide si un clon es un par de manos desechable o un auténtico segundo personaje.
+
+### Los cuatro arquetipos de clones
+
+| Arquetipo | Cómo se comportan los clones | Uso más potente | Coste principal |
+|---|---|---|---|
+| Clonador de enjambre | Muchas copias débiles, rápidas de producir, de vida corta | Recolección, cobertura del mapa, exploración | Micromanagement intenso, carga de rendimiento |
+| Clonador de élite | Pocas copias poderosas, arranque lento | Combates contra jefes, defensa, tareas de precisión | Inicio lento, alta inversión por unidad |
+| Clonador estructural | Las copias son edificios, torretas o instalaciones | Expansión de base, cadenas de automatización | Espacio, mantenimiento, planificación del trazado |
+| Híbrido | Niveles mezclados con roles distintos | Transiciones de mitad a final de partida | Complejidad, fatiga de decisiones |
+
+Saber en qué arquetipo se apoya tu build importa más que cualquier mejora individual. Un jugador de enjambre que optimiza para la calidad de un solo clon está luchando contra su propio conjunto de herramientas.
+
+## Cómo funciona realmente la IA de creadores de clones
+
+Bajo el capó, la IA de creadores de clones no es un solo sistema. Es una pila de pequeñas decisiones que se ejecutan en cada tick, y cada capa puede fallar de forma independiente. Entender las capas hace que depurar sea mucho más rápido que adivinar.
+
+| Capa de IA | Pregunta que responde | Síntoma de fallo |
+|---|---|---|
+| Selección de tareas | ¿Qué debería hacer este clon ahora mismo? | Clones inactivos junto a nodos de recursos llenos |
+| Pila de prioridades | ¿Qué tarea gana cuando dos entran en conflicto? | Varios clones disputándose el mismo objetivo |
+| Búsqueda de rutas | ¿Cómo llega el clon hasta allí? | Clones atascados en la geometría o en las puertas |
+| Coordinación | ¿Cómo evitan los clones solaparse? | Amontonamiento, daño desperdiciado, cuellos de botella bloqueados |
+| Comportamiento de reserva | ¿Qué pasa cuando ninguna tarea es válida? | Clones congelados en el sitio indefinidamente |
+
+La capa de selección de tareas es donde la mayoría de las builds pierden eficiencia en silencio. Si la lista de prioridades de un clon está mal ordenada, pasará tranquilamente junto a una tarea cercana para llegar a una lejana que puntuó más alto. La experiencia de los jugadores con estrategias cargadas de clones apunta siempre a la misma solución: acorta la lista de prioridades y pon la tarea de mayor valor arriba, en lugar de la más interesante.
+
+La coordinación es el segundo gran punto de fallo. Cuando varios clones comparten un objetivo, la mayoría de las implementaciones no reparten el trabajo automáticamente: se apilan unos encima de otros. Los informes de la comunidad en títulos de estrategia y supervivencia describen el mismo síntoma: un muro de clones machacando un nodo mientras tres nodos idénticos permanecen intactos a dos casillas de distancia. La asignación de zonas o las órdenes manuales de dispersión lo solucionan, pero solo si detectas el problema a tiempo.
+
+### Por qué existen los límites de clones
+
+Todo creador de clones acaba topando con un techo, y normalmente es deliberado, no un error. Motivos habituales:
+
+- **Límites de rendimiento.** Cada clon consume tiempo de procesamiento, así que los motores limitan la cantidad para mantener estable la tasa de fotogramas.
+- **Escalado del mantenimiento.** Los clones suelen costar recursos por ciclo, así que una fuerza grande puede drenar más rápido de lo que produce.
+- **Techos suaves.** La eficiencia por clon cae pasado un umbral, lo que hace que las copias extra valgan menos que las mejoras.
+- **Presupuestos de tick de la IA.** Las actualizaciones de comportamiento se ejecutan según un calendario, así que los grupos muy grandes reciben decisiones con menos frecuencia.
+
+La conclusión práctica: encuentra tu límite antes de construir hacia él. Construir más allá de un techo suave desperdicia recursos que las mejoras habrían aprovechado mucho mejor.
+
+## La economía de la duplicación
+
+Los creadores de clones son mecánicas de acumulación, lo que significa que las decisiones interesantes ocurren pronto. Cada clon cuesta recursos y tiempo, y solo se amortiza después de haber trabajado lo suficiente. Esa ventana de retorno —a veces llamada deuda de clones— es el número más importante de todo el sistema.
+
+| Fase | Cantidad típica de clones | Qué deberías estar haciendo | Trampa común |
+|---|---|---|---|
+| Inicial | 1–5 | Asignación manual, aprender las prioridades de tareas | Invertir en exceso en cantidad de clones antes de que los ingresos lo sostengan |
+| Media | 5–30 | Automatizar reglas de tareas, establecer zonas | Ignorar al personaje constructor original |
+| Tardía | 30+ | Delegación, gestión del límite, mejoras de nivel | Microgestionar clones individuales |
+
+En la fase inicial, un clon bien colocado supera a tres mal dirigidos. En la fase media, el cuello de botella pasa de la producción a la logística: los clones existen, pero el trabajo no está bien distribuido. En la fase tardía, el cuello de botella suele ser tu propia atención.
+
+Esa progresión es la razón por la que los jugadores veteranos tratan a los creadores de clones como una mecánica de gestión de la atención disfrazada de mecánica de producción. La jugada ganadora casi siempre consiste en reducir el número de decisiones que tienes que tomar tú mismo por minuto.
+
+## Consejos prácticos para mejores builds de clones
+
+1. **Asigna zonas, no clones individuales.** Las reglas por zonas sobreviven a la pérdida de unidades y no requieren volver a hacer clic cuando muere un clon.
+2. **Pon tu tarea de mayor rendimiento en la parte superior de la lista de prioridades.** El orden gana a la cantidad bruta de clones casi siempre.
+3. **Dispersa antes de apilar.** Reparte los clones entre varios objetivos antes de añadir más clones a uno que ya existe.
+4. **Mejora la fuente, no solo las copias.** Como los clones heredan de su origen, una mejora en la fuente se multiplica por todo el grupo.
+5. **Vigila la tasa de inactividad, no la cantidad de clones.** Los clones inactivos son la señal más clara de que tus reglas están mal.
+6. **Construye un nivel por delante de tus ingresos.** Los clones que cuestan más de lo que producen crean una espiral de deuda.
+7. **Ten siempre a mano una anulación manual.** La automatización se encarga del trabajo rutinario; tú te encargas de las excepciones.
+
+### Errores comunes y sus soluciones
+
+| Error | Cómo se ve | Solución |
+|---|---|---|
+| Lista de prioridades demasiado larga | Clones vagando entre tareas | Redúcela a tres o cuatro tareas ordenadas |
+| Sin tarea de reserva | Clones que se congelan cuando se acaba el trabajo | Establece una orden por defecto de recolección o patrulla |
+| Clones uniformes | Cada copia hace todo de forma aceptable | Especializa los clones por zona o rol |
+| Ignorar la búsqueda de rutas | Clones atascados en una puerta | Ensancha la ruta o añade un segundo carril |
+| Construir más allá del techo suave | Ingresos planos a pesar de tener más clones | Redirige el gasto a mejoras |
+
+## Métricas que separan una buena IA de creadores de clones de una excelente
+
+No puedes mejorar lo que no mides. Estas son las señales que merece la pena seguir y cómo se ve una versión saludable de cada una en la práctica. Las <a href="https://store.steampowered.com/" rel="nofollow">categorías de estrategia y simulación de la tienda de Steam</a> están llenas de títulos construidos por completo en torno a estos bucles, y las mismas métricas se aplican a casi todos ellos.
+
+| Métrica | Qué mide | Cómo se ve una buena cifra |
+|---|---|---|
+| Tasa de inactividad | Proporción de clones sin tarea activa | Baja y estable durante el juego normal |
+| Solapamiento de tareas | Clones que se disputan el mismo objetivo | Poco frecuente salvo en fuego concentrado deliberado |
+| Tiempo de amortización | Tiempo que tarda un clon en ganar lo que costó | Más corto que la duración de la fase actual |
+| Ratio de mejoras frente a clones | Reparto del gasto entre calidad y cantidad | Equilibrado, inclinándose a la calidad cerca de los límites |
+| Velocidad de recuperación | Qué tan rápido se reconstruye la build tras las pérdidas | Suficientemente rápida para sobrevivir a una mala pelea |
+
+Regla general de la comunidad: si tu tasa de inactividad se dispara justo después de añadir clones, los añadiste demasiado rápido. El sistema necesita que las reglas se actualicen al mismo ritmo que el número de unidades.
+
+## Clon único frente a enjambre: elegir una identidad de build
+
+Las dos identidades dominantes tiran en direcciones opuestas, y mezclarlas sin cuidado produce lo peor de ambas.
+
+| | Clon de élite único | Build de enjambre |
+|---|---|---|
+| Arranque | Lento, caro | Rápido, barato |
+| Techo de habilidad | Micro por unidad elevado | Macro a nivel de sistema elevado |
+| Modo de fallo | Una sola pérdida te deja cojo | Muerte por mil pérdidas |
+| Mejor con | Objetivos precisos y de alto valor | Cargas de trabajo amplias y repetitivas |
+| Lo que exige la IA de creadores de clones | Control ágil y reservas limpias | Fuerte coordinación y gestión de zonas |
+
+La mayoría de las builds exitosas se comprometen con una identidad durante los dos primeros tercios de una partida y luego añaden una capa fina de la otra cuando su economía puede absorberla.
+
+## Preguntas frecuentes
+
+**¿Qué significa "IA de creadores de clones" en los videojuegos?**
+Se refiere al sistema de comportamiento que controla las unidades duplicadas: las reglas que deciden qué hace cada clon, en qué orden y cómo evitan los clones entrar en conflicto entre sí. Una capa sólida de IA de creadores de clones hace que una fuerza pequeña parezca organizada; una débil hace que una fuerza grande parezca caótica.
+
+**¿Cuántos clones debería construir?**
+Construye hasta tu techo suave, no más allá. Si añadir un clon no aumenta visiblemente la producción, ese recurso pertenece a una mejora.
+
+**¿Por qué mis clones se quedan inactivos?**
+Nueve de cada diez veces, la causa es una tarea de reserva ausente o una lista de prioridades sin ninguna entrada válida una vez terminado el trabajo principal. Establece una orden por defecto y la inactividad suele desaparecer.
+
+**¿Funcionan las mecánicas de creador de clones en multijugador?**
+Sí, aunque la coordinación importa más. En cooperativo, asignar una zona a cada jugador evita que los clones dupliquen trabajo y mantiene predecible el rendimiento global del grupo.
+
+**¿Los creadores de clones son solo una trampa de micromanagement?**
+Solo si tú los tratas así. La mecánica recompensa a los jugadores que diseñan reglas y delegan, y castiga a los que insisten en hacer clic en cada unidad a mano.

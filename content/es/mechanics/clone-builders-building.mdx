@@ -1,0 +1,115 @@
+export const metadata = {
+  title: "Constructores clón a escala: una guía práctica de las mecánicas de construcción con clones",
+  description: "Aprende cómo funcionan los constructores clón en los juegos de construcción, cómo poner tareas en cola, evitar clones desaprovechados y escalar una plantilla de clones sin que tu base se detenga.",
+  category: "mechanics",
+  date: "2026-10-02",
+}
+
+## Por qué los constructores clón lo cambian todo en la construcción
+
+Los constructores clón convierten la construcción de una tarea pesada en un puzle de logística. En lugar de colocar cada muro, rampa y caja de almacenamiento a mano, generas duplicados, les entregas una lista de tareas y ves cómo una base se ensambla sola mientras te concentras en la siguiente expansión. Ese cambio es exactamente la razón por la que la construcción con constructores clón se ha vuelto una mecánica tan reconocible en juegos de sandbox, colonias y estilo fábrica.
+
+El atractivo es simple: tu rendimiento deja de estar limitado por la mano que usa el ratón y empieza a estarlo por lo bien que planificas. Pero la mecánica es engañosamente profunda. Una plantilla de clones mal gestionada es más lenta que construir en solitario: los clones chocan, duplican trabajo, se adentran en terreno sin terminar y se quedan inactivos cuando no miras. Esta guía cubre cómo funciona realmente la mecánica, cómo poner trabajo en cola de forma eficiente y cómo escalar de dos clones a un equipo de construcción completo sin que colapsen tus FPS ni tu cordura.
+
+## ¿Qué cuenta como constructor clón?
+
+El término abarca dos ideas relacionadas, y la mayoría de los juegos se apoyan en una o en ambas:
+
+- **Clones unitarios**: trabajadores, drones o copias de tu propio personaje que caminan físicamente hasta una obra y colocan bloques, paneles o piezas.
+- **Clones de estructura**: un comando o herramienta que copia una construcción existente y la estampa en otro lugar, de modo que un diseño terminado se convierte en muchos.
+
+Ambos existen para eliminar el trabajo manual repetitivo. La diferencia importa porque los clones unitarios cuestan recursos y atención de forma continua, mientras que los clones de estructura cuestan una configuración única y luego escalan casi sin coste.
+
+| Tipo de clon | Qué hace | Mejor uso | Principal desventaja |
+|---|---|---|---|
+| Clon trabajador generado | Ejecuta tareas de construcción en cola paso a paso | Bases orgánicas que crecen de forma irregular | Necesita comida, energía o mantenimiento |
+| Clon espejo | Copia tus propias acciones mientras construyes | Estructuras y muros simétricos | Se rompe en terreno irregular |
+| Clon de plano | Estampa al instante un diseño guardado | Módulos repetidos como barracones o granjas | Ignora las particularidades del terreno local |
+| Clon temporal | Existe para una tarea y luego desaparece | Reparaciones rápidas y puentes | No se puede reutilizar ni mejorar |
+
+Los informes de la comunidad favorecen sistemáticamente un enfoque híbrido: usa clones de plano para todo lo repetitivo y reserva tus clones trabajadores para el trabajo desordenado y específico de cada sitio que una herramienta de estampado no puede manejar.
+
+## El bucle central de la construcción con constructores clón
+
+Una vez entiendes el bucle, la mecánica deja de parecer aleatoria. Casi todas las implementaciones siguen las mismas cinco etapas:
+
+1. **Inspeccionar**: confirma que el suelo esté lo bastante plano, despeja obstáculos y marca la huella.
+2. **Encolar**: emite las tareas en el orden en que realmente pueden completarse, no en el orden en que quieres que terminen.
+3. **Asignar**: empareja el tipo de clon con el tipo de tarea. Un clon transportista nunca debería ser tu soldador principal.
+4. **Verificar**: recorre la obra y revisa si hay piezas a medio terminar antes de empezar la siguiente fase.
+5. **Replicar**: guarda la sección terminada como plano para que la siguiente cueste una fracción del esfuerzo.
+
+El punto de fallo más común es el paso dos. Los jugadores encolan un tejado antes que los pilares de apoyo y luego se preguntan por qué sus clones están ahí parados sosteniendo materiales que no pueden usar. Ordenar las tareas por dependencia —cimientos, luego muros, luego tejado, luego interiores— elimina casi todo el tiempo de inactividad.
+
+| Rol del clon | Tarea principal | Orden de prioridad | Notas |
+|---|---|---|---|
+| Topógrafo | Despeja el suelo, marca la huella | 1.º | Barato, rápido, evita rehacer trabajo |
+| Transportista | Mueve materiales a la obra | 2.º | Duplica en rutas largas |
+| Ensamblador | Coloca piezas estructurales | 3.º | Tu cuello de botella en la mayoría de construcciones |
+| Acabador | Detalles, cableado, decoración | 4.º | Puede trabajar en paralelo con los ensambladores |
+| Clon de reparación | Arregla daños y deterioro | Continuo | A menudo se olvida hasta que algo se rompe |
+
+Si quieres ver cómo funciona un comando de copia literal en un juego sandbox convencional, la [referencia del comando /clone de Minecraft](https://minecraft.wiki/w/Commands/clone) es un caso de estudio útil. Te permite duplicar una región definida de bloques, opcionalmente filtrada por una máscara o movida en lugar de copiada: la misma lógica que usan los clones de plano en constructores más especializados.
+
+## Construcción con clones vs. construcción en solitario vs. automatización total
+
+No todos los proyectos merecen un equipo de clones. A veces construir a mano es genuinamente más rápido, sobre todo para trabajos pequeños o muy detallados. La tabla siguiente es una guía aproximada de decisión basada en la experiencia típica de los jugadores.
+
+| Enfoque | Velocidad en construcciones pequeñas | Velocidad en construcciones grandes | Control | Coste de recursos |
+|---|---|---|---|---|
+| Construcción en solitario | La más rápida | Penosamente lenta | Total | Mínimo |
+| Construcción con constructores clón | Moderada | Muy rápida | Compartido | De bajo a medio |
+| Scripts de automatización total | Lenta de configurar | La más rápida | El más bajo | Alto |
+
+Una regla útil de los informes de la comunidad: si una estructura se va a repetir tres veces o más, vale la pena crear una cadena de clones para ella. Si es una pieza decorativa única, hazla tú mismo.
+
+También hay un coste oculto de los clones que los jugadores nuevos pasan por alto: consumen atención. Cada clon que generas es otra entidad cuyo enrutamiento, inventario y estado quizá tengas que revisar. Los equipos de cinco a ocho clones suelen ser el punto óptimo para la mayoría de los jugadores antes de que la carga de gestión empiece a comerse el tiempo que ahorraste.
+
+## Consejos prácticos para sacar más partido a tus constructores clón
+
+Aquí, pequeños ajustes producen ganancias desproporcionadas. Estos son los hábitos a los que los jugadores experimentados vuelven una y otra vez.
+
+- **Construye primero una zona de preparación.** Los clones desperdician enormes cantidades de tiempo caminando. Un depósito central con materiales preclasificados reduce drásticamente la distancia de viaje.
+- **Limita el tamaño de tu equipo.** Más clones no significa automáticamente más producción. Prueba incrementos de dos y detente cuando la producción deje de subir.
+- **Usa colas de tareas cortas.** Las colas largas ocultan errores. Los lotes de cinco a diez tareas son más fáciles de verificar y corregir.
+- **Nivela el terreno antes de generar clones.** Los errores de enrutamiento en pendientes son la causa número uno de proyectos de construcción con clones estancados.
+- **Guarda planos en el momento en que algo funcione.** Un diseño verificado vale más que un equipo más rápido.
+- **Asigna clones de reparación dedicados.** El deterioro y los daños se acumulan durante las expansiones largas.
+
+| Consejo | Por qué funciona | Configuración rápida |
+|---|---|---|
+| Depósito central | Reduce la distancia a pie | Coloca almacenamiento a pocas casillas de la obra |
+| Límite de equipo | Evita atascos de enrutamiento | Empieza con 4, añade 2 a la vez |
+| Colas cortas | Los errores aparecen antes | Vuelve a encolar cada 5–10 tareas |
+| Preparación del terreno | Evita clones atascados | Aplana un margen alrededor de la huella |
+| Biblioteca de planos | Elimina el trabajo de diseño repetido | Guarda cada módulo terminado |
+
+## Escalar, límites y errores comunes
+
+Escalar una plantilla de clones tiene menos que ver con números brutos y más con eliminar cuellos de botella. En la mayoría de los juegos, el cuello de botella se mueve a medida que creces: empieza siendo el suministro de materiales, pasa a ser el enrutamiento y el espacio, y finalmente se convierte en tu propia velocidad de toma de decisiones.
+
+| Error | Síntoma | Solución |
+|---|---|---|
+| Clonar antes de despejar | Clones atascados o girando | Inspecciona y aplana primero |
+| Sin prioridad de tareas | Clones inactivos a mitad de construcción | Ordena las tareas por dependencia |
+| Huellas superpuestas | Los clones se bloquean entre sí | Separa los módulos por una casilla |
+| Ignorar el mantenimiento | Los clones se detienen a mitad del proyecto | Automatiza comida, energía o combustible desde el principio |
+| Sin plano guardado | Reconstruir desde cero | Guarda inmediatamente después de verificar |
+
+Otra consideración al escalar: los límites de entidades. Muchos motores limitan cuántas unidades activas pueden existir antes de que el rendimiento se degrade. Si tus FPS caen cuando aparece el equipo, ese es tu techo real, no el menú de construcción del juego.
+
+La experiencia de los jugadores sugiere que las configuraciones más sólidas tratan a los clones como infraestructura y no como una novedad. Cuando dejas de pensar "cuántos clones puedo generar" y empiezas a pensar "cuál es mi cuello de botella actual", toda la mecánica encaja en su sitio.
+
+## FAQ
+
+**¿Los constructores clón reemplazan por completo la construcción manual?**
+No. La mayoría de los jugadores sigue construyendo a mano estructuras pequeñas o muy detalladas. La construcción con constructores clón brilla en módulos repetitivos —muros, bloques de viviendas, granjas y líneas de producción— donde la consistencia importa más que el control artístico.
+
+**¿Cuántos clones debería tener activos a la vez?**
+Empieza con un equipo pequeño, de unos cuatro, y añade dos a la vez mientras observas tu producción. Detente cuando añadir más clones ya no aumente el trabajo completado por minuto.
+
+**¿Por qué mis clones se quedan parados sin hacer nada?**
+Los culpables habituales son rutas bloqueadas, materiales faltantes o tareas encoladas en mal orden. Revisa primero la ruta hasta la obra y luego verifica que la lista de tareas esté secuenciada por dependencia.
+
+**¿Son mejores los clones de plano que los clones trabajadores?**
+Resuelven problemas distintos. Los planos son más rápidos y baratos para estructuras idénticas, mientras que los clones trabajadores manejan terrenos irregulares y diseños únicos que un estampado no puede encajar limpiamente.

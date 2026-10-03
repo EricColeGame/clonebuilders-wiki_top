@@ -6,7 +6,16 @@
     "description": "Your ultimate guide to Clone Builders on Roblox! Explore clone building mechanics, construction tips, build ideas, controls, updates, and community information for creating better structures.",
     "legalNotice": "Non-official fan wiki. Made by players, for players."
   },
-  "nav": {},
+  "nav": {
+    "guide": "Guide",
+    "mechanics": "Mechanics",
+    "progression": "Progression",
+    "controls": "Controls",
+    "maps": "Maps",
+    "items": "Items",
+    "codes": "Codes",
+    "community": "Community"
+  },
   "home": {
     "meta": {
       "title": "Clone Builders Wiki - Codes, Guide & Units",
@@ -397,7 +406,38 @@
       "secondary": "Play on Roblox"
     }
   },
-  "bosses": {},
+  "guide": {
+    "overviewTitle": "Clone Builders Wiki Guide: Beginner Walkthroughs & How to Play",
+    "overviewDescription": "Start here for Clone Builders Wiki guides — beginner walkthroughs, how to play, tutorials, and practical tips for cloning, building, and progressing fast."
+  },
+  "mechanics": {
+    "overviewTitle": "Clone Builders Wiki Mechanics: Cloning, Building, Clones & AI",
+    "overviewDescription": "Understand the Clone Builders Wiki core systems — cloning, building, your base, the lab, and the clone AI that automates your production lines."
+  },
+  "progression": {
+    "overviewTitle": "Clone Builders Wiki Progression: Levels, Unlocks & Best Builds",
+    "overviewDescription": "Track Clone Builders Wiki progression — XP and levels, unlocks, upgrades, and the best builds to grow your clone empire step by step."
+  },
+  "controls": {
+    "overviewTitle": "Clone Builders Wiki Controls: Keyboard, Mobile & Commands",
+    "overviewDescription": "Every Clone Builders Wiki control you need — keyboard and mouse bindings, mobile touch controls, and console commands in one place."
+  },
+  "maps": {
+    "overviewTitle": "Clone Builders Wiki Maps & Worlds: Creations and Showcase",
+    "overviewDescription": "Explore Clone Builders Wiki maps and worlds — build maps, player creations, showcases, and sandbox world guides for every builder."
+  },
+  "items": {
+    "overviewTitle": "Clone Builders Wiki Items: Materials, Resources & Tools",
+    "overviewDescription": "Clone Builders Wiki items explained — materials, resources, and tools you need to build, craft, and expand your base efficiently."
+  },
+  "codes": {
+    "overviewTitle": "Clone Builders Wiki Codes: Active Codes & How to Redeem",
+    "overviewDescription": "All Clone Builders Wiki codes in one place — active codes, how to redeem them, and fixes for invalid or expired codes."
+  },
+  "community": {
+    "overviewTitle": "Clone Builders Wiki Community: Discord, Reddit & Updates",
+    "overviewDescription": "Join the Clone Builders Wiki community — Discord and Reddit links, official updates, and where to find other builders."
+  },
   "shared": {
     "wikiNavigation": "Wiki Navigation",
     "activeCodes": "Active Codes",
@@ -428,10 +468,10 @@
     "officialYoutube": "Official YouTube",
     "vvBuilder": "Clone Builders Tools",
     "beginnerGuide": "Beginner Guide",
-    "raceGuides": "Race Guides",
-    "bossGuides": "Boss Guides",
-    "buildGuide": "Build Guide",
     "privacyPolicy": "Privacy Policy",
-    "termsOfService": "Terms of Service"
+    "termsOfService": "Terms of Service",
+    "codesGuide": "Codes",
+    "itemGuides": "Items & Materials",
+    "mapGuides": "Maps & Worlds"
   }
 }

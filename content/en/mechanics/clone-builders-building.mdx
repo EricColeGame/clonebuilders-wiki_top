@@ -1,0 +1,115 @@
+export const metadata = {
+  title: "Clone Builders Building at Scale: A Practical Guide to Clone Construction Mechanics",
+  description: "Learn how clone builders work in building games, how to queue tasks, avoid wasted clones, and scale a clone workforce without stalling your base.",
+  category: "mechanics",
+  date: "2026-10-02",
+}
+
+## Why Clone Builders Change Everything About Construction
+
+Clone builders turn construction from a chore into a logistics puzzle. Instead of placing every wall, ramp, and storage crate by hand, you spawn duplicates, hand them a task list, and watch a base assemble itself while you focus on the next expansion. That shift is exactly why clone builders building has become such a recognizable mechanic across sandbox, colony, and factory-style games.
+
+The appeal is simple: your throughput stops being limited by your mouse hand and starts being limited by how well you plan. But the mechanic is deceptively deep. A poorly managed clone workforce is slower than building alone — clones collide, duplicate work, wander into unfinished terrain, and idle while you are not looking. This guide covers how the mechanic actually functions, how to queue work efficiently, and how to scale from two clones to a full construction crew without your frame rate or your sanity collapsing.
+
+## What Counts as a Clone Builder?
+
+The term covers two related ideas, and most games lean on one or both:
+
+- **Unit clones** — duplicate workers, drones, or copies of your own character that physically walk to a site and place blocks, panels, or parts.
+- **Structure clones** — a command or tool that copies an existing build and stamps it down somewhere else, so one finished design becomes many.
+
+Both exist to remove repeated manual labor. The difference matters because unit clones cost ongoing resources and attention, while structure clones cost a one-time setup and then scale almost freely.
+
+| Clone type | What it does | Best used for | Main drawback |
+|---|---|---|---|
+| Spawned worker clone | Executes queued build tasks step by step | Organic bases that grow unevenly | Needs food, power, or upkeep |
+| Mirror clone | Copies your own actions as you build | Symmetrical structures and walls | Breaks on uneven terrain |
+| Blueprint clone | Stamps a saved design instantly | Repeated modules like barracks or farms | Ignores local terrain quirks |
+| Temporary clone | Exists for one job, then despawns | Quick repairs and bridges | Cannot be reused or upgraded |
+
+Community reports consistently favor a hybrid approach: use blueprint clones for anything repetitive, and save your worker clones for the messy, site-specific work that a stamp tool cannot handle.
+
+## The Core Loop of Clone Builders Building
+
+Once you understand the loop, the mechanic stops feeling random. Almost every implementation follows the same five stages:
+
+1. **Survey** — confirm the ground is flat enough, clear obstructions, and mark the footprint.
+2. **Queue** — issue tasks in the order they can actually be completed, not the order you want them finished.
+3. **Assign** — match clone type to task type. A hauler clone should never be your primary welder.
+4. **Verify** — walk the site and check for half-finished pieces before starting the next phase.
+5. **Replicate** — save the finished section as a blueprint so the next one costs a fraction of the effort.
+
+The most common failure point is step two. Players queue a roof before the support pillars, then wonder why their clones are standing around holding materials they cannot use. Ordering tasks by dependency — foundations, then walls, then roofing, then interiors — eliminates most idle time.
+
+| Clone role | Primary task | Priority order | Notes |
+|---|---|---|---|
+| Surveyor | Clears ground, marks footprint | 1st | Cheap, fast, prevents rework |
+| Hauler | Moves materials to site | 2nd | Double up on long routes |
+| Assembler | Places structural pieces | 3rd | Your bottleneck in most builds |
+| Finisher | Details, wiring, decoration | 4th | Can run in parallel with assemblers |
+| Repair clone | Fixes damage and decay | Ongoing | Often forgotten until something breaks |
+
+If you want to see how a literal copy command works in a mainstream sandbox game, [Minecraft's /clone command reference](https://minecraft.wiki/w/Commands/clone) is a useful case study. It lets you duplicate a defined region of blocks, optionally filtered by a mask or moved rather than copied — the same logic blueprint clones use in more specialized builders.
+
+## Clone Building vs. Solo Building vs. Full Automation
+
+Not every project deserves a clone crew. Sometimes building by hand is genuinely faster, especially for small or highly detailed work. The table below is a rough decision guide based on typical player experience.
+
+| Approach | Speed on small builds | Speed on large builds | Control | Resource cost |
+|---|---|---|---|---|
+| Solo building | Fastest | Painfully slow | Total | Minimal |
+| Clone builders building | Moderate | Very fast | Shared | Low to medium |
+| Full automation scripts | Slow to set up | Fastest | Lowest | High |
+
+A useful rule from community reports: if a structure will be repeated three or more times, it is worth building a clone pipeline for it. If it is a one-off decorative piece, do it yourself.
+
+There is also a hidden cost to clones that new players miss — they consume attention. Every clone you spawn is another entity whose pathing, inventory, and status you may need to check. Crews of five to eight clones tend to be the sweet spot for most players before management overhead starts eating the time you saved.
+
+## Practical Tips for Getting More Out of Your Clone Builders
+
+Small adjustments produce outsized gains here. These are the habits that experienced players return to again and again.
+
+- **Build a staging area first.** Clones waste enormous amounts of time walking. A central depot with materials pre-sorted cuts travel distance dramatically.
+- **Cap your crew size.** More clones is not automatically more output. Test increments of two and stop when output stops rising.
+- **Use short task queues.** Long queues hide errors. Batches of five to ten tasks are easier to verify and correct.
+- **Level terrain before spawning.** Pathing bugs on slopes are the number one cause of stalled clone builders building projects.
+- **Save blueprints the moment something works.** A verified design is worth more than a faster crew.
+- **Assign dedicated repair clones.** Decay and damage sneak up during long expansions.
+
+| Tip | Why it works | Quick setup |
+|---|---|---|
+| Central depot | Cuts walking distance | Place storage within a few tiles of the site |
+| Crew cap | Prevents pathing traffic jams | Start with 4, add 2 at a time |
+| Short queues | Errors surface early | Re-queue every 5–10 tasks |
+| Terrain prep | Prevents stuck clones | Flatten a margin around the footprint |
+| Blueprint library | Removes repeated design work | Save every finished module |
+
+## Scaling Up, Limits, and Common Mistakes
+
+Scaling a clone workforce is less about raw numbers and more about removing bottlenecks. In most games, the bottleneck moves as you grow: it starts as material supply, becomes pathing and space, and eventually becomes your own decision-making speed.
+
+| Mistake | Symptom | Fix |
+|---|---|---|
+| Cloning before clearing | Clones stuck or spinning | Survey and flatten first |
+| No task priority | Clones idle mid-build | Order tasks by dependency |
+| Overlapping footprints | Clones block each other | Space modules apart by one tile |
+| Ignoring upkeep | Clones stop mid-project | Automate food, power, or fuel early |
+| No blueprint saved | Rebuilding from scratch | Save immediately after verification |
+
+One more scaling consideration: entity limits. Many engines cap how many active units can exist before performance degrades. If your frame rate drops when the crew spawns, that is your real ceiling — not the game's build menu.
+
+Player experience suggests that the strongest setups treat clones as infrastructure rather than as a novelty. Once you stop thinking "how many clones can I spawn" and start thinking "what is my current bottleneck," the whole mechanic clicks into place.
+
+## FAQ
+
+**Do clone builders replace manual building entirely?**
+No. Most players still build small or highly detailed structures by hand. Clone builders building shines on repetitive modules — walls, housing blocks, farms, and production lines — where consistency matters more than artistic control.
+
+**How many clones should I run at once?**
+Start with a small crew, around four, and add two at a time while watching your output. Stop when adding more clones no longer increases completed work per minute.
+
+**Why are my clones standing around doing nothing?**
+The usual culprits are blocked paths, missing materials, or tasks queued out of order. Check the route to the site first, then verify the task list is sequenced by dependency.
+
+**Are blueprint clones better than worker clones?**
+They solve different problems. Blueprints are faster and cheaper for identical structures, while worker clones handle irregular terrain and one-off designs that a stamp cannot fit cleanly.

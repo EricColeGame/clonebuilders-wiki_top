@@ -1,0 +1,122 @@
+export const metadata = {
+  title: "Guía del laboratorio de constructores clon: cómo los constructores clon hacen crecer tu base rápidamente",
+  description: "Aprende cómo funciona el laboratorio de constructores clon: roles de los clones, orden de mejoras, cálculo de eficiencia y los errores que frenan silenciosamente el progreso de la base.",
+  category: "mechanics",
+  date: "2026-10-02",
+}
+
+## Qué hace realmente un laboratorio de constructores clon
+
+Un laboratorio de constructores clon es la diferencia entre una base que crece mientras estás ausente y una que se estanca cada vez que te desconectas. Si tu cola de construcción está permanentemente vacía y tu único constructor siempre está caminando hacia algún lugar, estás dejando progreso sobre la mesa. El laboratorio de constructores clon soluciona eso al convertir a un trabajador en un equipo, pero solo cuando sabes qué copias hacer, en qué orden y cuándo parar.
+
+La mayoría de los jugadores descubren esta mecánica de la manera difícil. La desbloquean, generan tantos clones como permite el límite de recursos y luego se preguntan por qué sus tiempos de construcción apenas mejoraron. La respuesta casi siempre es la misma: los clones son una herramienta de *rendimiento*, no una herramienta de *capacidad*. Diez clones lentos asignados al mismo trabajo desperdician más tiempo que tres rápidos repartidos en una cola sensata.
+
+La terminología varía según el título. Algunos juegos lo llaman bahía de clones, replicador o laboratorio de constructores, y otros lo entierran dentro de un árbol de investigación. La mecánica subyacente es idéntica entre géneros, y las reglas de optimización también.
+
+| Función principal | Qué hace | Por qué importa |
+|---|---|---|
+| Duplicación | Produce copias autónomas de constructores | Multiplica el rendimiento de construcción sin jugadores adicionales |
+| Asignación de tareas | Enruta clones a colas, sitios o nodos de recursos | Evita el tiempo de inactividad, el mayor coste oculto |
+| Escalado de mejoras | Aumenta la velocidad, capacidad de carga o nivel de los clones | Convierte recursos en ritmo permanente |
+| Reciclaje / retirada | Fusiona o despide clones | Recupera valor cuando cambian tus prioridades |
+| Desbloqueo de automatización | Permite que los clones trabajen mientras estás desconectado | Convierte el tiempo real de inactividad en progreso |
+
+## El bucle de producción del laboratorio de constructores clon
+
+Cada implementación de esta mecánica sigue el mismo bucle de cinco pasos. Rómpelo y tu laboratorio de constructores clon se convierte en una decoración cara.
+
+| Paso | Acción | Coste típico | Beneficio |
+|---|---|---|---|
+| 1 | Reúne el recurso necesario | Tiempo, energía o un material farmeado | Alimenta el siguiente paso |
+| 2 | Pon un clon en cola en el laboratorio | Moneda más un temporizador de construcción | Añade un trabajador más |
+| 3 | Asigna un rol antes de que aparezca | Normalmente gratis, a veces con coste | Evita tiempo de desplazamiento desperdiciado |
+| 4 | Mejora el nivel del laboratorio | Costes crecientes | Desbloquea clones más rápidos o especializados |
+| 5 | Recicla clones obsoletos | Reembolso parcial en la mayoría de diseños | Libera capacidad para mejores unidades |
+
+### Dónde está realmente el cuello de botella
+
+Los informes de la comunidad de juegos de constructores y gestión de bases señalan sistemáticamente el mismo punto de estrangulamiento: **la latencia de asignación**, no la cantidad de clones. Un clon que se genera y luego permanece inactivo durante treinta segundos te cuesta exactamente lo mismo que un clon que nunca construiste.
+
+La solución práctica es planificar la cola de antemano. Decide los próximos cuatro trabajos *antes* de pulsar el botón de duplicar, para que cada nuevo clon tenga una asignación esperando en el momento en que aparece. En los juegos donde los clones caminan hasta su lugar de trabajo, también conviene situar el laboratorio cerca de tu zona de construcción activa en lugar de en una esquina del mapa.
+
+Para una visión más amplia de cómo los bucles de construcción encajan en el género de construcción de bases, [el centro de etiquetas de construcción de bases de Steam](https://store.steampowered.com/tags/en/Base%20Building/) es un punto de referencia útil para ver lo diferente que los estudios implementan la misma idea central.
+
+## Comparación de roles de clones: qué constructores duplicar
+
+No todos los clones merecen ser construidos, y los que sí lo merecen rara vez siguen siendo útiles para siempre. Usa esta comparación como lista de comprobación mental.
+
+| Tipo de clon | Trabajo principal | Mejor para | Omítelo si… |
+|---|---|---|---|
+| Clon constructor básico | Construcción y mejoras | Expansión temprana, llenar colas vacías | Tu cola de construcción ya está saturada |
+| Clon recolector | Recoge materias primas | Alimentar una economía hambrienta de recursos | El almacenamiento ya está al máximo |
+| Clon transportista / logístico | Mueve bienes entre nodos | Líneas de suministro largas, bases dispersas | Tu base es compacta |
+| Clon reparador | Restaura estructuras dañadas | Juego centrado en defensa o PvP | Rara vez te atacan |
+| Clon especialista / de overclock | Trabajo rápido y costoso | Objetivos cronometrados y avances rápidos | Estás en una fase económica lenta |
+
+Una regla práctica útil de la experiencia de los jugadores: **nunca construyas un clon cuyo trabajo no puedas mantener cubierto durante los próximos diez minutos.** Los clones inactivos son una pérdida pura, y el reembolso por reciclarlos casi siempre es menor que lo que pagaste.
+
+## Prioridades de mejora en el laboratorio de constructores clon
+
+El orden de las mejoras importa más que la cantidad de mejoras. Verter recursos en la *cantidad* de clones mientras ignoras la *calidad* de los clones produce una multitud de trabajadores lentos que tropiezan entre sí.
+
+| Prioridad | Mejora | Por qué va primero |
+|---|---|---|
+| 1 | Velocidad de los clones | Comprime cada tarea que vayas a ejecutar |
+| 2 | Ranuras de asignación | Elimina directamente el tiempo de inactividad |
+| 3 | Cantidad de clones | Solo es valiosa una vez cubiertas la velocidad y las ranuras |
+| 4 | Capacidad de carga | Ayuda a los transportistas, hace poco por los constructores puros |
+| 5 | Aspectos cosméticos / de nivel | Impacto mecánico nulo; cómpralos al final o nunca |
+
+### Tres reglas que te mantienen eficiente
+
+- **Mejora la velocidad antes que la cantidad.** Dos clones rápidos normalmente superan a cuatro lentos en trabajos cortos.
+- **Ajusta el nivel del laboratorio a tu economía.** Un nivel que no puedes sostener drena los recursos que necesitas para la construcción real.
+- **Mantén libre un constructor manual.** La automatización nunca debería dejarte incapaz de reaccionar ante una reparación de emergencia.
+
+## Cálculo de eficiencia: cuándo los clones superan la construcción manual
+
+Los números exactos varían según el juego, así que trata la tabla siguiente como un modelo ilustrativo: sustituye tus propios tiempos y la lógica sigue siendo válida.
+
+| Escenario | Constructor manual | 1 clon | 3 clones | Veredicto |
+|---|---|---|---|---|
+| Tarea corta única | 100 % de referencia | Más lento por unidad | Más lento por unidad | Constrúyelo tú mismo |
+| Cinco tareas en paralelo | En cola una por una | Ganancia moderada | Gran ganancia | Los clones ganan |
+| Transporte largo de recursos | Viajes de ida y vuelta lentos | Pequeña ganancia | Ganancia moderada | Gana el clon transportista |
+| Reparación de emergencia | Respuesta instantánea | Aparición retrasada | Aparición retrasada | Gana el constructor manual |
+
+El patrón es consistente: los clones dominan cuando el trabajo es **paralelo y predecible**, y pierden cuando el trabajo es **urgente o singular**. En juegos donde los clones operan a una fracción de la velocidad de tu constructor —una elección de diseño común—, el punto de cruce suele estar en torno a tu tercera o cuarta tarea simultánea.
+
+## Errores comunes en el laboratorio de constructores clon
+
+La mayoría de las bases estancadas se remontan a un puñado de errores repetibles.
+
+- **Construir clones antes de construir almacenamiento.** Los trabajadores extra sin dónde poner la producción simplemente dejan de trabajar.
+- **Ignorar el temporizador de aparición.** Un clon en producción no es un clon en el trabajo; planifica en torno al retraso.
+- **Especializarse en exceso demasiado pronto.** Los clones recolectores son excelentes, hasta que tu cuello de botella es la construcción, no los materiales.
+- **Dejar el laboratorio en una zona muerta.** El tiempo de desplazamiento es un coste invisible. Acerca el laboratorio a lo que estés construyendo.
+- **No reciclar nunca.** Los roles cambian a medida que madura una base. Los clones viejos deberían fundirse, no conservarlos para siempre.
+- **Automatizarlo todo.** Algunas tareas realmente necesitan una decisión humana, y la automatización las maneja mal.
+
+Un laboratorio de constructores clon recompensa la planificación mucho más de lo que recompensa el gasto. Los jugadores que más le sacan no son los que tienen el mayor ejército de clones, sino aquellos cuyos clones nunca se quedan quietos.
+
+## Juego avanzado: sincronización y sinergia
+
+Una vez controlados los conceptos básicos, las ganancias vienen de la sincronización. Escalona la producción de tu laboratorio para que termine justo antes de un gran empuje de expansión, de modo que los nuevos clones lleguen con trabajo ya esperándolos. Durante los periodos defensivos tranquilos, desplaza clones hacia reparación y transporte en lugar de construcción que aún no necesitas.
+
+También hay una sinergia que vale la pena probar en la mayoría de implementaciones: emparejar clones rápidos con un único especialista de alta capacidad. Los clones rápidos se encargan de las muchas tareas pequeñas mientras el especialista asume las pocas tareas largas. Esa división mantiene ocupado a cada trabajador y evita el error clásico de lanzar diez clones contra un solo segmento de muro.
+
+Por último, audita tu configuración con regularidad. Cada vez que cambie el diseño de tu base, probablemente tus roles de clones deberían cambiar con él.
+
+## Preguntas frecuentes
+
+**¿Vale la pena desbloquear el laboratorio de constructores clon pronto?**
+Normalmente sí, pero solo si puedes mantener ocupados a los clones. Desbloquearlo pronto y tener dos clones inactivos es peor que guardar los recursos para una expansión posterior más grande.
+
+**¿Cuántos clones debería construir?**
+Construye solo tantos como trabajo en cola tengas. Si tu lista de asignaciones se agota antes de que tus clones terminen sus trabajos actuales, has construido demasiados.
+
+**¿Los clones reemplazan a mi constructor original?**
+No. Mantén libre al original para reparaciones urgentes y decisiones. El laboratorio de constructores clon se trata mejor como una fuerza de trabajo paralela, no como un reemplazo.
+
+**¿Por qué mis clones son tan lentos?**
+La velocidad normalmente es una mejora, no un valor predeterminado. Prioriza la velocidad de los clones en el laboratorio antes de añadir más copias, y asegúrate de que la distancia de desplazamiento no se esté comiendo su tiempo de trabajo.

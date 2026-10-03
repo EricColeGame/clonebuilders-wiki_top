@@ -1,0 +1,107 @@
+export const metadata = {
+  title: "Creaciones de constructores por clonación: cómo diseñar, clonar y compartir mapas personalizados",
+  description: "Explora las creaciones de constructores por clonación: flujos de diseño de mapas, técnicas de clonación, consejos de escala y hábitos para compartir que convierten construcciones simples en mapas destacados.",
+  category: "maps",
+  date: "2026-10-03",
+}
+
+## Qué hace que las creaciones de constructores por clonación destaquen
+
+Las creaciones de constructores por clonación son lo que ocurre cuando una idea simple — duplicar una estructura y luego duplicarla otra vez — crece hasta convertirse en un mapa completo y jugable. Ya sea que estés trazando una calle de ciudad, una torre para escalar o un laberinto de pasillos idénticos, la herramienta de clonación es la ruta más rápida desde un concepto inicial hasta algo por lo que otros jugadores puedan caminar de verdad. Esa velocidad importa, porque crear mapas suele ser una carrera entre la ambición y la paciencia. Las creaciones de constructores por clonación recompensan ambas cosas: obtienes la escala de una construcción enorme sin colocar cada muro a mano.
+
+Sin embargo, el atractivo no es solo la velocidad. La clonación impone consistencia. Cuando cada segmento de un puente o cada piso de una torre proviene de la misma fuente, el mapa se lee como intencional y no como accidental. Los jugadores navegan más rápido cuando la repetición es deliberada, y perdonan la repetición mucho más fácilmente cuando parece una decisión de diseño en lugar de una falta de ideas.
+
+Ese es el verdadero valor de las creaciones de constructores por clonación: permiten que una sola unidad bien diseñada haga el trabajo de cien mediocres.
+
+| Dimensión | Colocar cada pieza a mano | Construir con clones |
+|---|---|---|
+| Tiempo hasta la primera versión jugable | Lento — horas por bloque | Rápido — minutos por bloque |
+| Consistencia visual | Se desvía; los pequeños errores se acumulan | Exacta por defecto |
+| Coste de una revisión | Alto; hay que localizar cada pieza | Bajo; corriges la fuente y vuelves a clonar |
+| Riesgo de rendimiento | Moderado; el peso se nota a medida que añades | Mayor; la duplicación oculta el coste |
+| Rango creativo | Control total, pieza a pieza | Ideal para patrones, ritmo y escala |
+
+## El flujo de trabajo central: boceto, clonación y refinamiento
+
+Un mapa clonado triunfa o fracasa mucho antes de que pulses el botón de duplicar. La unidad que clonas es el ADN de todo el nivel, así que el orden de las operaciones importa más que la velocidad bruta de construcción. Los informes de la comunidad apuntan de forma consistente al mismo patrón: los constructores que prueban a fondo una sola unidad pasan mucho menos tiempo reparando el mapa después.
+
+| Etapa | Qué haces | Por qué importa |
+|---|---|---|
+| 1. Boceto | Esboza la huella, las líneas de visión y los puntos de aparición en papel o en una plataforma de prueba plana | Evita que clones un diseño defectuoso cientos de veces |
+| 2. Prototipo | Construye una unidad — una sala, un segmento de torre, una manzana de calle | El clon solo es tan bueno como su original |
+| 3. Prueba de esfuerzo | Recorre la unidad individual a la velocidad del jugador | Detecta puertas estrechas, escaleras empinadas y techos bajos |
+| 4. Pasada de clonación | Duplica a lo largo de una cuadrícula o ruta con un espaciado consistente | Crea ritmo y una navegación legible |
+| 5. Pasada de variación | Cambia entre el 10 y el 20 % de las copias con accesorios, iluminación o daños | Elimina la sensación estéril de copiar y pegar |
+| 6. Optimización | Fusiona, agrupa o simplifica la geometría oculta | Protege la tasa de fotogramas |
+| 7. Prueba de juego | Pruébalo con otros jugadores antes de publicarlo | Encuentra trampas en los puntos de aparición, callejones sin salida y bloqueos del progreso |
+
+### Errores que hunden un mapa clonado
+
+- **Clonar antes de probar.** Duplicar una unidad sin probar multiplica todos los defectos a la vez.
+- **Clonarlo todo.** Si los muros, los suelos, los accesorios y las luces son todos copias, el mapa se siente mecánico.
+- **Ignorar el espaciado.** Un hueco que parece correcto una vez se convierte en un problema de ritmo tras cuarenta repeticiones.
+- **Saltarse la pasada de variación.** Las pequeñas diferencias — una baldosa agrietada, una caja desplazada, una lámpara distinta — hacen más por la atmósfera que cualquier paquete de texturas.
+- **Publicar sin comprobar el rendimiento.** Los mapas con exceso de clones suelen ser los que se entrecortan cerca del punto de aparición.
+
+## Comparación de métodos de clonación
+
+No existe un único método de clonación que sea mejor que los demás. Cada uno cambia control por comodidad, y la elección correcta depende de si estás alicatando un suelo o generando todo un paisaje procedural. La experiencia de los jugadores sugiere que la mayoría de los mapas sólidos combinan al menos dos métodos: uno preciso para la estructura y otro más libre para la decoración.
+
+| Método | Ideal para | Precisión | Coste de rendimiento | Nivel de habilidad requerido |
+|---|---|---|---|---|
+| Clonación en cuadrícula o con ajuste | Suelos, baldosas, distribuciones en bloques | Muy alta | Bajo por pieza, alto en volumen | Principiante |
+| Copiar y pegar con desplazamiento | Escaleras, rampas, accesorios repetidos | Media | Bajo | Principiante |
+| Duplicación por patrón o matriz | Vallas, pilares, filas de asientos | Alta | Medio | Intermedio |
+| Kits modulares prefabricados | Salas, edificios y arenas completos | Alta | De medio a alto | Intermedio |
+| Duplicación programada o automatizada | Terreno procedural, mapas enormes y repetitivos | Media | Alto | Avanzado |
+
+El patrón es sencillo: cuanto más automatizado sea tu método, menos pensarás en cada pieza, y más probable será que crees geometría que nadie verá jamás. La duplicación automatizada es potente, pero necesita una pasada de limpieza antes de publicar.
+
+## Rendimiento y escala: mantener los mapas jugables
+
+Aquí es donde las creaciones de constructores por clonación se vuelven peligrosas. Un mapa construido a mano crece pieza a pieza, así que notas el peso a medida que avanzas. Un mapa clonado puede pasar de estar vacío a tener miles de partes en unos pocos clics, y la tasa de fotogramas se desploma antes de que te des cuenta de por qué.
+
+| Factor | Por qué perjudica | Mitigación práctica |
+|---|---|---|
+| Recuento total de partes | Cada pieza clonada es algo que el motor debe rastrear | Fusiona los clones decorativos; elimina todo lo que los jugadores no puedan ver |
+| Objetos pesados idénticos | El coste de física e iluminación se multiplica con cada copia | Usa versiones simplificadas y sin colisión para la decoración |
+| Geometría superpuesta | Las caras ocultas se siguen procesando | Recorta los interiores de los bloques sellados |
+| Líneas de visión largas | El motor dibuja todo lo que está a la vista | Rompe las líneas de visión con esquinas, niebla o terreno |
+| Muchas fuentes de luz clonadas | El coste de las sombras se multiplica con cada lámpara | Reutiliza unas pocas luces reales y simula el resto con superficies emisivas |
+
+Un hábito útil es construir una «esquina de prueba» antes de la pasada completa de clonación: coloca veinte copias de tu unidad en la configuración más pesada que vaya a usar el mapa y recórrela. Si esa esquina funciona con fluidez, lo más probable es que el mapa terminado también lo haga.
+
+| Tipo de mapa | Densidad de clones | Riesgo típico | Solución habitual de la comunidad |
+|---|---|---|---|
+| Torres o circuitos de obstáculos | Alta | Fatiga por repetición | Alterna temas de segmento cada pocos pisos |
+| Manzanas de ciudad o pueblo | Muy alta | Caídas de fotogramas cerca del punto de aparición | Detalla solo las calles que los jugadores visitan de verdad |
+| Mapas de laberinto y pasillos | Alta | Visuales monótonos | Cambia los materiales de las paredes por zona |
+| Arenas y diseños de PvP | Media | Simetría injusta | Refleja en espejo en lugar de clonar en línea recta |
+| Construcciones de exhibición | Baja | Nada que explorar | Añade accesorios interactivos entre los conjuntos clonados |
+
+## Compartir tus creaciones y aprender de la comunidad
+
+Publicar es parte del oficio. Un mapa que nadie juega es, en el mejor de los casos, una pieza de portafolio, y el ciclo de retroalimentación es la forma en que la mayoría de los constructores mejora. Las plataformas son lo bastante distintas como para que las mismas creaciones de constructores por clonación triunfen en un sitio y desaparezcan en otro simplemente por cómo se presentaron.
+
+| Dónde compartes | Qué funciona allí | Consejo |
+|---|---|---|
+| Centros de creación dentro del juego | Mapas jugables y de carga rápida | Mantén el tamaño de archivo reducido; los jugadores se van durante las cargas largas |
+| Foros y servidores de Discord de la comunidad | Comentarios sobre trabajos en curso | Publica un clip de 30 segundos, no un recorrido de diez minutos |
+| Plataformas de vídeo y streaming | Recorridos y timelapses de construcción | Muestra el paso de clonación: es la pregunta más frecuente |
+| Redes sociales | Una sola captura de pantalla potente como imagen principal | Empieza por la esquina que parece más original, no por la más clonada |
+
+Para quien sea nuevo en este estilo de construcción, [explorar juegos de construcción tipo sandbox en Steam](https://store.steampowered.com/tags/en/Sandbox/) es una forma práctica de ver cómo los títulos consolidados gestionan los mapas creados por usuarios, las herramientas de taller y las funciones para compartir dentro del juego. Observar cómo otras comunidades organizan sus centros de creación dará forma a cómo presentas tu propio trabajo.
+
+## Preguntas frecuentes
+
+**¿Qué son exactamente las creaciones de constructores por clonación?**
+Son mapas y estructuras construidos principalmente duplicando una unidad base ya probada — una sala, un segmento de torre o un bloque — en lugar de colocar cada pieza por separado. El enfoque cambia algo de singularidad artesanal por velocidad, consistencia y escala.
+
+**¿Los mapas clonados rinden peor que los construidos a mano?**
+No de forma automática, pero conllevan más riesgo. El peligro es el volumen: la duplicación facilita añadir miles de partes sin darse cuenta. Los constructores que fusionan las piezas decorativas, recortan la geometría oculta y hacen pruebas de esfuerzo desde el principio suelen mantener un rendimiento similar al de los mapas hechos a mano.
+
+**¿Cómo evito que las creaciones de constructores por clonación parezcan repetitivas?**
+Haz una pasada de variación. Mantén la estructura idéntica, pero cambia entre el 10 y el 20 % de los detalles superficiales: accesorios, materiales, iluminación, daños o carteles. Las pequeñas inconsistencias se leen como «vivido» y no como «inacabado», y rompen el patrón de cuadrícula que delata a los mapas clonados.
+
+**¿Puede un principiante crear un mapa para compartir usando clonación?**
+Sí. Empieza con la clonación en cuadrícula o con ajuste, mantén el mapa pequeño y pruébalo antes de publicarlo. El flujo de trabajo se adapta bien a escalas menores: un único pasillo bien diseñado, clonado ocho veces con variaciones, puede ser más divertido que una construcción enorme que nunca se probó.

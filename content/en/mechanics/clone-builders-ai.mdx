@@ -1,0 +1,133 @@
+export const metadata = {
+  title: "Clone Builders AI Explained: How Duplicate-Unit Mechanics Actually Work",
+  description: "How clone builders AI works: duplicate-unit mechanics, clone management tips, and the metrics that separate strong builds from weak ones.",
+  category: "mechanics",
+  date: "2026-10-02",
+}
+
+## What Counts as a Clone Builder?
+
+A clone builder looks simple on paper: make copies, hand them jobs, watch the numbers climb. Then you hit a resource cap, half your copies stand idle, and the whole machine grinds to a halt. That gap between the fantasy and the execution is where clone builders AI lives — the behavior layer that decides which duplicate does what, when, and in what order. Get that layer right and a modest clone builders AI setup can outproduce a build carrying three times the raw unit count.
+
+The defining trait of the mechanic isn't the copying. It's delegation. You create the duplicate, then you hand it a job and trust it to keep doing that job while you think about something else.
+
+That separates clone builders from two lookalike mechanics. Summoners spawn temporary units that exist only for a fight. Passive multipliers create bonuses with no body attached. Clone builders sit between them: persistent copies, real workloads, and a management layer the player has to actively design.
+
+Most clones also inherit something from their source — stats, skills, equipment, or a fraction of all three. That inheritance is the mechanic's real lever, because it decides whether a clone is a disposable pair of hands or a genuine second character.
+
+### The Four Clone Archetypes
+
+| Archetype | How clones behave | Strongest use | Main cost |
+|---|---|---|---|
+| Swarm cloner | Many weak copies, fast to produce, short-lived | Gathering, map coverage, scouting | Heavy micromanagement, performance load |
+| Elite cloner | Few powerful copies, slow ramp-up | Boss fights, defense, precision tasks | Slow start, high per-unit investment |
+| Structural cloner | Copies are buildings, turrets, or facilities | Base expansion, automation chains | Space, upkeep, layout planning |
+| Hybrid | Mixed tiers with different roles | Mid-to-late game transitions | Complexity, decision fatigue |
+
+Knowing which archetype your build leans on matters more than any individual upgrade. A swarm player who optimizes for single-clone quality is fighting their own toolkit.
+
+## How Clone Builders AI Actually Works
+
+Under the hood, clone builders AI is not one system. It's a stack of small decisions running every tick, and each layer can fail independently. Understanding the layers makes debugging far faster than guessing.
+
+| AI layer | Question it answers | Failure symptom |
+|---|---|---|
+| Task selection | What should this clone do right now? | Idle clones standing next to full resource nodes |
+| Priority stack | Which task wins when two conflict? | Multiple clones contesting the same target |
+| Pathfinding | How does the clone get there? | Clones stuck on geometry or doorways |
+| Coordination | How do clones avoid overlapping? | Clumping, wasted damage, blocked chokepoints |
+| Fallback behavior | What happens when no task is valid? | Clones freezing in place indefinitely |
+
+The task selection layer is where most builds quietly lose efficiency. If a clone's priority list is ordered badly, it will happily walk past a nearby job to reach a distant one that scored higher. Player experience with clone-heavy strategies consistently points to the same fix: shorten the priority list, and put the highest-value task at the top rather than the most interesting one.
+
+Coordination is the second big failure point. When several clones share a target, most implementations don't automatically split the work — they stack on top of each other. Community reports across strategy and survival titles describe the same symptom: a wall of clones hammering one node while three identical nodes sit untouched two tiles away. Zone assignment or manual spread orders solve it, but only if you notice the problem early.
+
+### Why Clone Caps Exist
+
+Every clone builder runs into a ceiling, and it's usually deliberate rather than a bug. Common reasons:
+
+- **Performance limits.** Each clone consumes processing time, so engines cap the count to keep the frame rate stable.
+- **Upkeep scaling.** Clones often cost resources per cycle, so a large force can drain faster than it produces.
+- **Soft caps.** Efficiency per clone drops past a threshold, making extra copies less valuable than upgrades.
+- **AI tick budgets.** Behavior updates run on a schedule, so very large groups get less frequent decisions.
+
+The practical takeaway: find your cap before you build into it. Building past a soft cap wastes resources that upgrades would have used far better.
+
+## The Economy of Duplication
+
+Clone builders are compounding mechanics, which means the interesting decisions happen early. Each clone costs resources and time, and it only pays for itself after it has worked long enough. That payback window — sometimes called clone debt — is the single most important number in the whole system.
+
+| Phase | Typical clone count | What you should be doing | Common trap |
+|---|---|---|---|
+| Early | 1–5 | Manual assignment, learning task priorities | Over-investing in clone count before income supports it |
+| Mid | 5–30 | Automating task rules, setting zones | Ignoring the original builder character |
+| Late | 30+ | Delegation, cap management, tier upgrades | Micromanaging individual clones |
+
+In the early phase, one well-placed clone beats three poorly directed ones. In the mid phase, the bottleneck shifts from production to logistics — clones exist, but the work isn't distributed well. By the late phase, the bottleneck is usually your own attention.
+
+That progression is why veteran players treat clone builders as an attention-management mechanic disguised as a production mechanic. The winning move is almost always to reduce the number of decisions you personally have to make per minute.
+
+## Practical Tips for Better Clone Builds
+
+1. **Assign zones, not individual clones.** Zone rules survive unit loss and require no re-clicking when a clone dies.
+2. **Put your highest-throughput task at the top of the priority list.** Ordering beats raw clone count almost every time.
+3. **Spread before you stack.** Split clones across multiple targets before adding more clones to an existing one.
+4. **Upgrade the source, not just the copies.** Since clones inherit from their origin, a source upgrade multiplies across the whole group.
+5. **Watch the idle rate, not the clone count.** Idle clones are the clearest signal that your rules are wrong.
+6. **Build one tier ahead of your income.** Clones that cost more than they earn create a debt spiral.
+7. **Keep a manual override ready.** Automation handles routine work; you handle the exceptions.
+
+### Common Mistakes and Their Fixes
+
+| Mistake | What it looks like | Fix |
+|---|---|---|
+| Priority list too long | Clones wandering between jobs | Cut to three or four ranked tasks |
+| No fallback task | Clones freezing when work runs out | Set a default gather or patrol order |
+| Uniform clones | Every copy does everything adequately | Specialize clones by zone or role |
+| Ignoring pathing | Clones stuck at a doorway | Widen the route or add a second lane |
+| Building past soft cap | Income flat despite more clones | Redirect spend into upgrades |
+
+## Metrics That Separate Good Clone Builders AI from Great Ones
+
+You can't improve what you don't measure. These are the signals worth tracking, and what a healthy version of each looks like in practice. The <a href="https://store.steampowered.com/" rel="nofollow">Steam storefront's strategy and simulation categories</a> are full of titles built entirely around these loops, and the same metrics apply across almost all of them.
+
+| Metric | What it measures | What good looks like |
+|---|---|---|
+| Idle rate | Share of clones with no active task | Low and stable during normal play |
+| Task overlap | Clones contesting the same target | Rare outside deliberate focus fire |
+| Payback time | Time for a clone to earn its cost | Shorter than the current phase length |
+| Upgrade-to-clone ratio | Spending split between quality and quantity | Balanced, tilting to quality near caps |
+| Recovery speed | How fast the build rebuilds after losses | Fast enough to survive one bad fight |
+
+Community rule of thumb: if your idle rate spikes right after you add clones, you added them too fast. The system needs rules updated in step with headcount.
+
+## Solo Clone vs. Swarm: Choosing a Build Identity
+
+The two dominant identities pull in opposite directions, and mixing them carelessly produces the worst of both.
+
+| | Solo Elite Clone | Swarm Build |
+|---|---|---|
+| Ramp-up | Slow, expensive | Fast, cheap |
+| Skill ceiling | High per-unit micro | High system-level macro |
+| Failure mode | One loss cripples you | Death by a thousand losses |
+| Best with | Precise, high-value objectives | Broad, repetitive workloads |
+| Clone builders AI demands | Responsive control and clean fallbacks | Strong coordination and zoning |
+
+Most successful builds commit to one identity for the first two-thirds of a run, then add a thin layer of the other once their economy can absorb it.
+
+## FAQ
+
+**What does "clone builders AI" mean in games?**
+It refers to the behavior system that controls duplicate units — the rules deciding what each clone does, in what order, and how clones avoid conflicting with each other. A strong clone builders AI layer makes a small force feel organized; a weak one makes a large force feel chaotic.
+
+**How many clones should I build?**
+Build to your soft cap, not past it. If adding a clone doesn't visibly increase output, that resource belongs in an upgrade instead.
+
+**Why do my clones keep standing idle?**
+Nine times out of ten, the cause is a missing fallback task or a priority list that has no valid entry once the primary job is finished. Set a default order and the idling usually stops.
+
+**Do clone builder mechanics work in multiplayer?**
+Yes, though coordination matters more. In co-op, assigning each player a zone prevents clones from duplicating work, and it keeps the group's overall throughput predictable.
+
+**Are clone builders just a micromanagement trap?**
+Only if you treat them that way. The mechanic rewards players who design rules and delegate, and punishes players who insist on clicking every unit by hand.
