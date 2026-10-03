@@ -140,12 +140,30 @@
         "El progreso nace de equilibrar duplicación, delegación y escalado: gasta recursos en generar más clones, asígnalos a recolectar, transportar, construir o defender, y luego reinvierte en mejoras que eleven el techo. Esta Clone Builders Wiki cubre el bucle principal, los niveles de recursos, las prioridades de mejora, los controles, los diseños de base y los códigos canjeables en guías con lenguaje claro."
       ],
       "stats": [
-        { "label": "Plataforma", "value": "Roblox" },
-        { "label": "Género", "value": "Construcción y automatización" },
-        { "label": "Bucle principal", "value": "Clonar, asignar, mejorar" },
-        { "label": "Roles de clones", "value": "Recolectar, transportar, construir, defender" },
-        { "label": "Niveles de recursos", "value": "De S a D" },
-        { "label": "Códigos", "value": "Recompensas canjeables" }
+        {
+          "label": "Plataforma",
+          "value": "Roblox"
+        },
+        {
+          "label": "Género",
+          "value": "Construcción y automatización"
+        },
+        {
+          "label": "Bucle principal",
+          "value": "Clonar, asignar, mejorar"
+        },
+        {
+          "label": "Roles de clones",
+          "value": "Recolectar, transportar, construir, defender"
+        },
+        {
+          "label": "Niveles de recursos",
+          "value": "De S a D"
+        },
+        {
+          "label": "Códigos",
+          "value": "Recompensas canjeables"
+        }
       ],
       "cta": "Explora todas las guías"
     },
@@ -160,10 +178,22 @@
           "href": "/guide/clone-builders-beginner-guide",
           "displayType": "step-by-step",
           "highlights": [
-            { "label": "1", "detail": "Completa el tutorial para desbloquear el generador de clones y el menú de mejoras" },
-            { "label": "2", "detail": "Reclama cada recompensa inicial, bono de inicio de sesión y cofre gratis antes de gastar moneda" },
-            { "label": "3", "detail": "Compra tu primer clon extra antes que cualquier objeto cosmético" },
-            { "label": "4", "detail": "Asigna los clones a su tarea de mayor valor, no a la más cercana" }
+            {
+              "label": "1",
+              "detail": "Completa el tutorial para desbloquear el generador de clones y el menú de mejoras"
+            },
+            {
+              "label": "2",
+              "detail": "Reclama cada recompensa inicial, bono de inicio de sesión y cofre gratis antes de gastar moneda"
+            },
+            {
+              "label": "3",
+              "detail": "Compra tu primer clon extra antes que cualquier objeto cosmético"
+            },
+            {
+              "label": "4",
+              "detail": "Asigna los clones a su tarea de mayor valor, no a la más cercana"
+            }
           ]
         },
         {
@@ -173,10 +203,22 @@
           "href": "/mechanics/clone-builders-building",
           "displayType": "step-by-step",
           "highlights": [
-            { "label": "1", "detail": "Coloca tu primera estructura desde el menú de construcción y confirma su superficie" },
-            { "label": "2", "detail": "Asigna clones constructores para que la obra avance mientras planificas la siguiente sección" },
-            { "label": "3", "detail": "Pasa de la colocación manual a una línea de ensamblaje completa con clones" },
-            { "label": "4", "detail": "Reequilibra las asignaciones de clones cada vez que desbloquees un nuevo nivel" }
+            {
+              "label": "1",
+              "detail": "Coloca tu primera estructura desde el menú de construcción y confirma su superficie"
+            },
+            {
+              "label": "2",
+              "detail": "Asigna clones constructores para que la obra avance mientras planificas la siguiente sección"
+            },
+            {
+              "label": "3",
+              "detail": "Pasa de la colocación manual a una línea de ensamblaje completa con clones"
+            },
+            {
+              "label": "4",
+              "detail": "Reequilibra las asignaciones de clones cada vez que desbloquees un nuevo nivel"
+            }
           ]
         },
         {
@@ -186,10 +228,22 @@
           "href": "/maps/clone-builders-creations",
           "displayType": "tier-grid",
           "highlights": [
-            { "label": "S", "detail": "Línea de fábrica automatizada con estaciones de clones alimentadas por cintas y rendimiento total de recursos" },
-            { "label": "A", "detail": "Base de varias parcelas con zonas dedicadas a recolectores, transportistas y constructores" },
-            { "label": "B", "detail": "Torre o casa de tamaño medio construida a partir de un plano limpio y repetible" },
-            { "label": "C", "detail": "Choza inicial y un bucle de recursos sencillo para una partida nueva" }
+            {
+              "label": "S",
+              "detail": "Línea de fábrica automatizada con estaciones de clones alimentadas por cintas y rendimiento total de recursos"
+            },
+            {
+              "label": "A",
+              "detail": "Base de varias parcelas con zonas dedicadas a recolectores, transportistas y constructores"
+            },
+            {
+              "label": "B",
+              "detail": "Torre o casa de tamaño medio construida a partir de un plano limpio y repetible"
+            },
+            {
+              "label": "C",
+              "detail": "Choza inicial y un bucle de recursos sencillo para una partida nueva"
+            }
           ]
         },
         {
@@ -199,10 +253,22 @@
           "href": "/mechanics/clone-builders-ai",
           "displayType": "card-list",
           "highlights": [
-            { "label": "Orden de tareas", "detail": "Acorta la lista de prioridades y pon el trabajo de mayor valor arriba" },
-            { "label": "Reparto del trabajo", "detail": "Distribuye los clones entre varios nodos para que dejen de amontonarse en un objetivo" },
-            { "label": "Rutas", "detail": "Despeja puertas y geometría que dejan a los clones atascados en el sitio" },
-            { "label": "Límite de clones", "detail": "Conoce tu límite de clones antes de superarlo y desperdiciar recursos" }
+            {
+              "label": "Orden de tareas",
+              "detail": "Acorta la lista de prioridades y pon el trabajo de mayor valor arriba"
+            },
+            {
+              "label": "Reparto del trabajo",
+              "detail": "Distribuye los clones entre varios nodos para que dejen de amontonarse en un objetivo"
+            },
+            {
+              "label": "Rutas",
+              "detail": "Despeja puertas y geometría que dejan a los clones atascados en el sitio"
+            },
+            {
+              "label": "Límite de clones",
+              "detail": "Conoce tu límite de clones antes de superarlo y desperdiciar recursos"
+            }
           ]
         },
         {
@@ -212,10 +278,22 @@
           "href": "/progression/clone-builders-unlocks",
           "displayType": "card-list",
           "highlights": [
-            { "label": "Hitos", "detail": "Las insignias suelen seguir las primeras builds, los desbloqueos de nivel y los objetivos de producción" },
-            { "label": "Tiempo de juego", "detail": "Las sesiones largas y las partidas repetidas alimentan los logros basados en horas jugadas" },
-            { "label": "Desbloqueos", "detail": "Los objetivos de logros suelen coincidir con nuevos tipos de clones y estructuras" },
-            { "label": "Recompensas", "detail": "Revisa cada insignia en busca de recompensas de moneda, cosméticas o de perfil" }
+            {
+              "label": "Hitos",
+              "detail": "Las insignias suelen seguir las primeras builds, los desbloqueos de nivel y los objetivos de producción"
+            },
+            {
+              "label": "Tiempo de juego",
+              "detail": "Las sesiones largas y las partidas repetidas alimentan los logros basados en horas jugadas"
+            },
+            {
+              "label": "Desbloqueos",
+              "detail": "Los objetivos de logros suelen coincidir con nuevos tipos de clones y estructuras"
+            },
+            {
+              "label": "Recompensas",
+              "detail": "Revisa cada insignia en busca de recompensas de moneda, cosméticas o de perfil"
+            }
           ]
         },
         {
@@ -225,10 +303,22 @@
           "href": "/community/clone-builders-community",
           "displayType": "card-list",
           "highlights": [
-            { "label": "Grandes builds", "detail": "Usa un servidor privado para proyectos grandes que necesitan un espacio de trabajo estable y libre" },
-            { "label": "Pruebas", "detail": "Experimenta con diseños y roles de clones sin competir por los nodos" },
-            { "label": "Sin sabotajes", "detail": "Mantén las interrupciones de los servidores públicos lejos de un plan de construcción largo" },
-            { "label": "Cooperativo", "detail": "Invita a amigos para builds compartidas, intercambios y minijuegos personalizados" }
+            {
+              "label": "Grandes builds",
+              "detail": "Usa un servidor privado para proyectos grandes que necesitan un espacio de trabajo estable y libre"
+            },
+            {
+              "label": "Pruebas",
+              "detail": "Experimenta con diseños y roles de clones sin competir por los nodos"
+            },
+            {
+              "label": "Sin sabotajes",
+              "detail": "Mantén las interrupciones de los servidores públicos lejos de un plan de construcción largo"
+            },
+            {
+              "label": "Cooperativo",
+              "detail": "Invita a amigos para builds compartidas, intercambios y minijuegos personalizados"
+            }
           ]
         },
         {
@@ -238,10 +328,22 @@
           "href": "/community/clone-builders-updates",
           "displayType": "card-list",
           "highlights": [
-            { "label": "Parches", "detail": "Los ajustes de equilibrio pueden cambiar en silencio el orden de construcción que funcionaba el mes pasado" },
-            { "label": "Nuevas unidades", "detail": "Las actualizaciones de contenido suelen añadir niveles de clones, mapas o recompensas exclusivas de eventos" },
-            { "label": "Equilibrio", "detail": "Lee la sección de notas de diseño para ver qué números tocaron los desarrolladores" },
-            { "label": "Eventos", "detail": "Los eventos por tiempo limitado suelen traer su propia moneda y tienda" }
+            {
+              "label": "Parches",
+              "detail": "Los ajustes de equilibrio pueden cambiar en silencio el orden de construcción que funcionaba el mes pasado"
+            },
+            {
+              "label": "Nuevas unidades",
+              "detail": "Las actualizaciones de contenido suelen añadir niveles de clones, mapas o recompensas exclusivas de eventos"
+            },
+            {
+              "label": "Equilibrio",
+              "detail": "Lee la sección de notas de diseño para ver qué números tocaron los desarrolladores"
+            },
+            {
+              "label": "Eventos",
+              "detail": "Los eventos por tiempo limitado suelen traer su propia moneda y tienda"
+            }
           ]
         },
         {
@@ -251,9 +353,18 @@
           "href": "/codes/clone-builders-codes",
           "displayType": "code-cards",
           "highlights": [
-            { "label": "AJUSTES", "detail": "Abre el menú de Ajustes o Códigos del juego para encontrar el campo de canje" },
-            { "label": "PEGA", "detail": "Introduce el código exactamente como está escrito, ya que distingue mayúsculas y rechaza espacios extra" },
-            { "label": "RECLAMA", "detail": "Confirma el canje y luego revisa tu correo o inventario para ver la recompensa" }
+            {
+              "label": "AJUSTES",
+              "detail": "Abre el menú de Ajustes o Códigos del juego para encontrar el campo de canje"
+            },
+            {
+              "label": "PEGA",
+              "detail": "Introduce el código exactamente como está escrito, ya que distingue mayúsculas y rechaza espacios extra"
+            },
+            {
+              "label": "RECLAMA",
+              "detail": "Confirma el canje y luego revisa tu correo o inventario para ver la recompensa"
+            }
           ]
         }
       ]

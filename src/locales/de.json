@@ -140,12 +140,30 @@
         "Fortschritt entsteht aus der Balance von Duplizierung, Delegation und Eskalation: Gib Ressourcen aus, um mehr Klone zu erzeugen, weise sie dem Sammeln, Transportieren, Bauen oder Verteidigen zu und investiere dann in Upgrades, die die Obergrenze anheben. Dieses Clone Builders Wiki behandelt den Kern-Loop, Ressourcenstufen, Upgrade-Prioritäten, Steuerung, Basis-Layouts und einlösbare Codes in verständlichen Anleitungen."
       ],
       "stats": [
-        { "label": "Plattform", "value": "Roblox" },
-        { "label": "Genre", "value": "Bauen & Automatisierung" },
-        { "label": "Kern-Loop", "value": "Klonen, zuweisen, upgraden" },
-        { "label": "Klon-Rollen", "value": "Sammeln, transportieren, bauen, verteidigen" },
-        { "label": "Ressourcen-Stufen", "value": "S bis D" },
-        { "label": "Codes", "value": "Einlösbare Belohnungen" }
+        {
+          "label": "Plattform",
+          "value": "Roblox"
+        },
+        {
+          "label": "Genre",
+          "value": "Bauen & Automatisierung"
+        },
+        {
+          "label": "Kern-Loop",
+          "value": "Klonen, zuweisen, upgraden"
+        },
+        {
+          "label": "Klon-Rollen",
+          "value": "Sammeln, transportieren, bauen, verteidigen"
+        },
+        {
+          "label": "Ressourcen-Stufen",
+          "value": "S bis D"
+        },
+        {
+          "label": "Codes",
+          "value": "Einlösbare Belohnungen"
+        }
       ],
       "cta": "Alle Anleitungen entdecken"
     },
@@ -160,10 +178,22 @@
           "href": "/guide/clone-builders-beginner-guide",
           "displayType": "step-by-step",
           "highlights": [
-            { "label": "1", "detail": "Schließe das Tutorial ab, um Klon-Spawner und Upgrade-Menü freizuschalten" },
-            { "label": "2", "detail": "Hole jede Startbelohnung, jeden Login-Bonus und jede Gratis-Truhe ab, bevor du Währung ausgibst" },
-            { "label": "3", "detail": "Kaufe deinen ersten zusätzlichen Klon vor jedem kosmetischen Kauf" },
-            { "label": "4", "detail": "Weise Klone ihrer wertvollsten Aufgabe zu, nicht der nächstgelegenen" }
+            {
+              "label": "1",
+              "detail": "Schließe das Tutorial ab, um Klon-Spawner und Upgrade-Menü freizuschalten"
+            },
+            {
+              "label": "2",
+              "detail": "Hole jede Startbelohnung, jeden Login-Bonus und jede Gratis-Truhe ab, bevor du Währung ausgibst"
+            },
+            {
+              "label": "3",
+              "detail": "Kaufe deinen ersten zusätzlichen Klon vor jedem kosmetischen Kauf"
+            },
+            {
+              "label": "4",
+              "detail": "Weise Klone ihrer wertvollsten Aufgabe zu, nicht der nächstgelegenen"
+            }
           ]
         },
         {
@@ -173,10 +203,22 @@
           "href": "/mechanics/clone-builders-building",
           "displayType": "step-by-step",
           "highlights": [
-            { "label": "1", "detail": "Platziere dein erstes Bauwerk über das Baumenü und bestätige seine Grundfläche" },
-            { "label": "2", "detail": "Weise Bauklone zu, damit der Bau weiterläuft, während du den nächsten Abschnitt planst" },
-            { "label": "3", "detail": "Wechsle vom manuellen Platzieren zur vollständigen Klon-Montagestraße" },
-            { "label": "4", "detail": "Balanciere die Klon-Zuweisungen bei jeder neuen Stufe neu aus" }
+            {
+              "label": "1",
+              "detail": "Platziere dein erstes Bauwerk über das Baumenü und bestätige seine Grundfläche"
+            },
+            {
+              "label": "2",
+              "detail": "Weise Bauklone zu, damit der Bau weiterläuft, während du den nächsten Abschnitt planst"
+            },
+            {
+              "label": "3",
+              "detail": "Wechsle vom manuellen Platzieren zur vollständigen Klon-Montagestraße"
+            },
+            {
+              "label": "4",
+              "detail": "Balanciere die Klon-Zuweisungen bei jeder neuen Stufe neu aus"
+            }
           ]
         },
         {
@@ -186,10 +228,22 @@
           "href": "/maps/clone-builders-creations",
           "displayType": "tier-grid",
           "highlights": [
-            { "label": "S", "detail": "Automatisierte Fabrikstraße mit förderbandversorgten Klon-Stationen und vollem Ressourcendurchsatz" },
-            { "label": "A", "detail": "Basis mit mehreren Parzellen und eigenen Zonen für Sammler, Transporter und Bauklone" },
-            { "label": "B", "detail": "Mittelgroßer Turm oder Haus aus einem sauberen, wiederholbaren Bauplan" },
-            { "label": "C", "detail": "Anfängerhütte und ein einfacher Ressourcen-Loop für einen frischen Spielstand" }
+            {
+              "label": "S",
+              "detail": "Automatisierte Fabrikstraße mit förderbandversorgten Klon-Stationen und vollem Ressourcendurchsatz"
+            },
+            {
+              "label": "A",
+              "detail": "Basis mit mehreren Parzellen und eigenen Zonen für Sammler, Transporter und Bauklone"
+            },
+            {
+              "label": "B",
+              "detail": "Mittelgroßer Turm oder Haus aus einem sauberen, wiederholbaren Bauplan"
+            },
+            {
+              "label": "C",
+              "detail": "Anfängerhütte und ein einfacher Ressourcen-Loop für einen frischen Spielstand"
+            }
           ]
         },
         {
@@ -199,10 +253,22 @@
           "href": "/mechanics/clone-builders-ai",
           "displayType": "card-list",
           "highlights": [
-            { "label": "Aufgabenreihenfolge", "detail": "Kürze die Prioritätsliste und setze die wertvollste Arbeit nach oben" },
-            { "label": "Arbeit aufteilen", "detail": "Verteile Klone auf mehrere Knoten, damit sie sich nicht auf einem Ziel stapeln" },
-            { "label": "Wegefindung", "detail": "Räume Türen und Geometrie frei, die Klone feststecken lassen" },
-            { "label": "Klon-Limit", "detail": "Kenne dein Klon-Limit, bevor du es überschreitest und Ressourcen verschwendest" }
+            {
+              "label": "Aufgabenreihenfolge",
+              "detail": "Kürze die Prioritätsliste und setze die wertvollste Arbeit nach oben"
+            },
+            {
+              "label": "Arbeit aufteilen",
+              "detail": "Verteile Klone auf mehrere Knoten, damit sie sich nicht auf einem Ziel stapeln"
+            },
+            {
+              "label": "Wegefindung",
+              "detail": "Räume Türen und Geometrie frei, die Klone feststecken lassen"
+            },
+            {
+              "label": "Klon-Limit",
+              "detail": "Kenne dein Klon-Limit, bevor du es überschreitest und Ressourcen verschwendest"
+            }
           ]
         },
         {
@@ -212,10 +278,22 @@
           "href": "/progression/clone-builders-unlocks",
           "displayType": "card-list",
           "highlights": [
-            { "label": "Meilensteine", "detail": "Abzeichen verfolgen meist erste Bauwerke, Stufen-Freischaltungen und Produktionsziele" },
-            { "label": "Spielzeit", "detail": "Längere Sitzungen und wiederholte Runs füttern die spielzeitbasierten Erfolge" },
-            { "label": "Freischaltungen", "detail": "Erfolgsziele decken sich oft mit neuen Klontypen und Bauwerken" },
-            { "label": "Belohnungen", "detail": "Prüfe jedes Abzeichen auf Währungs-, Kosmetik- oder Profilbelohnungen" }
+            {
+              "label": "Meilensteine",
+              "detail": "Abzeichen verfolgen meist erste Bauwerke, Stufen-Freischaltungen und Produktionsziele"
+            },
+            {
+              "label": "Spielzeit",
+              "detail": "Längere Sitzungen und wiederholte Runs füttern die spielzeitbasierten Erfolge"
+            },
+            {
+              "label": "Freischaltungen",
+              "detail": "Erfolgsziele decken sich oft mit neuen Klontypen und Bauwerken"
+            },
+            {
+              "label": "Belohnungen",
+              "detail": "Prüfe jedes Abzeichen auf Währungs-, Kosmetik- oder Profilbelohnungen"
+            }
           ]
         },
         {
@@ -225,10 +303,22 @@
           "href": "/community/clone-builders-community",
           "displayType": "card-list",
           "highlights": [
-            { "label": "Große Bauwerke", "detail": "Nutze einen privaten Server für große Projekte, die einen stabilen, freien Arbeitsbereich brauchen" },
-            { "label": "Testen", "detail": "Experimentiere mit Layouts und Klon-Rollen, ohne um Knoten zu konkurrieren" },
-            { "label": "Kein Griefing", "detail": "Halte Störungen aus öffentlichen Servern von einem langen Bauplan fern" },
-            { "label": "Co-op", "detail": "Lade Freunde zu gemeinsamen Bauwerken, Tausch und eigenen Minispielen ein" }
+            {
+              "label": "Große Bauwerke",
+              "detail": "Nutze einen privaten Server für große Projekte, die einen stabilen, freien Arbeitsbereich brauchen"
+            },
+            {
+              "label": "Testen",
+              "detail": "Experimentiere mit Layouts und Klon-Rollen, ohne um Knoten zu konkurrieren"
+            },
+            {
+              "label": "Kein Griefing",
+              "detail": "Halte Störungen aus öffentlichen Servern von einem langen Bauplan fern"
+            },
+            {
+              "label": "Co-op",
+              "detail": "Lade Freunde zu gemeinsamen Bauwerken, Tausch und eigenen Minispielen ein"
+            }
           ]
         },
         {
@@ -238,10 +328,22 @@
           "href": "/community/clone-builders-updates",
           "displayType": "card-list",
           "highlights": [
-            { "label": "Patches", "detail": "Balance-Anpassungen können die Bau-Reihenfolge, die letzten Monat funktionierte, still verändern" },
-            { "label": "Neue Einheiten", "detail": "Content-Updates bringen oft neue Klon-Stufen, Karten oder event-exklusive Belohnungen" },
-            { "label": "Balance", "detail": "Lies den Abschnitt mit den Design-Notizen, um zu sehen, welche Zahlen die Entwickler angepasst haben" },
-            { "label": "Events", "detail": "Zeitlich begrenzte Events bringen meist eigene Währung und eigenen Shop mit" }
+            {
+              "label": "Patches",
+              "detail": "Balance-Anpassungen können die Bau-Reihenfolge, die letzten Monat funktionierte, still verändern"
+            },
+            {
+              "label": "Neue Einheiten",
+              "detail": "Content-Updates bringen oft neue Klon-Stufen, Karten oder event-exklusive Belohnungen"
+            },
+            {
+              "label": "Balance",
+              "detail": "Lies den Abschnitt mit den Design-Notizen, um zu sehen, welche Zahlen die Entwickler angepasst haben"
+            },
+            {
+              "label": "Events",
+              "detail": "Zeitlich begrenzte Events bringen meist eigene Währung und eigenen Shop mit"
+            }
           ]
         },
         {
@@ -251,9 +353,18 @@
           "href": "/codes/clone-builders-codes",
           "displayType": "code-cards",
           "highlights": [
-            { "label": "EINSTELLUNGEN", "detail": "Öffne das Einstellungs- oder Code-Menü im Spiel, um das Einlösefeld zu finden" },
-            { "label": "EINFÜGEN", "detail": "Gib den Code genau wie geschrieben ein, da Codes zwischen Groß- und Kleinschreibung unterscheiden und zusätzliche Leerzeichen ablehnen" },
-            { "label": "EINLÖSEN", "detail": "Bestätige das Einlösen und prüfe dann deine Post oder dein Inventar auf die Belohnung" }
+            {
+              "label": "EINSTELLUNGEN",
+              "detail": "Öffne das Einstellungs- oder Code-Menü im Spiel, um das Einlösefeld zu finden"
+            },
+            {
+              "label": "EINFÜGEN",
+              "detail": "Gib den Code genau wie geschrieben ein, da Codes zwischen Groß- und Kleinschreibung unterscheiden und zusätzliche Leerzeichen ablehnen"
+            },
+            {
+              "label": "EINLÖSEN",
+              "detail": "Bestätige das Einlösen und prüfe dann deine Post oder dein Inventar auf die Belohnung"
+            }
           ]
         }
       ]
