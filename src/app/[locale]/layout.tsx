@@ -26,6 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     metadataBase: new URL(siteUrl),
     title: { default: "Clone Builders Wiki", template: "%s" },
     description: "Complete Clone Builders fan wiki with building guides, clone mechanics, controls, build ideas, updates and sandbox tips for Roblox players.",
+    keywords: ["Clone Builders", "clonebuilders wiki", "Clone Builders Wiki", "Roblox", "building simulator", "Roblox codes", "beginner guide"],
     manifest: "/manifest.json",
     icons: {
       icon: [
@@ -49,10 +50,10 @@ export default async function LocaleLayout({ children, params }: { children: Rea
   const organization = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: siteConfig.name,
-    url: siteUrl,
-    logo: `${siteUrl}/android-chrome-512x512.png`,
-    image: `${siteUrl}/images/hero.webp`,
+    "name": siteConfig.name,
+    "url": siteUrl,
+    "logo": `${siteUrl}/android-chrome-512x512.png`,
+    "image": `${siteUrl}/images/hero.webp`,
   };
 
   const adsenseId = process.env.NEXT_PUBLIC_GOOGLE_ADSENSE_ID;
