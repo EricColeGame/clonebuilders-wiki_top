@@ -1,122 +1,103 @@
 export const metadata = {
-  title: "Clonagem em Clone Builders explicada: mecânicas centrais, dicas e estratégias vencedoras",
-  description: "Um guia prático sobre as mecânicas de clonagem em clone builders: como a duplicação funciona, quanto custa, quais funções copiar primeiro e os erros que travam sua build.",
+  title: "Guia do Clone Builders Roblox: Como Funciona o Sandbox de Construção com NPCs",
+  description: "Aprenda como funciona o Clone Builders Roblox: dê uma ideia aos clones, veja-os posicionar e redimensionar peças, e teste projetos grandes em um servidor privado.",
   category: "mechanics",
-  date: "2026-10-02",
-}
+  date: "2026-10-14",
+};
 
-A clonagem em clone builders é uma das mecânicas mais mal compreendidas nos jogos modernos de estratégia, sandbox e sobrevivência. À primeira vista, parece produção gratuita: aperte um botão, ganhe uma duplicata, repita para sempre. Na prática, é um quebra-cabeça de recursos com limites rígidos, custos crescentes e janelas de tempo que punem quem joga sem cuidado. Entender isso importa porque jogadores que dominam a duplicação produzem consistentemente mais do que oponentes que nunca tocam na mecânica.
+A experiência do Roblox conhecida como Clone Builders Roblox é um sandbox de construção experimental do grupo Synoptic Interactive. Em vez de posicionar cada bloco manualmente, você entrega uma ideia aos seus clones e deixa que eles montem as peças dentro do mundo. A página oficial descreve a experiência como um campo de testes para os projetos maiores do estúdio relacionados a clones, e é por isso que a experiência está sempre mudando e por que o comportamento incomum dos clones faz parte da proposta, em vez de ser um bug esperando para ser reportado.
 
-Este guia detalha como a clonagem em clone builders realmente funciona no gênero — os diferentes modelos de duplicação, a economia por trás deles, as ordens de build que escalam e as armadilhas que travam uma run. Tudo abaixo é estruturado em torno de mecânicas gerais, e não de um título específico, para que você possa aplicar os conceitos tanto em um jogo de estratégia em tempo real de construção de exércitos quanto em um sandbox de construção de bases ou em um RPG de coleção com um artifício de clonagem.
+Este guia se mantém fiel ao que o desenvolvedor realmente anuncia. Onde a comunidade preencheu lacunas, isso está marcado como observação de terceiros. Onde nada está documentado, isso é dito de forma clara para que você não perca tempo procurando sistemas que podem não existir.
 
-## O que a clonagem em clone builders significa na prática
+## O Que o Clone Builders Roblox Realmente É
 
-A expressão abrange duas ideias ligadas. Primeiro, descreve um sistema de jogo que permite duplicar unidades, estruturas ou personagens em vez de produzir cada um do zero. Segundo, descreve os jogadores que constroem toda a sua estratégia em torno desse sistema — aqueles que tratam a primeira cópia como um modelo e cada cópia seguinte como alavancagem.
+De acordo com a listagem oficial no Roblox, o Clone Builders Roblox é um sandbox de construção baseado em clones NPC. Você dá uma ideia a esses clones, e eles respondem usando um sistema de construção estruturado que pode posicionar, redimensionar, mover e montar peças. O resultado final é uma criação dentro do mundo, e não uma tela de menu com desbloqueios.
 
-A maioria das implementações se encaixa em um de quatro modelos, e cada um limita o progresso de maneira diferente.
+O desenvolvedor, Synoptic Interactive, enquadra tudo isso como um experimento. A descrição oficial diz que o projeto serve como campo de testes para futuros jogos relacionados a clones, e que experimentos deste sandbox podem chegar a esses títulos posteriores. Essa única frase explica a maioria das decisões de design: recursos aparecem, o comportamento muda, e a experiência foi feita para ser explorada, não concluída.
 
-| Modelo de clonagem | O que é copiado | Restrição de custo típica | Onde você vê isso |
-|---|---|---|---|
-| Duplicação de unidades | Unidades de combate, trabalhadores, drones | Energia, suprimento ou limite populacional | Estratégia em tempo real e jogos de construção de exércitos |
-| Clonagem de estruturas ou blueprints | Edifícios, cadeias de produção, layouts inteiros | Tempo de construção e matérias-primas | Sandboxes de construção de bases e automação |
-| Clonagem de personagens | Heróis, tripulação, membros do grupo | Recargas e moeda rara | Auto-battlers, roguelites, RPGs de coleção |
-| Clonagem do próprio personagem ou de ondas | O personagem do jogador ou o próprio gerador | Risco de perder o original | Survival arcade e tower defense |
+O lugar foi criado em 2026-09-14 e atualizado pela última vez em 2026-10-14, segundo o registro oficial, com até 15 jogadores por servidor e aproximadamente 4,2 milhões de visitas no momento da consulta. Esses números mostram que a experiência está ativa e é modificada com frequência, não congelada.
 
-A distinção principal é se o clone é *permanente* ou *temporário*. Clones permanentes mudam sua economia para sempre; clones temporários são ferramentas de explosão que você usa em um momento específico. Confundir os dois é a maneira mais rápida de desperdiçar uma run.
+Você pode ver a página oficial aqui: https://www.roblox.com/games/98456203230140/CLONE-BUILDERS
 
-## O loop central de clonagem, passo a passo
+## O Loop de Ideia para Construção e o Sistema de Construção Estruturado
 
-Todo clone builder segue mais ou menos o mesmo loop de cinco etapas, não importa o quão diferente a superfície pareça. Aprender o loop permite diagnosticar problemas em vez de adivinhar.
+O loop principal anunciado pelo desenvolvedor é curto de descrever e aberto de jogar:
 
-| Etapa | O que você faz | Armadilha comum |
+1. Você dá uma ideia aos seus clones (um prompt ou instrução).
+2. Os clones interpretam essa ideia e agem sobre ela usando o sistema de construção estruturado.
+3. Esse sistema posiciona, redimensiona, move e monta peças em uma criação.
+4. Você observa, ajusta e tenta de novo.
+
+A palavra importante é "estruturado". Os clones não são descritos como geradores livres que soltam geometria aleatória. Eles trabalham dentro de um conjunto definido de ações de construção — posicionamento, redimensionamento, movimento, montagem — e é isso que faz o resultado parecer uma construção em vez de ruído. Se você já usou sandboxes de construção antes, a mudança mental é que você está dirigindo o trabalho, em vez de executá-lo.
+
+O que a página oficial não documenta é igualmente importante. Ela não lista unidades, equipamentos, tiers, sistemas de gacha, drops de chefe, níveis, mapas ou códigos. Se você veio aqui procurando uma escada de progressão, o desenvolvedor não anunciou nenhuma. A experiência é descrita como um sandbox e um campo de testes, e esse enquadramento é consistente em toda a descrição oficial.
+
+## Recursos Anunciados, Notas da Comunidade e O Que Não Está Documentado
+
+Manter essas três categorias separadas evita muita confusão, porque o Clone Builders Roblox é o tipo de experiência em que os jogadores assumem que sistemas existem simplesmente porque jogos semelhantes os têm.
+
+| Categoria | Detalhe | Fonte |
 |---|---|---|
-| 1. Garanta uma fonte | Proteja ou construa aquilo que produz clones | Construir clones antes de a fonte ser defensável |
-| 2. Pague o primeiro custo | Gaste a cópia mais barata que você conseguirá | Pular a primeira cópia para "economizar" recursos |
-| 3. Atribua funções | Dê a cada duplicata uma tarefa: coletar, lutar, construir, explorar | Fazer todos os clones idênticos |
-| 4. Escale a produção | Adicione cópias enquanto os custos ainda estão baixos | Construir demais antes de sua renda acompanhar |
-| 5. Reinvista ou converta | Transforme clones excedentes em upgrades ou novas fontes | Acumular clones que ficam ociosos |
+| Anunciado | Dar uma ideia aos clones e vê-los construir | Listagem oficial |
+| Anunciado | Sistema estruturado posiciona, redimensiona, move e monta peças | Listagem oficial |
+| Anunciado | Experimentos podem chegar aos futuros jogos dos desenvolvedores | Listagem oficial |
+| Anunciado | Mudança constante com novos recursos | Listagem oficial |
+| Anunciado | Servidores privados recomendados para construções grandes ou minijogos | Listagem oficial |
+| Anunciado | Até 15 jogadores por servidor; criado em 2026-09-14; atualizado em 2026-10-14 | Registro oficial |
+| Observação | Comportamento incomum dos clones é amplamente relatado pelos jogadores | Guias de terceiros e discussões de jogadores |
+| Não documentado | Unidades, equipamentos, tiers, gacha, drops de chefe, níveis, mapas, códigos | Ausente da página oficial |
 
-### Por que timing vence volume
+A frase sobre "mudança constante" importa mais do que parece. Se um recurso que você viu na semana passada se comporta de forma diferente hoje, isso é consistente com um projeto que os desenvolvedores descrevem como experimental. Guias de terceiros podem ser úteis para capturar um retrato do comportamento, mas envelhecem rápido e não são documentação do desenvolvedor.
 
-Relatos da comunidade de jogadores de estratégia e sandbox apontam repetidamente para o mesmo padrão: o vencedor raramente é a pessoa com mais clones na tela. É a pessoa que tinha clones *ativos* durante a janela em que eles importavam.
+## Servidores Privados, Tamanho do Servidor e Por Que a Escala Muda Tudo
 
-Uma duplicata produzida trinta segundos tarde demais pode ser pior do que nenhuma duplicata, porque consumiu recursos que poderiam ter ido para defesa ou renda. Antes de enfileirar outra cópia, faça uma pergunta: o que este clone estará fazendo no próximo minuto? Se a resposta for "esperando", você o construiu cedo demais.
+A descrição oficial recomenda especificamente um servidor privado para construções grandes e minijogos. Esse é um aviso prático, não um argumento de venda. Com até 15 jogadores por servidor, uma sessão pública pode se encher de pessoas rodando seus próprios experimentos com clones ao mesmo tempo, e criações com muitas peças ficam mais difíceis de gerenciar quando outros jogadores estão adicionando coisas ao mesmo mundo.
 
-Outras regras de timing que vale internalizar:
+Servidores privados ajudam de três maneiras concretas:
 
-- **Clone antes de uma luta, não durante ela.** Produção durante o combate geralmente significa que sua fonte está exposta.
-- **Agrupe suas cópias.** Clonar em ondas permite absorver picos de custo e manter um único ciclo de upgrades.
-- **Pare no limite, não no zero.** Mantenha uma reserva para que uma fonte perdida não encerre sua run.
-- **Alinhe a quantidade de clones à sua manutenção.** Mais cópias do que você consegue pagar é uma derrota lenta, não rápida.
+- **Espaço de construção mais limpo.** Menos construções conflitantes e menos peças disputando sua atenção.
+- **Testes repetíveis.** Se você está tentando entender como os clones respondem a uma ideia específica, um ambiente controlado torna as comparações significativas.
+- **Montagens de minijogos.** Como o desenvolvedor menciona explicitamente minijogos como um caso de uso de servidor privado, esse é o contexto documentado para rodar atividades estruturadas em vez de construção livre.
 
-## Economia de clones: custos, limites e escalonamento
+Não há detalhes documentados de preço ou configuração de servidor além dessa recomendação, então confira o menu de servidor dentro do jogo para ver o que está realmente disponível na sua conta.
 
-A clonagem em clone builders vive ou morre pela economia. A duplicação quase sempre é barata no início e cara depois, o que cria uma curva que recompensa agressão precoce e pune hesitação tardia.
+## Como Obter Resultados Úteis com Prompts de Clones
 
-| Recurso | Por que ele limita a clonagem | Prioridade |
-|---|---|---|
-| Energia ou mana | Limita quantas cópias podem estar ativas ao mesmo tempo | Alta — planeje em torno disso primeiro |
-| Limite populacional ou de suprimento | Teto rígido para o total de unidades, clonadas ou não | Alta — faça upgrade antes de atingi-lo |
-| Matérias-primas | Pagam pela clonagem de estruturas e blueprints | Média — escala com o controle do mapa |
-| Moeda rara ou recargas | Limitam a clonagem de personagens | Média — guarde para cópias de alto valor |
-| Tempo | O custo oculto por trás de cada clone | Altíssima — o único recurso que você não pode farmar |
+Como a página oficial não publica sintaxe de prompt, categorias ou exemplos, o conselho honesto é tratar os prompts como experimentação. Ainda assim, a estrutura anunciada oferece uma abordagem razoável:
 
-Um modelo mental útil é a **dívida de clones**. Cada duplicata que você cria adiciona um custo contínuo: manutenção, atenção ou espaço. Se a produção de um clone não supera sua dívida dentro de uma janela razoável, ele é um passivo. Jogadores experientes auditam seu elenco regularmente e cortam as cópias que não estão mais pagando o aluguel.
+- **Comece específico.** Uma única ideia clara dá ao sistema estruturado algo concreto para posicionar, redimensionar, mover e montar.
+- **Observe a sequência, não só o resultado.** Como o sistema é descrito como estruturado, observar a ordem das ações diz mais sobre o comportamento dos clones do que julgar apenas a construção finalizada.
+- **Mude uma coisa por vez.** Com recursos descritos como em constante mudança, isolar variáveis ajuda a diferenciar um novo comportamento de um resultado aleatório.
+- **Reconstrua em vez de consertar.** Se os clones montarem algo inutilizável, recomeçar com uma ideia mais clara geralmente é mais rápido do que tentar corrigir o layout das peças manualmente.
 
-Há também uma armadilha de escalonamento que vale nomear. Muitos sistemas precificam cada novo clone um pouco mais alto que o anterior. Isso significa que a décima cópia custa muito mais que a segunda, mesmo fazendo o mesmo trabalho. A solução é diversificar: em vez de perseguir mais um clone, melhore os que você já tem ou invista em uma segunda fonte de produção.
+Nada disso garante um resultado específico. O desenvolvedor enquadra a experiência como um campo de testes, o que significa que seus resultados são, em parte, o objetivo do experimento.
 
-## Ordens de build, funções e tabelas de unidades que vencem partidas
+## Verificando Detalhes Não Documentados Por Conta Própria
 
-Clone builders que fazem clonagem sem um plano acabam com uma pilha de unidades idênticas e nenhuma resposta a um contra-ataque. As funções são o que transformam quantidade em estratégia.
+Vários termos de busca comuns simplesmente não são respondidos pela página oficial. Se você quer saber se um recurso específico existe, verifique na própria experiência em vez de confiar em um resumo:
 
-| Função do clone | Pontos fortes | Pontos fracos | Quando construir |
-|---|---|---|---|
-| Coletor | Financia todo o resto; cópia mais segura | Indefeso; atrai incursões | Primeiras duas ou três cópias |
-| Construtor | Expande território e produção | Retorno lento | Quando a renda estiver estável |
-| Brigão | Absorve dano; segura pontos de estrangulamento | Caro de repor | Antes da sua primeira luta de verdade |
-| À distância ou suporte | Pune aglomerações; buffa a linha de frente | Frágil sem uma linha de proteção | Junto com seu segundo brigão |
-| Batedor ou sabotador | Revela planos; atrapalha a clonagem inimiga | Baixo valor de combate | Antes de cada compromisso importante |
+1. Abra a página oficial e leia a descrição atual — ela muda junto com o projeto.
+2. Entre na experiência e confira a interface do jogo em busca de algo parecido com um menu de construção, campo de prompt ou painel de configurações.
+3. Teste o comportamento diretamente com uma ideia simples e anote o que os clones realmente fazem.
+4. Para projetos grandes, configure um servidor privado conforme o desenvolvedor recomenda.
 
-### Uma ordem de build inicial simples
+Se uma mecânica não está na descrição e não é visível no jogo, é mais seguro assumir que ela não está documentada do que assumir que existe em algum lugar escondido.
 
-Use isto como esqueleto inicial e ajuste ao ritmo do seu jogo:
+## Perguntas Frequentes
 
-1. Construa uma fonte de produção e defenda-a imediatamente.
-2. Crie dois clones coletores — as cópias mais baratas que você conseguirá.
-3. Adicione um clone construtor para expandir renda ou controle do mapa.
-4. Adicione um clone brigão somente quando tiver algo que valha a pena proteger.
-5. Faça upgrade da sua fonte antes de criar o clone número seis.
-6. Adicione cópias de suporte ou à distância quando a linha de frente conseguir aguentar.
+**O Clone Builders Roblox é um jogo de progressão?**
+Não. A descrição oficial apresenta a experiência como um sandbox de construção e campo de testes. Níveis, tiers, equipamentos, gacha e drops de chefe não estão documentados em nenhum lugar da página oficial.
 
-A ordem importa mais que os números. Jogadores que seguem uma sequência como esta tendem a atingir seu pico de poder no meio do jogo mais cedo do que jogadores que clonam de forma reativa.
+**Existem códigos para o Clone Builders Roblox?**
+A página oficial não documenta nenhum. Não confie em listas de códigos de terceiros para esta experiência.
 
-## Erros comuns de novos clone builders
+**Quantos jogadores cabem em um servidor?**
+Até 15 jogadores por servidor, segundo o registro oficial. Para construções grandes ou minijogos, o desenvolvedor recomenda um servidor privado.
 
-A maioria das falhas em sistemas de clonagem é previsível, o que significa que pode ser corrigida. A tabela abaixo relaciona o sintoma ao hábito por trás dele.
+**Por que a experiência está sempre mudando?**
+Porque a Synoptic Interactive a descreve como um campo de testes para seus projetos maiores relacionados a clones, com experimentos que podem chegar a jogos futuros. A mudança constante é anunciada, não acidental.
 
-| Erro | Sintoma | Correção |
-|---|---|---|
-| Clonar cedo demais | Economia fraca, perdas constantes | Termine sua fonte e o primeiro upgrade de renda |
-| Clonar unidades idênticas | Nenhuma resposta a counters | Atribua pelo menos três funções distintas |
-| Ignorar o limite | Produção trava no meio da luta | Melhore a capacidade antes de atingi-la |
-| Acumular clones | Unidades ociosas, manutenção desperdiçada | Dê a cada clone uma ordem permanente |
-| Perseguir o clone mais novo | Custos subindo, eficiência caindo | Compare cada nova cópia com um upgrade em vez disso |
-| Sem plano de reposição | Uma incursão encerra a run | Mantenha uma reserva de recursos para reconstruir |
+**Ela tem relação com outras experiências de construção com NPCs?**
+Os desenvolvedores creditam o NPC Builders de Resurrected_Dove como inspiração, o que é um ponto de referência útil para o conceito geral de clones que constroem.
 
-Dois hábitos separam jogadores fortes de jogadores médios. O primeiro é uma **lista de verificação pré-clonagem**: fonte defendida, capacidade disponível, função atribuída, reserva intacta. O segundo é uma **revisão pós-partida**: conte quantos clones você construiu e quantos realmente contribuíram. A maioria dos jogadores descobre que um terço de suas cópias nunca fez trabalho significativo.
-
-## Perguntas frequentes
-
-**A clonagem em clone builders é sempre a estratégia mais forte?**
-Não. A duplicação é um multiplicador, e multiplicadores só compensam quando há algo para multiplicar. Se sua renda base ou qualidade de unidade é fraca, a clonagem apenas amplia uma posição fraca. Construa a fundação primeiro e depois a duplique.
-
-**Quantos clones devo manter ativos ao mesmo tempo?**
-Use sua manutenção e seu limite como guia, em vez de um número fixo. Uma regra prática da experiência dos jogadores: todo clone ativo deve gerar recursos, segurar terreno ou criar pressão. Se uma cópia não faz nada disso, aposente-a e reinvista.
-
-**Unidades clonadas mantêm seus upgrades?**
-Isso depende inteiramente do sistema. Alguns jogos copiam o estado atual de uma unidade, outros redefinem clones para o estado base, e outros copiam upgrades, mas não buffs temporários. Teste isso cedo com um único clone barato — isso muda toda a sua ordem de upgrades.
-
-**Qual é a maneira mais rápida de melhorar nas mecânicas de clonagem?**
-Execute a mesma ordem de build inicial várias vezes e anote onde ela quebra. A repetição ensina a curva de custo e as janelas de timing mais rápido do que ler qualquer guia, e deixa óbvio o momento em que sua economia trava.
-
-A versão curta: trate a clonagem em clone builders como um problema de economia primeiro e um problema de combate depois. Proteja a fonte, pague os custos mais baratos cedo, dê uma função a cada cópia e corte tudo que deixar de se pagar.
+Para os detalhes autoritativos e atuais, consulte sempre https://www.roblox.com/games/98456203230140/CLONE-BUILDERS em vez de um guia estático.

@@ -1,133 +1,90 @@
 export const metadata = {
-  title: "Clone-Builder-KI erklärt: Wie Duplikat-Einheiten-Mechaniken wirklich funktionieren",
-  description: "Wie Clone-Builder-KI funktioniert: Duplikat-Einheiten-Mechaniken, Tipps zum Klon-Management und die Metriken, die starke Builds von schwachen unterscheiden.",
+  title: "Clone Builders Roblox: So funktioniert die Clone-Bau-Sandbox",
+  description: "Ein praktischer Leitfaden zu Clone Builders auf Roblox: wie NPC-Clones Teile platzieren, skalieren, bewegen und zusammensetzen, plus was die offizielle Seite dokumentiert und was nicht.",
   category: "mechanics",
-  date: "2026-10-02",
-}
+  date: "2026-10-14",
+};
 
-## Was gilt als Clone-Builder?
+Wenn du schon einmal Zeit in Roblox-Bauspielen verbracht hast, kennst du den Rhythmus: Teil auswählen, ziehen, skalieren, wiederholen, bis etwas richtig aussieht. Clone Builders auf Roblox nimmt diese Schleife und übergibt die mühsame Arbeit an NPC-Clones. Statt jede Wand selbst zu platzieren, gibst du einer Gruppe von Clones eine Idee, und sie nutzen ein strukturiertes Bausystem, um Teile in der Welt zusammenzusetzen. Das Ergebnis ist weniger „Survival-Tycoon" und mehr „sieh zu, wie eine Crew hilfsbereiter Roboter mit Geometrie diskutiert".
 
-Ein Clone-Builder sieht auf dem Papier einfach aus: Kopien erstellen, ihnen Aufgaben übergeben, die Zahlen steigen sehen. Dann erreichst du eine Ressourcengrenze, die Hälfte deiner Kopien steht untätig herum, und die ganze Maschinerie kommt zum Erliegen. In dieser Lücke zwischen Fantasie und Umsetzung lebt die Clone-Builder-KI – die Verhaltensschicht, die entscheidet, welches Duplikat was tut, wann und in welcher Reihenfolge. Wenn du diese Schicht richtig hinbekommst, kann ein bescheidenes Clone-Builder-KI-Setup einen Build übertreffen, der die dreifache Roh-Einheitenzahl mit sich führt.
+Dieser Artikel behandelt, was tatsächlich über die Experience dokumentiert ist, wie die zentrale Bauschleife zu funktionieren scheint, wo Berichte Dritter für Farbe sorgen und welche populären Annahmen schlicht nicht von der offiziellen Seite gestützt werden.
 
-Das entscheidende Merkmal dieser Mechanik ist nicht das Kopieren. Es ist die Delegation. Du erstellst das Duplikat, übergibst ihm dann eine Aufgabe und vertraust darauf, dass es diese Aufgabe weiter ausführt, während du über etwas anderes nachdenkst.
+## Was Clone Builders tatsächlich ist
 
-Das unterscheidet Clone-Builder von zwei ähnlich aussehenden Mechaniken. Beschwörer erzeugen temporäre Einheiten, die nur für einen Kampf existieren. Passive Multiplikatoren erzeugen Boni ohne zugehörigen Körper. Clone-Builder liegen dazwischen: dauerhafte Kopien, echte Arbeitslast und eine Verwaltungsschicht, die der Spieler aktiv gestalten muss.
+Der offizielle Roblox-Eintrag identifiziert die Experience als „[🏗️] CLONE BUILDERS!" (Place 98456203230140), erstellt von der Gruppe Synoptic Interactive. Der Place wurde am 14. September 2026 erstellt und zuletzt am 14. Oktober 2026 aktualisiert. Er unterstützt bis zu 15 Spieler pro Server und hatte laut dem Eintrag von Oktober 2026 rund 4,2 Millionen Besuche angesammelt.
 
-Die meisten Klone erben außerdem etwas von ihrer Quelle – Werte, Fähigkeiten, Ausrüstung oder einen Bruchteil von allem dreien. Diese Vererbung ist der eigentliche Hebel der Mechanik, denn sie entscheidet, ob ein Klon ein entbehrliches Paar Hände oder eine echte zweite Spielfigur ist.
+Das entscheidende Detail ist die Absicht. Die Entwickler beschreiben es als experimentellen Testbereich für ihre größeren clone-bezogenen Projekte. Diese Einordnung ist wichtiger als jede Feature-Liste. Sie bedeutet, dass sich die Experience voraussichtlich verändern wird, dass ungewöhnliches Clone-Verhalten Teil des Konzepts ist und dass Experimente, die hier laufen, irgendwann in zukünftigen Spielen des Teams auftauchen könnten. Wenn du ein fertiges, stabiles Produkt mit festgelegter Content-Pipeline suchst, ist das hier nicht das Richtige — und die Entwickler sagen das offen.
 
-### Die vier Klon-Archetypen
+Du kannst die offizielle Seite hier ansehen: [CLONE BUILDERS! auf Roblox](https://www.roblox.com/games/98456203230140/CLONE-BUILDERS).
 
-| Archetyp | Wie sich Klone verhalten | Stärkste Verwendung | Hauptkosten |
-|---|---|---|---|
-| Schwarm-Kloner | Viele schwache Kopien, schnell produziert, kurzlebig | Sammeln, Kartenabdeckung, Erkundung | Starker Mikromanagement-Aufwand, Performance-Last |
-| Elite-Kloner | Wenige mächtige Kopien, langsamer Hochlauf | Bosskämpfe, Verteidigung, Präzisionsaufgaben | Langsamer Start, hohe Investition pro Einheit |
-| Struktur-Kloner | Kopien sind Gebäude, Türme oder Anlagen | Basisausbau, Automatisierungsketten | Platz, Unterhalt, Layout-Planung |
-| Hybrid | Gemischte Stufen mit unterschiedlichen Rollen | Übergänge vom Mittel- zum Spätspiel | Komplexität, Entscheidungsmüdigkeit |
+## Die beworbene Bauschleife
 
-Zu wissen, auf welchen Archetyp dein Build setzt, ist wichtiger als jedes einzelne Upgrade. Ein Schwarm-Spieler, der auf die Qualität einzelner Klone optimiert, kämpft gegen sein eigenes Werkzeug.
+Laut der offiziellen Beschreibung funktioniert die zentrale Schleife so:
 
-## Wie Clone-Builder-KI tatsächlich funktioniert
+- Du gibst deinen Clones eine Idee.
+- Die Clones bauen sie dann mit einem strukturierten Bausystem.
+- Dieses System basiert auf vier Verben: Platzieren, Skalieren, Bewegen und Zusammensetzen von Teilen.
 
-Unter der Haube ist Clone-Builder-KI kein einzelnes System. Es ist ein Stapel kleiner Entscheidungen, die bei jedem Tick ausgeführt werden, und jede Schicht kann unabhängig voneinander versagen. Das Verständnis der Schichten macht das Debugging weit schneller als bloßes Raten.
+Diese vier Verben sind das gesamte dokumentierte mechanische Vokabular des Spiels. Es gibt keine Erwähnung von Bauplänen, Materiallisten, Budgets oder Ressourcenkosten auf der offiziellen Seite. Der Schwerpunkt liegt darauf, dass der Clone die Bauarbeit erledigt, während du das Konzept vorgibst.
 
-| KI-Schicht | Frage, die sie beantwortet | Fehlersymptom |
+Eine praktische Tabelle hilft dabei, Dokumentiertes von Nicht-Dokumentiertem zu trennen:
+
+| Feature | Offizieller Status | Hinweise |
 |---|---|---|
-| Aufgabenauswahl | Was soll dieser Klon gerade jetzt tun? | Untätige Klone, die neben vollen Ressourcenknoten stehen |
-| Prioritätsstapel | Welche Aufgabe gewinnt, wenn zwei kollidieren? | Mehrere Klone, die um dasselbe Ziel konkurrieren |
-| Wegfindung | Wie kommt der Klon dorthin? | Klone, die an Geometrie oder Türöffnungen hängen bleiben |
-| Koordination | Wie vermeiden Klone Überschneidungen? | Zusammenklumpen, verschwendeter Schaden, blockierte Engpässe |
-| Fallback-Verhalten | Was passiert, wenn keine Aufgabe gültig ist? | Klone, die unbegrenzt an Ort und Stelle einfrieren |
+| Clones eine Idee geben | Dokumentiert | Zentrale beworbene Interaktion |
+| Teile platzieren / skalieren / bewegen / zusammensetzen | Dokumentiert | Das „strukturierte Bausystem" |
+| Ständige Updates, Experimente | Dokumentiert | Entwickler nennen es einen Testbereich |
+| Private Server empfohlen | Dokumentiert | Vorgeschlagen für große Bauten und Minispiele |
+| Einheiten, Ausrüstung, Stufen, Gacha, Bosse | Nicht dokumentiert | Erwarte diese nicht auf der offiziellen Seite |
+| Promo-Codes | Nicht dokumentiert | Keine erscheinen im offiziellen Eintrag |
+| Karten, Welten, Level, Freischaltbares | Nicht dokumentiert | Prüfe im Spiel nach, wenn du neugierig bist |
 
-Die Aufgabenauswahl-Schicht ist der Ort, an dem die meisten Builds stillschweigend Effizienz verlieren. Wenn die Prioritätsliste eines Klons schlecht geordnet ist, läuft er bereitwillig an einer nahegelegenen Aufgabe vorbei, um eine entfernte zu erreichen, die höher bewertet wurde. Die Spielerfahrung mit klonlastigen Strategien deutet konsequent auf dieselbe Lösung hin: Verkürze die Prioritätsliste und setze die wertvollste Aufgabe an die Spitze, nicht die interessanteste.
+Die letzte Zeile verdient Betonung. Wenn eine Seite eines Drittanbieters eine Kartenliste, ein Stufen-Ranking oder einen Code-Veröffentlichungsplan verspricht, behandle das als unbestätigt. Die offizielle Seite dokumentiert nichts davon.
 
-Koordination ist der zweite große Fehlerpunkt. Wenn mehrere Klone ein Ziel teilen, verteilen die meisten Implementierungen die Arbeit nicht automatisch – sie stapeln sich übereinander. Community-Berichte aus Strategie- und Survival-Titeln beschreiben dasselbe Symptom: eine Wand von Klonen, die auf einen Knoten einschlägt, während drei identische Knoten zwei Felder entfernt unberührt bleiben. Zonenzuweisung oder manuelle Verteilungsbefehle lösen das Problem, aber nur, wenn du das Problem früh bemerkst.
+## Warum Private Server empfohlen werden
 
-### Warum Klon-Obergrenzen existieren
+Die offizielle Beschreibung empfiehlt ausdrücklich Private Server für große Bauten oder Minispiele. Die Begründung ist auch ohne zusätzliche Details einleuchtend: Bei bis zu 15 Spielern pro Server, die sich dieselbe Welt teilen, kann ein groß angelegter Bau schnell überfüllt werden. Teile werden gleichzeitig von den Clones mehrerer Spieler platziert, skaliert, bewegt und zusammengesetzt, was zu Störungen oder visuellem Durcheinander führen kann.
 
-Jeder Clone-Builder stößt an eine Obergrenze, und diese ist meist absichtlich und kein Bug. Häufige Gründe:
+Ein Private Server gibt dir eine ruhigere Sandbox. Wenn dein Ziel ist, zu testen, ob sich eine bestimmte Idee gut in von Clones gebaute Geometrie übersetzen lässt, oder ein kleines Minispiel auf deiner Kreation laufen zu lassen, entfernt die ruhigere Umgebung störende Variablen. Dies ist eine Empfehlung der Entwickler, keine Paywall-Voraussetzung für das grundlegende Spiel — die Basis-Experience ist offen.
 
-- **Performance-Grenzen.** Jeder Klon verbraucht Rechenzeit, daher begrenzen Engines die Anzahl, um die Bildrate stabil zu halten.
-- **Unterhaltsskalierung.** Klone kosten oft Ressourcen pro Zyklus, sodass eine große Streitmacht schneller verbrauchen kann, als sie produziert.
-- **Weiche Obergrenzen.** Die Effizienz pro Klon sinkt ab einem Schwellenwert, wodurch zusätzliche Kopien weniger wertvoll sind als Upgrades.
-- **KI-Tick-Budgets.** Verhaltensaktualisierungen laufen nach einem Zeitplan, sodass sehr große Gruppen seltener Entscheidungen erhalten.
+## Inspiriert von NPC Builders
 
-Die praktische Erkenntnis: Finde deine Obergrenze, bevor du in sie hineinbaust. Über eine weiche Obergrenze hinaus zu bauen, verschwendet Ressourcen, die Upgrades weit besser genutzt hätten.
+Die Entwickler nennen Resurrected_Doves NPC Builders als Inspiration. Das ist wissenswert, weil es dir verrät, in welcher Tradition das Spiel steht: Systeme, in denen Nicht-Spieler-Charaktere den Bau übernehmen, statt dass der Spieler jeden Stein selbst platziert. Clone Builders führt diese Linie mit einem eigenen strukturierten System und einer stärkeren Betonung auf Experimentieren fort.
 
-## Die Ökonomie der Duplikation
+Wenn du schon einmal NPC-gesteuerte Bauerfahrungen gespielt hast, ist die Umstellung hauptsächlich mental. Du bist weniger Maurer und mehr Regisseur. Deine Aufgabe sind die Idee und die Korrektur; die Clones übernehmen die Ausführung.
 
-Clone-Builder sind Zinseszins-Mechaniken, was bedeutet, dass die interessanten Entscheidungen früh fallen. Jeder Klon kostet Ressourcen und Zeit und amortisiert sich erst, nachdem er lange genug gearbeitet hat. Dieses Amortisationsfenster – manchmal als Klon-Schuld bezeichnet – ist die mit Abstand wichtigste Zahl im gesamten System.
+## Community-Beobachtungen und Drittanbieter-Leitfäden
 
-| Phase | Typische Klon-Anzahl | Was du tun solltest | Häufige Falle |
-|---|---|---|---|
-| Früh | 1–5 | Manuelle Zuweisung, Aufgabenprioritäten lernen | Überinvestition in die Klon-Anzahl, bevor das Einkommen sie trägt |
-| Mitte | 5–30 | Aufgabenregeln automatisieren, Zonen festlegen | Die ursprüngliche Builder-Figur vernachlässigen |
-| Spät | 30+ | Delegation, Obergrenzenverwaltung, Stufen-Upgrades | Mikromanagement einzelner Klone |
+Drittanbieter-Leitfäden haben Clone Builders als einsteigerfreundlich beschrieben, weil der Clone die mühsame Platzierungsarbeit übernimmt, und als chaotisch in größeren Gruppen, weil viele gleichzeitig bauende Clones Ergebnisse hervorbringen können, die du nicht beabsichtigt hast. Das sind sekundäre Beobachtungen, keine Entwicklerdokumentation, und sie sollten entsprechend behandelt werden.
 
-In der frühen Phase schlägt ein gut platzierter Klon drei schlecht gesteuerte. In der mittleren Phase verschiebt sich der Engpass von der Produktion zur Logistik – Klone existieren, aber die Arbeit ist nicht gut verteilt. In der späten Phase ist der Engpass meist deine eigene Aufmerksamkeit.
+Die praktische Erkenntnis aus den Community-Berichten deckt sich mit der offiziellen Einordnung: Dies ist eine Sandbox, kein Progressionsspiel. Suche nicht nach Levelkurven, Freischaltbäumen oder Währungssystemen. Falls es sie gibt, dokumentiert die offizielle Seite sie nicht, und der schnellste Weg, das zu bestätigen, ist, die Experience zu laden und dir die Benutzeroberfläche selbst anzusehen.
 
-Diese Progression ist der Grund, warum erfahrene Spieler Clone-Builder als Aufmerksamkeitsmanagement-Mechanik behandeln, die als Produktionsmechanik getarnt ist. Der siegreiche Zug besteht fast immer darin, die Anzahl der Entscheidungen zu reduzieren, die du persönlich pro Minute treffen musst.
+## Was nicht dokumentiert ist
 
-## Praktische Tipps für bessere Clone-Builds
+Mehrere populäre Roblox-Content-Muster tauchen nirgendwo im offiziellen Eintrag für diese Experience auf:
 
-1. **Weise Zonen zu, nicht einzelne Klone.** Zonenregeln überleben Einheitenverluste und erfordern kein erneutes Klicken, wenn ein Klon stirbt.
-2. **Setze deine Aufgabe mit dem höchsten Durchsatz an die Spitze der Prioritätsliste.** Die Reihenfolge schlägt die reine Klon-Anzahl fast immer.
-3. **Verteile, bevor du stapelst.** Teile Klone auf mehrere Ziele auf, bevor du einem bestehenden Ziel weitere Klone hinzufügst.
-4. **Verbessere die Quelle, nicht nur die Kopien.** Da Klone von ihrem Ursprung erben, multipliziert sich ein Quellen-Upgrade über die gesamte Gruppe.
-5. **Beobachte die Untätigkeitsrate, nicht die Klon-Anzahl.** Untätige Klone sind das klarste Signal dafür, dass deine Regeln falsch sind.
-6. **Baue eine Stufe über deinem Einkommen.** Klone, die mehr kosten als sie einbringen, erzeugen eine Schuldenspirale.
-7. **Halte einen manuellen Eingriff bereit.** Die Automatisierung erledigt Routinearbeit; du kümmerst dich um die Ausnahmen.
+- Keine Einheiten, Ausrüstung oder Stufen
+- Keine Gacha- oder Roll-Systeme
+- Keine Boss-Drops oder Mutationsseren
+- Keine Einkommensmultiplikatoren oder Prestige-Systeme
+- Keine Promo-Codes
+- Keine veröffentlichte Karten-, Welt- oder Level-Liste
 
-### Häufige Fehler und ihre Lösungen
-
-| Fehler | Wie er aussieht | Lösung |
-|---|---|---|
-| Prioritätsliste zu lang | Klone, die zwischen Aufgaben umherwandern | Auf drei oder vier gereihte Aufgaben reduzieren |
-| Keine Fallback-Aufgabe | Klone, die einfrieren, wenn die Arbeit ausgeht | Einen Standard-Sammel- oder Patrouillenbefehl festlegen |
-| Einheitliche Klone | Jede Kopie erledigt alles ausreichend | Klone nach Zone oder Rolle spezialisieren |
-| Wegfindung ignorieren | Klone, die in einer Türöffnung feststecken | Die Route verbreitern oder eine zweite Spur hinzufügen |
-| Über die weiche Obergrenze hinaus bauen | Einkommen stagniert trotz mehr Klone | Ausgaben in Upgrades umleiten |
-
-## Metriken, die gute Clone-Builder-KI von großartiger unterscheiden
-
-Du kannst nicht verbessern, was du nicht misst. Dies sind die Signale, die es wert sind, verfolgt zu werden, und wie eine gesunde Version von jedem in der Praxis aussieht. Die <a href="https://store.steampowered.com/" rel="nofollow">Strategie- und Simulationskategorien des Steam-Stores</a> sind voll von Titeln, die vollständig um diese Schleifen herum aufgebaut sind, und dieselben Metriken gelten für fast alle von ihnen.
-
-| Metrik | Was sie misst | Wie gut aussieht |
-|---|---|---|
-| Untätigkeitsrate | Anteil der Klone ohne aktive Aufgabe | Niedrig und stabil während des normalen Spiels |
-| Aufgabenüberschneidung | Klone, die um dasselbe Ziel konkurrieren | Selten außer bei bewusstem Fokusfeuer |
-| Amortisationszeit | Zeit, bis ein Klon seine Kosten einbringt | Kürzer als die aktuelle Phasenlänge |
-| Upgrade-zu-Klon-Verhältnis | Aufteilung der Ausgaben zwischen Qualität und Quantität | Ausgeglichen, mit Neigung zur Qualität nahe den Obergrenzen |
-| Erholungsgeschwindigkeit | Wie schnell sich der Build nach Verlusten wieder aufbaut | Schnell genug, um einen schlechten Kampf zu überstehen |
-
-Faustregel der Community: Wenn deine Untätigkeitsrate direkt nach dem Hinzufügen von Klonen in die Höhe schnellt, hast du sie zu schnell hinzugefügt. Das System braucht Regeln, die im Gleichschritt mit der Kopfzahl aktualisiert werden.
-
-## Solo-Klon vs. Schwarm: Die Wahl einer Build-Identität
-
-Die beiden dominanten Identitäten ziehen in entgegengesetzte Richtungen, und sie sorglos zu vermischen, erzeugt das Schlechteste aus beiden.
-
-| | Solo-Elite-Klon | Schwarm-Build |
-|---|---|---|
-| Hochlauf | Langsam, teuer | Schnell, günstig |
-| Skill-Obergrenze | Hohes Mikro pro Einheit | Hohes Makro auf Systemebene |
-| Fehlermodus | Ein Verlust lähmt dich | Tod durch tausend Verluste |
-| Am besten mit | Präzisen, hochwertigen Zielen | Breiten, repetitiven Arbeitslasten |
-| Anforderungen der Clone-Builder-KI | Reaktionsschnelle Steuerung und saubere Fallbacks | Starke Koordination und Zonierung |
-
-Die meisten erfolgreichen Builds bekennen sich für die ersten zwei Drittel eines Durchlaufs zu einer Identität und fügen dann eine dünne Schicht der anderen hinzu, sobald ihre Wirtschaft sie verkraften kann.
+Wenn du eine Seite siehst, die eines davon behauptet, gehe davon aus, dass der Autor entweder dieses Spiel mit einem anderen verwechselt oder Inhalte erfindet. Um etwas Bestimmtes zu überprüfen, öffne die Experience, prüfe die In-Game-Benutzeroberfläche und alle offiziellen Links und gleiche sie mit der Roblox-Seite ab. Die Entwickler haben gesagt, dass sich das Spiel ständig verändert, also kann ein Feature, das letzten Monat nicht existierte, jetzt existieren — genau deshalb ist ein Blick ins Spiel besser, als einer veralteten Liste zu vertrauen.
 
 ## FAQ
 
-**Was bedeutet „clone builders AI" in Spielen?**
-Es bezieht sich auf das Verhaltenssystem, das Duplikat-Einheiten steuert – die Regeln, die entscheiden, was jeder Klon tut, in welcher Reihenfolge und wie Klone Konflikte untereinander vermeiden. Eine starke Clone-Builder-KI-Schicht lässt eine kleine Streitmacht organisiert wirken; eine schwache lässt eine große Streitmacht chaotisch wirken.
+**Ist Clone Builders kostenlos spielbar?**
+Der offizielle Roblox-Eintrag listet keinen Preis, und Roblox-Experiences dieser Art sind in der Regel kostenlos zugänglich. Private Server sind eine separate Überlegung und werden für große Bauten empfohlen.
 
-**Wie viele Klone sollte ich bauen?**
-Baue bis zu deiner weichen Obergrenze, nicht darüber hinaus. Wenn das Hinzufügen eines Klons die Ausgabe nicht sichtbar erhöht, gehört diese Ressource stattdessen in ein Upgrade.
+**Wie viele Spieler passen in einen Server?**
+Bis zu 15 Spieler pro Server, laut dem offiziellen Eintrag.
 
-**Warum stehen meine Klone ständig untätig herum?**
-Neun von zehn Malen ist die Ursache eine fehlende Fallback-Aufgabe oder eine Prioritätsliste, die keinen gültigen Eintrag hat, sobald die Hauptaufgabe erledigt ist. Lege einen Standardbefehl fest, und das Untätigsein hört meist auf.
+**Gibt es Codes?**
+Auf der offiziellen Seite sind keine Promo-Codes dokumentiert. Verlasse dich nicht auf Code-Listen aus inoffiziellen Quellen.
 
-**Funktionieren Clone-Builder-Mechaniken im Multiplayer?**
-Ja, allerdings ist Koordination wichtiger. Im Koop verhindert die Zuweisung einer Zone an jeden Spieler, dass Klone Arbeit duplizieren, und es hält den Gesamtdurchsatz der Gruppe vorhersehbar.
+**Ist es fertig?**
+Nein. Die Entwickler beschreiben es als experimentellen Testbereich für größere clone-bezogene Projekte, mit ständigen Veränderungen und neuen Features im Laufe der Zeit.
 
-**Sind Clone-Builder nur eine Mikromanagement-Falle?**
-Nur, wenn du sie so behandelst. Die Mechanik belohnt Spieler, die Regeln entwerfen und delegieren, und bestraft Spieler, die darauf bestehen, jede Einheit von Hand anzuklicken.
+**Wo fange ich an?**
+Öffne die [offizielle Clone Builders-Seite](https://www.roblox.com/games/98456203230140/CLONE-BUILDERS), tritt einem Server bei, gib deinen Clones zuerst eine einfache Idee und schau, wie das Platzierungs- und Skalierungssystem reagiert, bevor du dich auf etwas Ehrgeiziges einlässt. Wenn du einen großen Bau oder ein Minispiel möchtest, ziehe einen Private Server in Betracht.

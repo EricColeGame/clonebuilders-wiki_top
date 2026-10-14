@@ -3,11 +3,11 @@
     "name": "Clone Builders Wiki",
     "shortName": "Clone Builders",
     "tagline": "Bauanleitungen, Klon-Mechaniken & Sandbox-Tipps",
-    "description": "Dein ultimativer Leitfaden zu Clone Builders auf Roblox! Entdecke Klon-Baumechaniken, Bautipps, Bauideen, Steuerung, Updates und Community-Infos für bessere Bauwerke.",
-    "legalNotice": "Inoffizielles Fan-Wiki. Von Spielern für Spieler."
+    "description": "Dein Fan-Leitfaden zu Clone Builders auf Roblox. Entdecke Klon-Baumechaniken, Bautipps, Bauideen, ein strukturiertes Bausystem zum Platzieren, Anpassen der Größe, Bewegen und Zusammensetzen von Teilen sowie Sandbox-Experimente und Community-Informationen.",
+    "legalNotice": "Inoffizielles Fan-Wiki. Von Spielern für Spieler erstellt."
   },
   "nav": {
-    "guide": "Anleitung",
+    "guide": "Leitfaden",
     "mechanics": "Mechaniken",
     "progression": "Fortschritt",
     "controls": "Steuerung",
@@ -18,52 +18,52 @@
   },
   "home": {
     "meta": {
-      "title": "Clone Builders Wiki - Codes, Anleitung & Einheiten",
-      "description": "Entdecke das Clone Builders Wiki für Roblox-Codes, Anfänger-Anleitungen, Einheiten-Infos, Baustrategien, Updates und alles, was Spieler brauchen, um schneller voranzukommen."
+      "title": "Clone Builders Wiki – Leitfaden, Mechaniken & Bauideen",
+      "description": "Fan-Wiki für Clone Builders auf Roblox. Anfängerleitfäden, Klon-Baumechaniken, Bautipps, Bauideen, Ratschläge für private Server und dokumentierte Spielinformationen. Codes werden vom offiziellen Spiel nicht dokumentiert."
     },
     "hero": {
-      "eyebrow": "Roblox Klon-Bau-Simulator",
+      "eyebrow": "Roblox Klon-Bau-Sandbox",
       "title": "Clone Builders Wiki",
-      "description": "Clone Builders ist ein Roblox-Bau- und Automatisierungsspiel, in dem Spieler Klone erschaffen, ihre Basis ausbauen, Ressourcen verwalten und neue Baumöglichkeiten freischalten. Stöbere in Anfänger-Anleitungen, Klon-Mechaniken, Bauideen und Updates.",
+      "description": "Clone Builders ist eine experimentelle Roblox-Bau-Sandbox, in der NPC-Klone eine Idee erhalten und mit einem strukturierten Bausystem Teile platzieren, ihre Größe anpassen, sie bewegen und zu Kreationen zusammensetzen. Durchstöbere Anfängerleitfäden, Klon-Mechaniken, Bauideen, Ratschläge für private Server und häufig gestellte Fragen zu diesem Testgelände für zukünftige klonbezogene Projekte.",
       "stats": [
-        "Besuche insgesamt",
-        "Verfügbare Einheiten",
-        "Aktive Codes",
-        "Wöchentliche Updates"
+        "Etwa 4,2 Millionen Besuche",
+        "Bis zu 15 Spieler pro Server",
+        "Erstellt am 14.09.2026",
+        "Zuletzt aktualisiert am 14.10.2026"
       ],
-      "primaryCta": "Anfänger-Anleitung",
+      "primaryCta": "Anfängerleitfaden",
       "secondaryCta": "Bauanleitung",
-      "tertiaryCta": "Aktive Codes",
+      "tertiaryCta": "Klon-Verhalten-Leitfaden",
       "videoLabel": "Offizielle Medien"
     },
     "updates": {
       "title": "Neueste Updates",
-      "browse": "Alle Anleitungen durchsuchen",
-      "viewAll": "Alle anzeigen"
+      "browse": "Alle Leitfäden durchsuchen",
+      "viewAll": "Alle ansehen"
     },
     "start": {
-      "eyebrow": "Hier starten",
-      "title": "Deine Clone Builders Reise",
+      "eyebrow": "Hier beginnen",
+      "title": "Deine Clone Builders-Reise",
       "cards": [
         {
           "number": "1",
-          "title": "Anfänger-Anleitung",
-          "description": "Lerne den Klon-Bau-Loop ab deiner ersten Einheit kennen: Erzeuge einen Klon, weise ihm eine Aufgabe zu und vollende dein erstes Bauwerk, ohne Ressourcen zu verschwenden."
+          "title": "Anfängerleitfaden",
+          "description": "Lerne die grundlegende Sandbox-Schleife kennen: Gib deinen Klonen eine Idee, sieh zu, wie sie Teile platzieren, ihre Größe anpassen, sie bewegen und zusammensetzen, und vollende deine erste Kreation, ohne mit der Steuerung zu kämpfen."
         },
         {
           "number": "2",
-          "title": "Schnellstes Leveln",
-          "description": "Sieh, wie Level und Stufen aufgebaut sind und welche Upgrades die nächste Stufe freischalten, statt nur die letzte zu farmen."
+          "title": "Klare Bauschritte",
+          "description": "Folge dem strukturierten Bausystem der Reihe nach: Platziere ein Teil, passe seine Größe an, bewege es an die gewünschte Position und setze es dann mit deinen Klonen zu einer größeren Kreation zusammen."
         },
         {
           "number": "3",
-          "title": "Beste Farmplätze",
-          "description": "Priorisiere Kapazität und Spawn-Ökonomie und leite Klone dann zu den Ressourcenfamilien, die alle anderen Gewinne vervielfachen."
+          "title": "Bauideen & Inspiration",
+          "description": "Probiere Projektideen aus, die zu einer Sandbox mit Klon-Helfern passen – von einfachen Hütten und Türmen bis hin zu großen zusammengesetzten Strukturen, die einen privaten Server erfordern."
         },
         {
           "number": "4",
-          "title": "Alle Codes & Einlösen",
-          "description": "Finde funktionierende Clone Builders Codes, löse sie im richtigen Menü ein und meide veraltete Listen und Betrugsseiten."
+          "title": "Klon-Verhalten-Leitfaden",
+          "description": "Verstehe, wie NPC-Klone Bauideen interpretieren und wie klarere Anweisungen zu vorhersehbareren Bauarbeiten führen."
         }
       ]
     },
@@ -72,63 +72,63 @@
       "title": "Gerade im Trend",
       "quickLinks": [
         "Klon-Mechaniken",
-        "Upgrade-Prioritäten",
-        "Ressourcen-Guide",
-        "Alle Codes"
+        "Bausystem",
+        "Bauideen",
+        "Klon-Verhalten"
       ],
       "cards": [
         {
           "badge": "Anfänger",
-          "title": "Anfänger-Anleitung",
-          "description": "Von deinem ersten Klon bis zum fertigen Bauwerk: der schnellste Weg durch die ersten Stunden.",
+          "title": "Anfängerleitfaden",
+          "description": "Von deiner ersten Klon-Idee bis zur fertigen Kreation – der schnellste Weg durch die ersten Stunden.",
           "href": "/guide/clone-builders-beginner-guide"
         },
         {
-          "badge": "Aktualisiert",
-          "title": "Aktive Codes",
-          "description": "Wie Clone Builders Codes funktionieren, wie du sie einlöst und wie du eine tote Liste erkennst.",
+          "badge": "Info",
+          "title": "Codes",
+          "description": "Das offizielle Spiel dokumentiert kein Code-System, daher sind keine funktionierenden Codes aufgeführt. Erfahre, wie du gefälschte oder ungültige Code-Listen erkennst.",
           "href": "/codes/clone-builders-codes"
         },
         {
           "badge": "Beliebt",
           "title": "Klon-Mechaniken",
-          "description": "Duplizierung, Delegation und Eskalation erklärt mit Rollen und Upgrade-Prioritäten.",
+          "description": "Wie NPC-Klone eine Idee aufnehmen und mithilfe des Bausystems Teile platzieren, ihre Größe anpassen, sie bewegen und zusammensetzen.",
           "href": "/mechanics/clone-builders-clones"
         },
         {
           "badge": "Beliebt",
           "title": "Bauanleitung",
-          "description": "Platzieren, skalieren und zusammensetzen, während deine Bauklone den Bau am Laufen halten.",
+          "description": "Platziere, passe die Größe an, bewege und setze Teile zusammen, während deine Bauklone den Bau vorantreiben.",
           "href": "/mechanics/clone-builders-building"
         },
         {
           "badge": "Neu",
-          "title": "Upgrade-Prioritäten",
-          "description": "Welche additiven und multiplikativen Upgrades die Zeit bis zur nächsten Stufe wirklich verkürzen.",
+          "title": "Bausystem",
+          "description": "Ein klarer Blick auf die dokumentierten Bauschritte: Platzieren, Größe anpassen, Bewegen und Zusammensetzen von Teilen zu Strukturen.",
           "href": "/progression/clone-builders-upgrades"
         },
         {
-          "badge": "Beliebt",
-          "title": "Ressourcen-Guide",
-          "description": "Ressourcenfamilien, Stufen von S bis D und wo du jede effizient farmst.",
+          "badge": "Nicht dokumentiert",
+          "title": "Gegenstände & Ressourcen",
+          "description": "Die offizielle Beschreibung dokumentiert weder Gegenstände noch Ressourcenstufen. Diese Seite erklärt, was dokumentiert ist und was nicht.",
           "href": "/items/clone-builders-resources"
         },
         {
           "badge": "Neu",
-          "title": "Basis-Layouts",
-          "description": "Klonen, zuweisen, bauen, verteidigen: Layout-Entscheidungen, die deine Basis produktiv halten.",
+          "title": "Sandbox-Praktiken",
+          "description": "Wie du sicher in einem sich entwickelnden Testgelände experimentierst, einschließlich Tipps zu Layout und Arbeitsbereich.",
           "href": "/mechanics/clone-builders-base"
         },
         {
           "badge": "Beliebt",
           "title": "Bauideen",
-          "description": "Projektideen von einfachen Hütten bis zu vollautomatischen Fabrikstraßen.",
+          "description": "Projektideen, die zu einer klonunterstützten Sandbox passen – von Anfängerhütten bis zu großen zusammengesetzten Strukturen.",
           "href": "/maps/clone-builders-creations"
         },
         {
           "badge": "Neu",
           "title": "Update-Tracker",
-          "description": "Wie Clone Builders Patches ausgerollt werden und wie du Patch Notes wie ein Veteran liest.",
+          "description": "Wie sich das Spiel im Laufe der Zeit verändert, was die Entwickler als sich entwickelnde Experimente beschreiben und was nicht dokumentiert ist.",
           "href": "/community/clone-builders-updates"
         }
       ]
@@ -136,8 +136,8 @@
     "aboutGame": {
       "title": "Was ist Clone Builders?",
       "paragraphs": [
-        "Clone Builders ist ein Roblox-Bau- und Automatisierungsspiel, in dem eine einzelne Baueinheit Kopien von sich selbst erstellt. Diese Klone sammeln Ressourcen, errichten Bauwerke, verteidigen die Basis und versorgen Maschinen – so wird aus einem langsamen Rinnsal von Arbeitern eine selbstlaufende Bauproduktion.",
-        "Fortschritt entsteht aus der Balance von Duplizierung, Delegation und Eskalation: Gib Ressourcen aus, um mehr Klone zu erzeugen, weise sie dem Sammeln, Transportieren, Bauen oder Verteidigen zu und investiere dann in Upgrades, die die Obergrenze anheben. Dieses Clone Builders Wiki behandelt den Kern-Loop, Ressourcenstufen, Upgrade-Prioritäten, Steuerung, Basis-Layouts und einlösbare Codes in verständlichen Anleitungen."
+        "Clone Builders ist eine experimentelle Roblox-Bau-Sandbox, in der NPC-Klone eine Idee erhalten und mit einem strukturierten Bausystem Teile platzieren, ihre Größe anpassen, sie bewegen und zu Kreationen in der Welt zusammensetzen. Es wird von der Roblox-Gruppe Synoptic Interactive erstellt und von den Entwicklern als Testgelände für ihre größeren klonbezogenen Projekte beschrieben.",
+        "Da das Spiel als sich ständig verändernd beschrieben wird, treten im Laufe der Zeit Experimente und ungewöhnliches Klon-Verhalten auf, und einige Funktionen könnten in zukünftige Spiele der Entwickler einfließen. Die offizielle Beschreibung empfiehlt einen privaten Server für große Bauten und Minigames. Sie dokumentiert keine Einheiten, Ausrüstung, Stufen, Gacha, Boss-Drops, Level, Karten oder Codes, daher stellt dieses Wiki das klar, anstatt Werte zu erfinden."
       ],
       "stats": [
         {
@@ -145,225 +145,225 @@
           "value": "Roblox"
         },
         {
+          "label": "Ersteller",
+          "value": "Synoptic Interactive"
+        },
+        {
           "label": "Genre",
-          "value": "Bauen & Automatisierung"
+          "value": "Bau-Sandbox"
         },
         {
-          "label": "Kern-Loop",
-          "value": "Klonen, zuweisen, upgraden"
+          "label": "Kernschleife",
+          "value": "Idee, Bauen, Zusammensetzen"
         },
         {
-          "label": "Klon-Rollen",
-          "value": "Sammeln, transportieren, bauen, verteidigen"
+          "label": "Servergröße",
+          "value": "Bis zu 15 Spieler"
         },
         {
-          "label": "Ressourcen-Stufen",
-          "value": "S bis D"
-        },
-        {
-          "label": "Codes",
-          "value": "Einlösbare Belohnungen"
+          "label": "Besuche",
+          "value": "Etwa 4,2 Millionen"
         }
       ],
-      "cta": "Alle Anleitungen entdecken"
+      "cta": "Alle Leitfäden erkunden"
     },
     "explore": {
-      "title": "Clone Builders Wiki entdecken",
-      "description": "Durchsuche die Kernsysteme von Clone Builders: Anfängerschritte, Bauen und Klonverhalten, Bauideen, Abzeichen, private Server, Updates und einlösbare Codes.",
+      "title": "Clone Builders Wiki erkunden",
+      "description": "Durchstöbere die wichtigsten Clone Builders-Systeme: Anfängerschritte, das Bausystem, Klon-Verhalten, Bauideen, Abzeichen, private Server, Updates und Codes (die das offizielle Spiel nicht dokumentiert).",
       "modules": [
         {
           "order": 1,
-          "name": "Anfänger-Anleitung des Clone Builders Wiki",
-          "description": "Dieses Modul hilft neuen Spielern, den Kern-Gameplay-Loop zu verstehen: Klonen Bauideen geben, den Baufortschritt beobachten und die ersten Projekte abschließen. Es behandelt Grundtipps, typische Anfängerfehler und empfohlene erste Bauwerke.",
+          "name": "Clone Builders Wiki Anfängerleitfaden",
+          "description": "Dieses Modul hilft neuen Spielern, die grundlegende Sandbox-Schleife zu verstehen, einschließlich dem Geben von Ideen an Klone, dem Beobachten des Baufortschritts und dem Abschließen ihrer ersten Kreationen. Es behandelt grundlegende Tipps, frühe Fehler und empfohlene erste Bauten für Anfänger.",
           "href": "/guide/clone-builders-beginner-guide",
           "displayType": "step-by-step",
           "highlights": [
             {
               "label": "1",
-              "detail": "Schließe das Tutorial ab, um Klon-Spawner und Upgrade-Menü freizuschalten"
+              "detail": "Starte einen privaten Server, wenn du einen ruhigen Raum für deine ersten Experimente und großen Bauten möchtest"
             },
             {
               "label": "2",
-              "detail": "Hole jede Startbelohnung, jeden Login-Bonus und jede Gratis-Truhe ab, bevor du Währung ausgibst"
+              "detail": "Gib deinen Klonen eine einfache Idee und sieh zu, wie sie Teile platzieren, ihre Größe anpassen und sie bewegen"
             },
             {
               "label": "3",
-              "detail": "Kaufe deinen ersten zusätzlichen Klon vor jedem kosmetischen Kauf"
+              "detail": "Setze die Teile zu einer kleinen fertigen Kreation zusammen, bevor du etwas Größeres beginnst"
             },
             {
               "label": "4",
-              "detail": "Weise Klone ihrer wertvollsten Aufgabe zu, nicht der nächstgelegenen"
+              "detail": "Notiere, was sich seit dem letzten Update geändert hat, denn das Spiel wird als sich ständig verändernd beschrieben"
             }
           ]
         },
         {
           "order": 2,
-          "name": "Bauanleitung des Clone Builders Wiki",
-          "description": "Dieses Modul erklärt, wie das Bausystem funktioniert: Platzieren, Skalieren, Verschieben und Zusammensetzen von Teilen durch Klon-Bau. Es bietet praktische Strategien für klarere und erfolgreichere Bauwerke.",
+          "name": "Clone Builders Wiki Bauanleitung",
+          "description": "Dieses Modul erklärt, wie das strukturierte Bausystem funktioniert, einschließlich Platzieren, Größe anpassen, Bewegen und Zusammensetzen von Teilen durch Klon-Bau. Es bietet praktische Strategien für klarere und erfolgreichere Strukturen.",
           "href": "/mechanics/clone-builders-building",
           "displayType": "step-by-step",
           "highlights": [
             {
               "label": "1",
-              "detail": "Platziere dein erstes Bauwerk über das Baumenü und bestätige seine Grundfläche"
+              "detail": "Platziere dein erstes Teil und prüfe, wie es in der Welt sitzt"
             },
             {
               "label": "2",
-              "detail": "Weise Bauklone zu, damit der Bau weiterläuft, während du den nächsten Abschnitt planst"
+              "detail": "Passe seine Größe an und bewege es dann an die gewünschte Position"
             },
             {
               "label": "3",
-              "detail": "Wechsle vom manuellen Platzieren zur vollständigen Klon-Montagestraße"
+              "detail": "Setze mehrere Teile zusammen, damit deine Klone von einer klaren Idee aus arbeiten können"
             },
             {
               "label": "4",
-              "detail": "Balanciere die Klon-Zuweisungen bei jeder neuen Stufe neu aus"
+              "detail": "Passe deinen Ansatz neu an, wann immer eine neue Funktion oder ein Experiment das System verändert"
             }
           ]
         },
         {
           "order": 3,
-          "name": "Bauideen des Clone Builders Wiki",
-          "description": "Dieses Modul sammelt beliebte Projektideen, die Spieler ausprobieren können – von einfachen Häusern und Türmen bis zu größeren kreativen Bauwerken und individuellen Umgebungen. Es hilft, Inspiration zu finden und passende Herausforderungen nach Schwierigkeit zu wählen.",
+          "name": "Clone Builders Wiki Bauideen",
+          "description": "Dieses Modul sammelt beliebte Projektideen, die Spieler ausprobieren können, von einfachen Häusern und Türmen bis hin zu größeren kreativen Strukturen und individuellen Umgebungen. Es hilft Nutzern, Inspiration zu suchen und geeignete Herausforderungen nach Schwierigkeit auszuwählen.",
           "href": "/maps/clone-builders-creations",
           "displayType": "tier-grid",
           "highlights": [
             {
-              "label": "S",
-              "detail": "Automatisierte Fabrikstraße mit förderbandversorgten Klon-Stationen und vollem Ressourcendurchsatz"
+              "label": "Groß",
+              "detail": "Ambitionierte zusammengesetzte Strukturen, die am besten auf einem privaten Server mit stabilem Arbeitsbereich versucht werden"
             },
             {
-              "label": "A",
-              "detail": "Basis mit mehreren Parzellen und eigenen Zonen für Sammler, Transporter und Bauklone"
+              "label": "Mittel",
+              "detail": "Mehrteilige Kreationen, die platzierte, größenangepasste, bewegte und zusammengesetzte Komponenten kombinieren"
             },
             {
-              "label": "B",
-              "detail": "Mittelgroßer Turm oder Haus aus einem sauberen, wiederholbaren Bauplan"
+              "label": "Klein",
+              "detail": "Ein kompaktes Haus oder ein Turm, gebaut aus einem sauberen, wiederholbaren Satz von Teilen"
             },
             {
-              "label": "C",
-              "detail": "Anfängerhütte und ein einfacher Ressourcen-Loop für einen frischen Spielstand"
+              "label": "Anfänger",
+              "detail": "Eine einfache Hütte oder Einraum-Kreation, um zu testen, wie Klone einer Idee folgen"
             }
           ]
         },
         {
           "order": 4,
-          "name": "Klonverhalten-Guide des Clone Builders Wiki",
-          "description": "Dieses Modul erklärt, wie NPC-Klone Bauaufgaben interpretieren und wie Spieler Ergebnisse verbessern, indem sie klarere Ideen geben. Der Fokus liegt auf Klon-Aktionen, Bau-Mustern und experimentellen Mechaniken.",
+          "name": "Clone Builders Wiki Klon-Verhalten-Leitfaden",
+          "description": "Dieses Modul erklärt, wie NPC-Klone Bauaufgaben interpretieren und wie Spieler die Ergebnisse verbessern können, indem sie klarere Ideen geben. Es konzentriert sich auf das Verständnis von Klon-Aktionen, Bau mustern und experimentellen Mechaniken.",
           "href": "/mechanics/clone-builders-ai",
           "displayType": "card-list",
           "highlights": [
             {
-              "label": "Aufgabenreihenfolge",
-              "detail": "Kürze die Prioritätsliste und setze die wertvollste Arbeit nach oben"
+              "label": "Klare Ideen",
+              "detail": "Gib Klonen jeweils eine klare Bauidee, damit ihre Aktionen leichter vorherzusagen sind"
             },
             {
               "label": "Arbeit aufteilen",
-              "detail": "Verteile Klone auf mehrere Knoten, damit sie sich nicht auf einem Ziel stapeln"
+              "detail": "Lass verschiedene Klone separate Teile übernehmen, damit sie sich nicht bei derselben Aufgabe stapeln"
             },
             {
-              "label": "Wegefindung",
-              "detail": "Räume Türen und Geometrie frei, die Klone feststecken lassen"
+              "label": "Wegfindung",
+              "detail": "Halte Durchgänge und Geometrie frei, damit Klon-Bauer nicht stecken bleiben"
             },
             {
-              "label": "Klon-Limit",
-              "detail": "Kenne dein Klon-Limit, bevor du es überschreitest und Ressourcen verschwendest"
+              "label": "Klon-Obergrenze",
+              "detail": "Die offizielle Beschreibung dokumentiert keine Klon-Obergrenze; prüfe das Verhalten im Spiel, bevor du sehr große Klon-Teams planst"
             }
           ]
         },
         {
           "order": 5,
-          "name": "Abzeichen-Guide des Clone Builders Wiki",
-          "description": "Dieses Modul behandelt verfügbare Roblox-Abzeichen und Erfolgsziele, etwa abgeschlossene Bauwerke und erreichte Spielzeit-Meilensteine. Es gibt Spielern klare Ziele, um ihren Fortschritt zu verfolgen.",
+          "name": "Clone Builders Wiki Abzeichen-Leitfaden",
+          "description": "Dieses Modul behandelt Roblox-Abzeichen und Erfolgsziele, wenn sie dokumentiert sind, einschließlich des Abschließens von Bauten und dem Erreichen von Spielzeit-Meilensteinen. Es bietet Spielern klare Ziele, um ihren Fortschritt zu verfolgen.",
           "href": "/progression/clone-builders-unlocks",
           "displayType": "card-list",
           "highlights": [
             {
               "label": "Meilensteine",
-              "detail": "Abzeichen verfolgen meist erste Bauwerke, Stufen-Freischaltungen und Produktionsziele"
+              "detail": "Die offizielle Beschreibung dokumentiert keine Abzeichen-Meilensteine; prüfe Roblox-Abzeichen direkt auf vorhandene"
             },
             {
               "label": "Spielzeit",
-              "detail": "Längere Sitzungen und wiederholte Runs füttern die spielzeitbasierten Erfolge"
+              "detail": "Die offizielle Beschreibung dokumentiert keine Spielzeit-Erfolge; behandle unbestätigte Abzeichen-Listen mit Vorsicht"
             },
             {
               "label": "Freischaltungen",
-              "detail": "Erfolgsziele decken sich oft mit neuen Klontypen und Bauwerken"
+              "detail": "Die offizielle Beschreibung dokumentiert keine freischaltbaren Klon-Typen oder Strukturen"
             },
             {
               "label": "Belohnungen",
-              "detail": "Prüfe jedes Abzeichen auf Währungs-, Kosmetik- oder Profilbelohnungen"
+              "detail": "Die offizielle Beschreibung dokumentiert keine Abzeichen-Belohnungen; meide Seiten, die bestimmte Preise versprechen"
             }
           ]
         },
         {
           "order": 6,
-          "name": "Private-Server-Guide des Clone Builders Wiki",
-          "description": "Dieses Modul erklärt, wann und warum Spieler private Server für größere Projekte, Experimente und eigene Minispiele nutzen sollten. Es hilft zu verstehen, wie private Sitzungen das Bauerlebnis verbessern können.",
+          "name": "Clone Builders Wiki Leitfaden für private Server",
+          "description": "Dieses Modul erklärt, wann und warum Spieler private Server für größere Projekte, Experimente und individuelle Minigames nutzen sollten. Es hilft Nutzern zu verstehen, wie private Sitzungen das Bauerlebnis verbessern können.",
           "href": "/community/clone-builders-community",
           "displayType": "card-list",
           "highlights": [
             {
-              "label": "Große Bauwerke",
-              "detail": "Nutze einen privaten Server für große Projekte, die einen stabilen, freien Arbeitsbereich brauchen"
+              "label": "Große Bauten",
+              "detail": "Die offizielle Beschreibung empfiehlt private Server für große Bauten, die einen stabilen, offenen Arbeitsbereich benötigen"
             },
             {
-              "label": "Testen",
-              "detail": "Experimentiere mit Layouts und Klon-Rollen, ohne um Knoten zu konkurrieren"
+              "label": "Minigames",
+              "detail": "Die offizielle Beschreibung empfiehlt private Server für Minigames, damit Freunde ohne Unterbrechungen durch öffentliche Server spielen können"
             },
             {
               "label": "Kein Griefing",
-              "detail": "Halte Störungen aus öffentlichen Servern von einem langen Bauplan fern"
+              "detail": "Ein privater Server hält unerwartete Unterbrechungen von einem langen Bauplan fern"
             },
             {
-              "label": "Co-op",
-              "detail": "Lade Freunde zu gemeinsamen Bauwerken, Tausch und eigenen Minispielen ein"
+              "label": "Testen",
+              "detail": "Experimentiere mit Layouts und Klon-Ideen auf einem privaten Server, ohne um Platz konkurrieren zu müssen"
             }
           ]
         },
         {
           "order": 7,
-          "name": "Updates des Clone Builders Wiki",
-          "description": "Dieses Modul verfolgt offizielle Spieländerungen, neue Experimente, Feature-Anpassungen und wichtige Ankündigungen. Es hilft zurückkehrenden Spielern, schnell zu verstehen, was sich geändert hat, bevor sie neue Bauwerke beginnen.",
+          "name": "Clone Builders Wiki Updates",
+          "description": "Dieses Modul verfolgt offizielle Spieländerungen, neue Experimente, Funktionsanpassungen und wichtige Ankündigungen. Es hilft zurückkehrenden Spielern, schnell zu verstehen, was sich geändert hat, bevor sie neue Bauten beginnen.",
           "href": "/community/clone-builders-updates",
           "displayType": "card-list",
           "highlights": [
             {
-              "label": "Patches",
-              "detail": "Balance-Anpassungen können die Bau-Reihenfolge, die letzten Monat funktionierte, still verändern"
+              "label": "Änderungsprotokoll",
+              "detail": "Prüfe das Datum der letzten Aktualisierung und die Beschreibung der Roblox-Seite auf die neuesten dokumentierten Änderungen"
             },
             {
-              "label": "Neue Einheiten",
-              "detail": "Content-Updates bringen oft neue Klon-Stufen, Karten oder event-exklusive Belohnungen"
+              "label": "Neue Experimente",
+              "detail": "Die Entwickler beschreiben das Spiel als Testgelände, auf dem im Laufe der Zeit neue Funktionen erscheinen"
             },
             {
               "label": "Balance",
-              "detail": "Lies den Abschnitt mit den Design-Notizen, um zu sehen, welche Zahlen die Entwickler angepasst haben"
+              "detail": "Die offizielle Seite veröffentlicht keine Patch-Notizen oder genauen Wertänderungen; behandle Community-Zahlen als unbestätigt"
             },
             {
               "label": "Events",
-              "detail": "Zeitlich begrenzte Events bringen meist eigene Währung und eigenen Shop mit"
+              "detail": "Die offizielle Beschreibung dokumentiert keine zeitlich begrenzten Events oder Event-Währung"
             }
           ]
         },
         {
           "order": 8,
-          "name": "Codes des Clone Builders Wiki",
-          "description": "Dieses Modul bietet einen Ort, um einlösbare Codes aufzulisten, falls der Entwickler in zukünftigen Updates ein Codesystem einführt. Die aktuellen Informationen können aktualisiert werden, sobald offizielle Belohnungen oder Events verfügbar sind.",
+          "name": "Clone Builders Wiki Codes",
+          "description": "Dieses Modul bietet einen Ort, um einlösbare Codes aufzulisten, falls der Entwickler in zukünftigen Updates ein Code-System einführt. Das offizielle Spiel dokumentiert derzeit keine Codes, daher sind hier keine funktionierenden Codes aufgeführt.",
           "href": "/codes/clone-builders-codes",
           "displayType": "code-cards",
           "highlights": [
             {
-              "label": "EINSTELLUNGEN",
-              "detail": "Öffne das Einstellungs- oder Code-Menü im Spiel, um das Einlösefeld zu finden"
+              "label": "NICHT DOKUMENTIERT",
+              "detail": "Die offizielle Beschreibung dokumentiert kein Code-System und keine einlösbaren Codes"
             },
             {
-              "label": "EINFÜGEN",
-              "detail": "Gib den Code genau wie geschrieben ein, da Codes zwischen Groß- und Kleinschreibung unterscheiden und zusätzliche Leerzeichen ablehnen"
+              "label": "VORSICHT",
+              "detail": "Seiten, die funktionierende Clone Builders-Codes behaupten, werden nicht durch die offiziellen Spielinformationen gestützt"
             },
             {
-              "label": "EINLÖSEN",
-              "detail": "Bestätige das Einlösen und prüfe dann deine Post oder dein Inventar auf die Belohnung"
+              "label": "SICHER BLEIBEN",
+              "detail": "Kaufe niemals Codes oder gib Kontodaten auf Drittanbieter-Seiten ein; nutze nur offizielle Roblox-Funktionen"
             }
           ]
         }
@@ -375,68 +375,68 @@
       "items": [
         {
           "question": "Was ist Clone Builders?",
-          "answer": "Clone Builders ist ein Roblox-Bau- und Automatisierungsspiel, in dem eine einzelne Baueinheit Kopien von sich selbst erstellt. Diese Klone sammeln Ressourcen, errichten Bauwerke und versorgen Maschinen, sodass aus einem kleinen Team eine selbstlaufende Bauproduktion werden kann."
+          "answer": "Clone Builders ist eine experimentelle Roblox-Bau-Sandbox von Synoptic Interactive. Du gibst NPC-Klonen eine Idee und sie verwenden ein strukturiertes Bausystem, um Teile zu platzieren, ihre Größe anzupassen, sie zu bewegen und zu Kreationen in der Welt zusammenzusetzen."
         },
         {
           "question": "Muss ich Robux ausgeben, um in Clone Builders voranzukommen?",
-          "answer": "Nein. Clone Builders lässt sich kostenlos spielen, und geduldige Spieler erreichen dieselben Meilensteine, indem sie den Klon-Loop am Laufen halten und Multiplikatoren vor Kosmetik kaufen. Bezahloptionen beschleunigen vor allem Timer."
+          "answer": "Die offizielle Beschreibung dokumentiert keine kostenpflichtige Progression, Pässe oder Multiplikatoren. Behandle Behauptungen über erforderliche Robux-Ausgaben als unbestätigt."
         },
         {
-          "question": "Was sollte ich in Clone Builders zuerst upgraden?",
-          "answer": "Priorisiere zuerst Klon-Kapazität und Spawn-Ökonomie, weil sie alle anderen Gewinne vervielfachen. Ergänze danach Produktionsrate und Kostenreduktion und spare multiplikative oder Prestige-Upgrades für das Mittel- und Endspiel auf."
+          "question": "Was sollte ich in Clone Builders zuerst tun?",
+          "answer": "Beginne mit einer kleinen Idee, beobachte, wie deine Klone Teile platzieren, ihre Größe anpassen und sie bewegen, und setze dann eine einfache Kreation zusammen. Das Spiel wird als Testgelände beschrieben, also erwarte, dass sich das Verhalten im Laufe der Zeit ändert."
         },
         {
-          "question": "Wie bekomme ich kostenlose Belohnungen in Clone Builders?",
-          "answer": "Löse funktionierende Codes im Einstellungs- oder Code-Menü im Spiel ein. Codes unterscheiden zwischen Groß- und Kleinschreibung, laufen ohne Vorwarnung ab und sollten nur im offiziellen Spiel eingelöst werden, niemals auf einer Drittanbieter-Seite gekauft werden."
+          "question": "Gibt es Codes oder kostenlose Belohnungen in Clone Builders?",
+          "answer": "Vom offiziellen Spiel werden keine funktionierenden Codes dokumentiert. Die Beschreibung enthält kein Code-System, daher ist jede Seite, die aktive Clone Builders-Codes behauptet, unbestätigt."
         },
         {
           "question": "Wie viele Klone kann ich in Clone Builders steuern?",
-          "answer": "Jedes klonbasierte Bauspiel setzt aus Leistungs- und Unterhaltsgründen ein Limit. Kenne dein aktuelles Klon-Limit, bevor du es überschreitest, denn zusätzliche Klone über ein weiches Limit hinaus verbrauchen Ressourcen, die Upgrades besser nutzen würden."
+          "answer": "Die offizielle Beschreibung dokumentiert keine Klon-Obergrenze. Prüfe die Limits im Spiel direkt und halte Experimente klein genug, um das Klon-Verhalten klar beobachten zu können."
         },
         {
-          "question": "Wo finde ich Anleitungen und Updates zu Clone Builders?",
-          "answer": "Dieses Clone Builders Wiki sammelt an einem Ort Anfängerschritte, Anleitungen zu Bauen und Klonverhalten, Ressourcen- und Upgrade-Prioritäten, Steuerung, Basis-Layouts, Codes und einen Update-Tracker."
+          "question": "Wo finde ich Clone Builders-Leitfäden und Updates?",
+          "answer": "Dieses Clone Builders Wiki sammelt Anfängerschritte, das Bausystem, Klon-Verhalten, Bauideen, Ratschläge für private Server und einen Update-Tracker an einem Ort, basierend auf der offiziellen Roblox-Seite und dokumentierten Fakten."
         }
       ]
     },
     "finalCta": {
       "title": "Bereit, Clone Builders zu meistern?",
-      "description": "Von deinem ersten Klon bis zu großen automatisierten Bauwerken deckt unser Community-Wiki alles mit kostenlosen, aktuellen Anleitungen ab.",
-      "primary": "Lies die Anfänger-Anleitung",
+      "description": "Von deiner ersten Klon-Idee bis zu großen zusammengesetzten Bauten – unser Fan-Wiki bietet dir kostenlose, klar belegte Leitfäden.",
+      "primary": "Anfängerleitfaden lesen",
       "secondary": "Auf Roblox spielen"
     }
   },
   "guide": {
-    "overviewTitle": "Clone Builders Wiki Anleitung: Anfänger-Walkthroughs & wie man spielt",
-    "overviewDescription": "Starte hier mit den Anleitungen des Clone Builders Wiki – Anfänger-Walkthroughs, wie man spielt, Tutorials und praktische Tipps zum Klonen, Bauen und schnellen Vorankommen."
+    "overviewTitle": "Clone Builders Wiki Leitfaden: Anfänger-Walkthroughs & Spielanleitung",
+    "overviewDescription": "Beginne hier mit den Clone Builders Wiki-Leitfäden – Anfänger-Walkthroughs, Spielanleitung, Tutorials und praktische Tipps, um Klonen Ideen zu geben, das Bausystem zu nutzen und Strukturen zu erstellen."
   },
   "mechanics": {
-    "overviewTitle": "Clone Builders Wiki Mechaniken: Klonen, Bauen, Klone & KI",
-    "overviewDescription": "Verstehe die Kernsysteme des Clone Builders Wiki – Klonen, Bauen, deine Basis, das Labor und die Klon-KI, die deine Produktionslinien automatisiert."
+    "overviewTitle": "Clone Builders Wiki Mechaniken: Klon-Bauen & Sandbox-Systeme",
+    "overviewDescription": "Verstehe die Kernsysteme des Clone Builders Wiki – das strukturierte Bausystem, Klon-Verhalten, das Zusammensetzen von Teilen und die experimentelle Sandbox, die sich im Laufe der Zeit verändert."
   },
   "progression": {
-    "overviewTitle": "Clone Builders Wiki Fortschritt: Level, Freischaltungen & beste Builds",
-    "overviewDescription": "Verfolge deinen Fortschritt im Clone Builders Wiki – XP und Level, Freischaltungen, Upgrades und die besten Builds, um dein Klon-Imperium Schritt für Schritt auszubauen."
+    "overviewTitle": "Clone Builders Wiki Fortschritt: Freischaltungen & Bauprojekte",
+    "overviewDescription": "Verfolge den Fortschritt im Clone Builders Wiki – was die offizielle Beschreibung dokumentiert, was nicht, und die besten Bauprojekte zum Ausprobieren, während du die Sandbox erlernst."
   },
   "controls": {
     "overviewTitle": "Clone Builders Wiki Steuerung: Tastatur, Mobil & Befehle",
-    "overviewDescription": "Jede Steuerung des Clone Builders Wiki, die du brauchst – Tastatur- und Mausbelegung, Touch-Steuerung für Mobilgeräte und Konsolenbefehle an einem Ort."
+    "overviewDescription": "Jede Clone Builders Wiki-Steuerung, die du brauchst – Tastatur- und Mausbelegungen, mobile Touch-Steuerung sowie Kamera- oder Bausteuerung an einem Ort."
   },
   "maps": {
     "overviewTitle": "Clone Builders Wiki Karten & Welten: Kreationen und Showcase",
-    "overviewDescription": "Entdecke Karten und Welten des Clone Builders Wiki – Baukarten, Spielerkreationen, Showcases und Sandbox-Weltanleitungen für jeden Baumeister."
+    "overviewDescription": "Erkunde Clone Builders Wiki-Karten und Welten – Baukarten, Spielerkreationen, Showcases und Sandbox-Weltführer für jeden Baumeister."
   },
   "items": {
     "overviewTitle": "Clone Builders Wiki Gegenstände: Materialien, Ressourcen & Werkzeuge",
-    "overviewDescription": "Die Gegenstände des Clone Builders Wiki erklärt – Materialien, Ressourcen und Werkzeuge, die du brauchst, um effizient zu bauen, herzustellen und deine Basis zu erweitern."
+    "overviewDescription": "Clone Builders Wiki-Gegenstände erklärt – die offizielle Beschreibung dokumentiert keine Materialien, Ressourcen oder Werkzeuge, daher behandelt dieser Abschnitt, was bestätigt ist und was nicht."
   },
   "codes": {
-    "overviewTitle": "Clone Builders Wiki Codes: Aktive Codes & wie man sie einlöst",
-    "overviewDescription": "Alle Codes des Clone Builders Wiki an einem Ort – aktive Codes, wie man sie einlöst und Lösungen für ungültige oder abgelaufene Codes."
+    "overviewTitle": "Clone Builders Wiki Codes: Aktive Codes & Einlösung",
+    "overviewDescription": "Clone Builders Wiki-Codes an einem Ort – das offizielle Spiel dokumentiert kein Code-System, daher erklärt diese Seite, was du vermeiden solltest und wie du sicher bleibst."
   },
   "community": {
-    "overviewTitle": "Clone Builders Wiki Community: Discord, Reddit und Updates",
-    "overviewDescription": "Werde Teil der Clone Builders Wiki Community – Discord- und Reddit-Links, offizielle Updates und wo du andere Baumeister findest."
+    "overviewTitle": "Clone Builders Wiki Community: Updates & Spieler-Leitfäden",
+    "overviewDescription": "Finde Clone Builders Wiki-Community-Informationen – offizielle Updates, wo du den Entwicklern folgen kannst und wo du Bauten mit anderen Spielern teilen kannst."
   },
   "shared": {
     "wikiNavigation": "Wiki-Navigation",
@@ -449,26 +449,26 @@
     "nextSteps": "Nächste Schritte",
     "needHelp": "Brauchst du Hilfe?",
     "relatedReading": "Verwandte Lektüre",
-    "relatedGuides": "Verwandte Anleitungen",
+    "relatedGuides": "Verwandte Leitfäden",
     "readMore": "Mehr lesen",
     "officialMedia": "Offizielle Medien",
     "home": "Startseite",
-    "noGuidesAvailable": "Noch keine Anleitungen verfügbar. Schau bald wieder vorbei!"
+    "noGuidesAvailable": "Noch keine Leitfäden verfügbar. Schau bald wieder vorbei!"
   },
   "footer": {
     "aboutTitle": "Clone Builders Wiki",
-    "about": "Das Clone Builders Wiki ist ein unabhängiger, von Fans erstellter Guide-Hub zu Klon-Baumechaniken, Bautipps, Bauideen, Steuerung und wichtigem Spielwissen – für neue und erfahrene Spieler gleichermaßen.",
+    "about": "Clone Builders Wiki ist ein unabhängiges, von Fans erstelltes Leitfaden-Hub, das die Klon-Bau-Sandbox, das strukturierte Bausystem zum Platzieren, Anpassen der Größe, Bewegen und Zusammensetzen von Teilen, Bauideen, Steuerung und essenzielles Spielwissen für neue und erfahrene Spieler gleichermaßen abdeckt.",
     "quickLinks": "Schnelllinks",
-    "guides": "Anleitungen",
+    "guides": "Leitfäden",
     "legal": "Rechtliches",
-    "copyright": "2026 Clone Builders Wiki. Inoffizielles Fan-Wiki, nicht mit den Clone Builders Entwicklern oder Roblox verbunden.",
-    "description": "Kostenloses Roblox-Bau- und Automatisierungsspiel. Erstelle Klone, erweitere deine Basis und schalte neue Baumöglichkeiten frei.",
-    "playGame": "Spiele Clone Builders auf Roblox",
+    "copyright": "2026 Clone Builders Wiki. Inoffizielles Fan-Wiki, nicht verbunden mit den Clone Builders-Entwicklern, Synoptic Interactive oder Roblox.",
+    "description": "Kostenlose Roblox-Klon-Bau-Sandbox. Gib Klonen eine Idee, nutze das strukturierte Bausystem und setze Kreationen zusammen.",
+    "playGame": "Clone Builders auf Roblox spielen",
     "officialDiscord": "Offizieller Discord",
     "officialYoutube": "Offizielles YouTube",
-    "vvBuilder": "Clone Builders Werkzeuge",
-    "beginnerGuide": "Anfänger-Anleitung",
-    "privacyPolicy": "Datenschutzerklärung",
+    "vvBuilder": "Clone Builders Tools",
+    "beginnerGuide": "Anfängerleitfaden",
+    "privacyPolicy": "Datenschutzrichtlinie",
     "termsOfService": "Nutzungsbedingungen",
     "codesGuide": "Codes",
     "itemGuides": "Gegenstände & Materialien",

@@ -1,115 +1,87 @@
 export const metadata = {
-  title: "Constructores clón a escala: una guía práctica de las mecánicas de construcción con clones",
-  description: "Aprende cómo funcionan los constructores clón en los juegos de construcción, cómo poner tareas en cola, evitar clones desaprovechados y escalar una plantilla de clones sin que tu base se detenga.",
+  title: "Clone Builders en Roblox: Cómo funciona el sandbox de construcción con NPC",
+  description: "Una guía fundamentada sobre Clone Builders en Roblox: lo que documenta la página oficial sobre dar ideas a los clones, el sistema de construcción estructurado y los servidores privados.",
   category: "mechanics",
-  date: "2026-10-02",
-}
+  date: "2026-10-14",
+};
 
-## Por qué los constructores clón lo cambian todo en la construcción
+Clone Builders es una de esas experiencias de Roblox que son más fáciles de entender viéndolas que leyendo sobre ellas. Le entregas una idea a un grupo de clones NPC, y ellos se ponen manos a la obra para convertir esa idea en algo físico dentro del mundo usando un sistema de construcción estructurado. No hay bucle de combate, ni escalera de progresión, ni inventario que gestionar. Todo el atractivo está en observar a trabajadores autónomos colocar, redimensionar, mover y ensamblar piezas mientras tú decides qué deberían intentar a continuación.
 
-Los constructores clón convierten la construcción de una tarea pesada en un puzle de logística. En lugar de colocar cada muro, rampa y caja de almacenamiento a mano, generas duplicados, les entregas una lista de tareas y ves cómo una base se ensambla sola mientras te concentras en la siguiente expansión. Ese cambio es exactamente la razón por la que la construcción con constructores clón se ha vuelto una mecánica tan reconocible en juegos de sandbox, colonias y estilo fábrica.
+Eso lo convierte en un tipo de sandbox distinto de los juegos creativos bloque a bloque que la mayoría de los jugadores de Roblox ya conoce. Este artículo se ciñe a lo que realmente documenta la página oficial de [[🏗️] CLONE BUILDERS!](https://www.roblox.com/games/98456203230140/CLONE-BUILDERS), señala lo que las guías de terceros reportan como observación y no como hecho confirmado por los desarrolladores, y es honesto sobre las muchas cosas que el juego simplemente no explica en ningún lugar oficial.
 
-El atractivo es simple: tu rendimiento deja de estar limitado por la mano que usa el ratón y empieza a estarlo por lo bien que planificas. Pero la mecánica es engañosamente profunda. Una plantilla de clones mal gestionada es más lenta que construir en solitario: los clones chocan, duplican trabajo, se adentran en terreno sin terminar y se quedan inactivos cuando no miras. Esta guía cubre cómo funciona realmente la mecánica, cómo poner trabajo en cola de forma eficiente y cómo escalar de dos clones a un equipo de construcción completo sin que colapsen tus FPS ni tu cordura.
+## Lo que realmente dice la página oficial
 
-## ¿Qué cuenta como constructor clón?
+El registro verificado de Roblox para la experiencia (place 98456203230140) indica que el creador es el grupo Synoptic Interactive, con el lugar creado el 2026-09-14 y actualizado por última vez el 2026-10-14. Los servidores admiten hasta 15 jugadores, y el juego ha acumulado aproximadamente 4,2 millones de visitas. Esas cifras provienen del registro oficial, no de conjeturas.
 
-El término abarca dos ideas relacionadas, y la mayoría de los juegos se apoyan en una o en ambas:
+La propia descripción anuncia una breve lista de características:
 
-- **Clones unitarios**: trabajadores, drones o copias de tu propio personaje que caminan físicamente hasta una obra y colocan bloques, paneles o piezas.
-- **Clones de estructura**: un comando o herramienta que copia una construcción existente y la estampa en otro lugar, de modo que un diseño terminado se convierte en muchos.
+- Le das una idea a tus clones, y ellos la construyen.
+- Un sistema de construcción estructurado se encarga de colocar, redimensionar, mover y ensamblar piezas.
+- El juego es un campo de pruebas para los proyectos más amplios relacionados con clones de los desarrolladores, así que los experimentos que se realicen aquí pueden llegar a sus futuros juegos.
+- La experiencia cambia constantemente, con nuevas características que aparecen con el tiempo.
+- Se recomiendan servidores privados para construcciones grandes o minijuegos.
 
-Ambos existen para eliminar el trabajo manual repetitivo. La diferencia importa porque los clones unitarios cuestan recursos y atención de forma continua, mientras que los clones de estructura cuestan una configuración única y luego escalan casi sin coste.
+Ese es todo el alcance anunciado. Destaca la ausencia en la descripción oficial de: cualquier mención a unidades, equipamiento, niveles, sistemas gacha, botines de jefes, niveles de progresión, mapas o códigos. Si has visto esos términos asociados a Clone Builders en otros lugares, no provienen de los desarrolladores.
 
-| Tipo de clon | Qué hace | Mejor uso | Principal desventaja |
-|---|---|---|---|
-| Clon trabajador generado | Ejecuta tareas de construcción en cola paso a paso | Bases orgánicas que crecen de forma irregular | Necesita comida, energía o mantenimiento |
-| Clon espejo | Copia tus propias acciones mientras construyes | Estructuras y muros simétricos | Se rompe en terreno irregular |
-| Clon de plano | Estampa al instante un diseño guardado | Módulos repetidos como barracones o granjas | Ignora las particularidades del terreno local |
-| Clon temporal | Existe para una tarea y luego desaparece | Reparaciones rápidas y puentes | No se puede reutilizar ni mejorar |
+## Cómo funciona el bucle de construcción de clones
 
-Los informes de la comunidad favorecen sistemáticamente un enfoque híbrido: usa clones de plano para todo lo repetitivo y reserva tus clones trabajadores para el trabajo desordenado y específico de cada sitio que una herramienta de estampado no puede manejar.
+El bucle principal descrito oficialmente es sencillo. Un jugador proporciona una idea, y los clones la ejecutan a través de un sistema de construcción que admite cuatro operaciones: colocar piezas, redimensionarlas, moverlas y ensamblarlas en una estructura terminada. Piénsalo menos como un menú de fabricación y más como delegación. No estás arrastrando cada ladrillo a su posición tú mismo; estás describiendo un resultado y observando cómo los NPC lo interpretan.
 
-## El bucle central de la construcción con constructores clón
+Como la descripción llama al juego un campo de pruebas, espera que esa interpretación sea imperfecta. Los clones pueden producir algo inesperado, ineficiente o directamente extraño. Esa inestabilidad es, posiblemente, el punto. Los desarrolladores enmarcan toda la experiencia como experimental, lo que significa que el comportamiento inusual de los clones es una característica del entorno y no un informe de error en potencia.
 
-Una vez entiendes el bucle, la mecánica deja de parecer aleatoria. Casi todas las implementaciones siguen las mismas cinco etapas:
+### Por qué importa la entrada de la "idea"
 
-1. **Inspeccionar**: confirma que el suelo esté lo bastante plano, despeja obstáculos y marca la huella.
-2. **Encolar**: emite las tareas en el orden en que realmente pueden completarse, no en el orden en que quieres que terminen.
-3. **Asignar**: empareja el tipo de clon con el tipo de tarea. Un clon transportista nunca debería ser tu soldador principal.
-4. **Verificar**: recorre la obra y revisa si hay piezas a medio terminar antes de empezar la siguiente fase.
-5. **Replicar**: guarda la sección terminada como plano para que la siguiente cueste una fracción del esfuerzo.
+Dado que la única entrada documentada es una idea, la habilidad práctica en Clone Builders es aprender a formular lo que quieres. Una indicación vaga da a los clones más margen para improvisar; una específica los limita. La página oficial no documenta una sintaxis de indicaciones, un límite de caracteres ni una lista de palabras clave, así que la mejor forma de aprender qué funciona es probar distintas formulaciones en el juego y observar los resultados. No hay una fórmula publicada que memorizar.
 
-El punto de fallo más común es el paso dos. Los jugadores encolan un tejado antes que los pilares de apoyo y luego se preguntan por qué sus clones están ahí parados sosteniendo materiales que no pueden usar. Ordenar las tareas por dependencia —cimientos, luego muros, luego tejado, luego interiores— elimina casi todo el tiempo de inactividad.
+## Servidores privados y proyectos más grandes
 
-| Rol del clon | Tarea principal | Orden de prioridad | Notas |
-|---|---|---|---|
-| Topógrafo | Despeja el suelo, marca la huella | 1.º | Barato, rápido, evita rehacer trabajo |
-| Transportista | Mueve materiales a la obra | 2.º | Duplica en rutas largas |
-| Ensamblador | Coloca piezas estructurales | 3.º | Tu cuello de botella en la mayoría de construcciones |
-| Acabador | Detalles, cableado, decoración | 4.º | Puede trabajar en paralelo con los ensambladores |
-| Clon de reparación | Arregla daños y deterioro | Continuo | A menudo se olvida hasta que algo se rompe |
+La descripción oficial recomienda explícitamente servidores privados para construcciones grandes y minijuegos. Es una pista significativa sobre la escala prevista. Los servidores públicos tienen un límite de 15 jugadores, y si todo el mundo está ejecutando clones simultáneamente, el espacio y la atención disponibles para una estructura ambiciosa se reducen rápidamente.
 
-Si quieres ver cómo funciona un comando de copia literal en un juego sandbox convencional, la [referencia del comando /clone de Minecraft](https://minecraft.wiki/w/Commands/clone) es un caso de estudio útil. Te permite duplicar una región definida de bloques, opcionalmente filtrada por una máscara o movida en lugar de copiada: la misma lógica que usan los clones de plano en constructores más especializados.
+Para cualquier cosa que quieras construir sin interrupciones —una gran creación colaborativa, o un minijuego que estés prototipando usando mano de obra clon— un servidor privado es el camino documentado. La página no anuncia precios, así que consulta directamente la opción de servidor privado en el juego para conocer las condiciones actuales en lugar de fiarte de una cifra de un artículo de terceros.
 
-## Construcción con clones vs. construcción en solitario vs. automatización total
+| Documentado oficialmente | No documentado oficialmente |
+|---|---|
+| Dar una idea a los clones para que construyan | Sintaxis de indicaciones o reglas de palabras clave |
+| Colocar, redimensionar, mover, ensamblar piezas | Teclas de acceso rápido o esquemas de control |
+| Campo de pruebas experimental para proyectos futuros | Juegos futuros específicos o fechas de lanzamiento |
+| Actualizaciones constantes y nuevas características | Notas de parche o registro de cambios |
+| Servidores privados para construcciones grandes y minijuegos | Precios o límites de servidores privados |
+| Hasta 15 jugadores por servidor | Mapas, niveles o desbloqueables |
 
-No todos los proyectos merecen un equipo de clones. A veces construir a mano es genuinamente más rápido, sobre todo para trabajos pequeños o muy detallados. La tabla siguiente es una guía aproximada de decisión basada en la experiencia típica de los jugadores.
+## Observaciones de la comunidad frente a documentación de los desarrolladores
 
-| Enfoque | Velocidad en construcciones pequeñas | Velocidad en construcciones grandes | Control | Coste de recursos |
-|---|---|---|---|---|
-| Construcción en solitario | La más rápida | Penosamente lenta | Total | Mínimo |
-| Construcción con constructores clón | Moderada | Muy rápida | Compartido | De bajo a medio |
-| Scripts de automatización total | Lenta de configurar | La más rápida | El más bajo | Alto |
+Las guías de terceros y los vídeos de jugadores sobre Clone Builders es mejor tratarlos como observaciones secundarias. Pueden ser genuinamente útiles para ver cómo se desarrolla el comportamiento de los clones en la práctica, pero no son documentación de los desarrolladores. Cuando una guía describe una técnica o una peculiaridad, esa es la experiencia de alguien en una versión concreta de un juego experimental —y los juegos experimentales cambian.
 
-Una regla útil de los informes de la comunidad: si una estructura se va a repetir tres veces o más, vale la pena crear una cadena de clones para ella. Si es una pieza decorativa única, hazla tú mismo.
+La regla práctica: confía en la página oficial para saber qué es el juego, y confía en tus propias pruebas en el juego para saber cómo se comporta actualmente. Si una fuente de la comunidad y la descripción oficial discrepan sobre la existencia de una característica, gana la descripción.
 
-También hay un coste oculto de los clones que los jugadores nuevos pasan por alto: consumen atención. Cada clon que generas es otra entidad cuyo enrutamiento, inventario y estado quizá tengas que revisar. Los equipos de cinco a ocho clones suelen ser el punto óptimo para la mayoría de los jugadores antes de que la carga de gestión empiece a comerse el tiempo que ahorraste.
+## Verificar las afirmaciones por tu cuenta
 
-## Consejos prácticos para sacar más partido a tus constructores clón
+Como el juego cambia constantemente y la descripción es deliberadamente escueta, la autoverificación es el método fiable. Abre la página oficial del juego, lee la descripción actual y comprueba la fecha de "última actualización" en el registro. Si ha avanzado más allá del 2026-10-14, es posible que se hayan lanzado nuevas características desde que se escribió este artículo.
 
-Aquí, pequeños ajustes producen ganancias desproporcionadas. Estos son los hábitos a los que los jugadores experimentados vuelven una y otra vez.
+En el juego, puedes comprobar si hay controles actualizados, cambios en la interfaz o nuevas opciones de construcción simplemente jugando una sesión. Si algo no está documentado en la página oficial y no es visible en el juego, trátalo como no confirmado en lugar de real.
 
-- **Construye primero una zona de preparación.** Los clones desperdician enormes cantidades de tiempo caminando. Un depósito central con materiales preclasificados reduce drásticamente la distancia de viaje.
-- **Limita el tamaño de tu equipo.** Más clones no significa automáticamente más producción. Prueba incrementos de dos y detente cuando la producción deje de subir.
-- **Usa colas de tareas cortas.** Las colas largas ocultan errores. Los lotes de cinco a diez tareas son más fáciles de verificar y corregir.
-- **Nivela el terreno antes de generar clones.** Los errores de enrutamiento en pendientes son la causa número uno de proyectos de construcción con clones estancados.
-- **Guarda planos en el momento en que algo funcione.** Un diseño verificado vale más que un equipo más rápido.
-- **Asigna clones de reparación dedicados.** El deterioro y los daños se acumulan durante las expansiones largas.
+## Preguntas frecuentes
 
-| Consejo | Por qué funciona | Configuración rápida |
-|---|---|---|
-| Depósito central | Reduce la distancia a pie | Coloca almacenamiento a pocas casillas de la obra |
-| Límite de equipo | Evita atascos de enrutamiento | Empieza con 4, añade 2 a la vez |
-| Colas cortas | Los errores aparecen antes | Vuelve a encolar cada 5–10 tareas |
-| Preparación del terreno | Evita clones atascados | Aplana un margen alrededor de la huella |
-| Biblioteca de planos | Elimina el trabajo de diseño repetido | Guarda cada módulo terminado |
+### ¿Clone Builders tiene códigos promocionales?
 
-## Escalar, límites y errores comunes
+La página oficial no documenta ningún código de ningún tipo. No te fíes de listas de códigos de sitios agregadores.
 
-Escalar una plantilla de clones tiene menos que ver con números brutos y más con eliminar cuellos de botella. En la mayoría de los juegos, el cuello de botella se mueve a medida que creces: empieza siendo el suministro de materiales, pasa a ser el enrutamiento y el espacio, y finalmente se convierte en tu propia velocidad de toma de decisiones.
+### ¿Hay unidades, niveles o botines de jefes?
 
-| Error | Síntoma | Solución |
-|---|---|---|
-| Clonar antes de despejar | Clones atascados o girando | Inspecciona y aplana primero |
-| Sin prioridad de tareas | Clones inactivos a mitad de construcción | Ordena las tareas por dependencia |
-| Huellas superpuestas | Los clones se bloquean entre sí | Separa los módulos por una casilla |
-| Ignorar el mantenimiento | Los clones se detienen a mitad del proyecto | Automatiza comida, energía o combustible desde el principio |
-| Sin plano guardado | Reconstruir desde cero | Guarda inmediatamente después de verificar |
+Ningún sistema de ese tipo aparece en la descripción oficial. La experiencia se anuncia como un sandbox de construcción con clones NPC, no como un juego de ejércitos o de progresión.
 
-Otra consideración al escalar: los límites de entidades. Muchos motores limitan cuántas unidades activas pueden existir antes de que el rendimiento se degrade. Si tus FPS caen cuando aparece el equipo, ese es tu techo real, no el menú de construcción del juego.
+### ¿Cuántos jugadores caben en un servidor?
 
-La experiencia de los jugadores sugiere que las configuraciones más sólidas tratan a los clones como infraestructura y no como una novedad. Cuando dejas de pensar "cuántos clones puedo generar" y empiezas a pensar "cuál es mi cuello de botella actual", toda la mecánica encaja en su sitio.
+Hasta 15, según el registro oficial.
 
-## FAQ
+### ¿Debería usar un servidor privado?
 
-**¿Los constructores clón reemplazan por completo la construcción manual?**
-No. La mayoría de los jugadores sigue construyendo a mano estructuras pequeñas o muy detalladas. La construcción con constructores clón brilla en módulos repetitivos —muros, bloques de viviendas, granjas y líneas de producción— donde la consistencia importa más que el control artístico.
+Los desarrolladores recomiendan uno para construcciones grandes y minijuegos. Para experimentar de forma casual, un servidor público está bien.
 
-**¿Cuántos clones debería tener activos a la vez?**
-Empieza con un equipo pequeño, de unos cuatro, y añade dos a la vez mientras observas tu producción. Detente cuando añadir más clones ya no aumente el trabajo completado por minuto.
+### ¿Está conectado con otros juegos?
 
-**¿Por qué mis clones se quedan parados sin hacer nada?**
-Los culpables habituales son rutas bloqueadas, materiales faltantes o tareas encoladas en mal orden. Revisa primero la ruta hasta la obra y luego verifica que la lista de tareas esté secuenciada por dependencia.
+La descripción dice que los experimentos aquí pueden llegar a los futuros juegos de los desarrolladores, pero no los nombra ni da plazos.
 
-**¿Son mejores los clones de plano que los clones trabajadores?**
-Resuelven problemas distintos. Los planos son más rápidos y baratos para estructuras idénticas, mientras que los clones trabajadores manejan terrenos irregulares y diseños únicos que un estampado no puede encajar limpiamente.
+## Conclusión
+
+Clone Builders es un sandbox experimental construido en torno a la delegación: tú aportas la idea, los clones aportan la mano de obra a través de un sistema estructurado de construcción por piezas. Con aproximadamente 4,2 millones de visitas, servidores de 15 jugadores y una descripción que se autodenomina abiertamente un campo de pruebas, la expectativa honesta es cambio constante y rarezas ocasionales. Empieza en la [página oficial de Roblox](https://www.roblox.com/games/98456203230140/CLONE-BUILDERS), prueba primero ideas sencillas y pásate a un servidor privado cuando tus ambiciones superen un vestíbulo público.

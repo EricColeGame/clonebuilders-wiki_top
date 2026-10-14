@@ -1,122 +1,103 @@
 export const metadata = {
-  title: "Klonen in Clone-Buildern erklärt: Kernmechaniken, Tipps und Gewinnstrategien",
-  description: "Ein praktischer Leitfaden zur Klonmechanik in Clone-Buildern: wie Duplikation funktioniert, was sie kostet, welche Rollen zuerst kopiert werden sollten und welche Fehler deinen Build ausbremsen.",
+  title: "Clone Builders Roblox Anleitung: So funktioniert die NPC-Bau-Sandbox",
+  description: "Erfahre, wie Clone Builders Roblox funktioniert: Gib Klonen eine Idee, sieh zu, wie sie Teile platzieren und skalieren, und teste große Projekte auf einem privaten Server.",
   category: "mechanics",
-  date: "2026-10-02",
-}
+  date: "2026-10-14",
+};
 
-Das Klonen in Clone-Buildern gehört zu den am meisten missverstandenen Mechaniken in modernen Strategie-, Sandbox- und Survival-Spielen. Auf den ersten Blick wirkt es wie kostenlose Produktion: Knopf drücken, Duplikat erhalten, endlos wiederholen. In der Praxis ist es ein Ressourcenpuzzle mit harten Obergrenzen, steigenden Kosten und Zeitfenstern, die nachlässiges Spiel bestrafen. Es zu verstehen ist wichtig, denn Spieler, die Duplikation beherrschen, produzieren beständig mehr als Gegner, die die Mechanik gar nicht anfassen.
+Die Roblox-Erfahrung namens Clone Builders Roblox ist eine experimentelle Bau-Sandbox der Gruppe Synoptic Interactive. Statt jeden Stein per Hand zu platzieren, gibst du deinen Klonen eine Idee und lässt sie Teile in der Welt zusammensetzen. Die offizielle Seite beschreibt sie als Testgelände für die größeren klonbezogenen Projekte des Studios, weshalb sich die Erfahrung ständig verändert und ungewöhnliches Klonverhalten Teil des Konzepts ist statt ein Bugreport, der darauf wartet, gemeldet zu werden.
 
-Dieser Leitfaden schlüsselt auf, wie Klonen in Clone-Buildern genreübergreifend tatsächlich funktioniert — die verschiedenen Duplikationsmodelle, die dahinterstehende Wirtschaft, die Build Orders, die skalieren, und die Fallen, die einen Run ausbremsen. Alles hier ist auf allgemeine Mechaniken statt auf einen bestimmten Titel ausgerichtet, sodass du es anwenden kannst, egal ob du einen Echtzeit-Armeeaufbauer, eine Basenbau-Sandbox oder ein Sammel-RPG mit Klon-Gimmick spielst.
+Diese Anleitung hält sich an das, was der Entwickler tatsächlich bewirbt. Wo die Community Lücken gefüllt hat, ist das als Drittanbieter-Beobachtung gekennzeichnet. Wo gar nichts dokumentiert ist, wird das klar gesagt, damit du keine Zeit damit verschwendest, nach Systemen zu suchen, die es vielleicht gar nicht gibt.
 
-## Was Klonen in Clone-Buildern in der Praxis bedeutet
+## Was Clone Builders Roblox tatsächlich ist
 
-Der Begriff umfasst zwei miteinander verbundene Ideen. Erstens beschreibt er ein Spielsystem, mit dem du Einheiten, Strukturen oder Charaktere duplizieren kannst, statt jede einzeln von Grund auf herzustellen. Zweitens beschreibt er die Spieler, die ihre gesamte Strategie um dieses System herum aufbauen — diejenigen, die die erste Kopie als Vorlage behandeln und jede weitere Kopie als Hebel.
+Laut dem offiziellen Roblox-Eintrag ist Clone Builders Roblox eine Bau-Sandbox rund um NPC-Klone. Du gibst diesen Klonen eine Idee, und sie reagieren, indem sie ein strukturiertes Bausystem nutzen, das Teile platzieren, skalieren, bewegen und zusammensetzen kann. Das Endergebnis ist eine Kreation in der Welt statt ein Menübildschirm voller Freischaltungen.
 
-Die meisten Umsetzungen fallen in eines von vier Modellen, und jedes davon begrenzt Fortschritt anders.
+Der Entwickler Synoptic Interactive rahmt das Ganze als Experiment. Die offizielle Beschreibung besagt, dass das Projekt als Testgelände für zukünftige klonbezogene Spiele dient und dass Experimente aus dieser Sandbox in diese späteren Titel einfließen können. Dieser eine Satz erklärt die meisten Designentscheidungen: Features erscheinen, Verhalten verschiebt sich, und die Erfahrung ist zum Herumstochern gedacht, nicht zum Abschließen.
 
-| Klonmodell | Was kopiert wird | Typische Kostenhürde | Wo es vorkommt |
-|---|---|---|---|
-| Einheiten-Duplikation | Kampfeinheiten, Arbeiter, Drohnen | Energie, Versorgung oder Bevölkerungsgrenze | Echtzeitstrategie und Armeeaufbauer |
-| Struktur- oder Bauplan-Klonen | Gebäude, Produktionsketten, ganze Layouts | Bauzeit und Rohstoffe | Basenbau- und Automatisierungs-Sandboxes |
-| Charakter-Klonen | Helden, Crew, Gruppenmitglieder | Abklingzeiten und seltene Währung | Auto-Battler, Roguelites, Sammel-RPGs |
-| Selbst- oder Wellen-Klonen | Die Spielerfigur oder der Spawner selbst | Risiko, das Original zu verlieren | Arcade-Survival und Tower Defense |
+Der Ort wurde am 2026-09-14 erstellt und zuletzt am 2026-10-14 aktualisiert, laut offiziellem Eintrag, mit bis zu 15 Spielern pro Server und rund 4,2 Millionen Besuchen zum Zeitpunkt des Abrufs. Diese Zahlen zeigen, dass die Erfahrung aktiv ist und häufig angefasst wird, nicht eingefroren.
 
-Der entscheidende Unterschied ist, ob der Klon *permanent* oder *temporär* ist. Permanente Klone verändern deine Wirtschaft für immer; temporäre Klone sind Burst-Werkzeuge, die du zu einem bestimmten Moment einsetzt. Die beiden zu verwechseln ist der schnellste Weg, einen Run zu verschwenden.
+Die offizielle Seite kannst du hier ansehen: https://www.roblox.com/games/98456203230140/CLONE-BUILDERS
 
-## Die zentrale Klon-Schleife, Schritt für Schritt
+## Die Idee-zu-Bau-Schleife und das strukturierte Bausystem
 
-Jeder Clone-Builder folgt ungefähr derselben Fünf-Schritte-Schleife, egal wie unterschiedlich die Oberfläche aussieht. Wenn du die Schleife lernst, kannst du Probleme diagnostizieren, statt zu raten.
+Die vom Entwickler beworbene Kernschleife ist kurz beschrieben und offen im Spiel:
 
-| Schritt | Was du tust | Häufige Falle |
+1. Du gibst deinen Klonen eine Idee (einen Prompt oder eine Anweisung).
+2. Die Klone interpretieren diese Idee und handeln danach mithilfe des strukturierten Bausystems.
+3. Dieses System platziert, skaliert, bewegt und setzt Teile zu einer Kreation zusammen.
+4. Du beobachtest, passt an und versuchst es erneut.
+
+Das wichtige Wort ist "strukturiert". Die Klone werden nicht als freie Generatoren beschrieben, die zufällige Geometrie abwerfen. Sie arbeiten innerhalb eines definierten Satzes von Bauaktionen — Platzierung, Skalierung, Bewegung, Zusammensetzung — und das ist es, was die Ausgabe wie einen Bau wirken lässt statt wie Rauschen. Wenn du schon einmal Bau-Sandboxen genutzt hast, ist die mentale Verschiebung die, dass du Arbeit anleitest, statt sie selbst auszuführen.
+
+Was die offizielle Seite nicht dokumentiert, ist ebenso wichtig. Sie listet keine Units, Ausrüstung, Stufen, Gacha-Systeme, Boss-Drops, Level, Maps oder Codes auf. Wenn du hierhergekommen bist, um eine Fortschrittsleiter zu finden, hat der Entwickler keine beworben. Die Erfahrung wird als Sandbox und Testgelände beschrieben, und diese Rahmung zieht sich konsistent durch die offizielle Beschreibung.
+
+## Beworbene Features, Community-Hinweise und was nicht dokumentiert ist
+
+Diese drei Kategorien getrennt zu halten, erspart viel Verwirrung, denn Clone Builders Roblox ist die Art von Erfahrung, bei der Spieler annehmen, dass Systeme existieren, nur weil ähnliche Spiele sie haben.
+
+| Kategorie | Detail | Quelle |
 |---|---|---|
-| 1. Eine Quelle sichern | Das schützen oder bauen, was Klone erzeugt | Klone bauen, bevor die Quelle verteidigbar ist |
-| 2. Die ersten Kosten zahlen | Die günstigste Kopie ausgeben, die du je bekommst | Die erste Kopie überspringen, um Ressourcen zu „sparen“ |
-| 3. Rollen zuweisen | Jeder Kopie eine Aufgabe geben: sammeln, kämpfen, bauen, aufklären | Jeden Klon identisch machen |
-| 4. Produktion skalieren | Kopien hinzufügen, solange die Kosten noch niedrig sind | Überbauen, bevor dein Einkommen nachzieht |
-| 5. Reinvestieren oder umwandeln | Überschüssige Klone in Upgrades oder neue Quellen verwandeln | Klone horten, die untätig herumstehen |
+| Beworben | Gib Klonen eine Idee und sieh zu, wie sie bauen | Offizieller Eintrag |
+| Beworben | Strukturiertes System platziert, skaliert, bewegt, setzt Teile zusammen | Offizieller Eintrag |
+| Beworben | Experimente können in zukünftige Spiele der Entwickler einfließen | Offizieller Eintrag |
+| Beworben | Ständige Veränderung mit neuen Features | Offizieller Eintrag |
+| Beworben | Private Server empfohlen für große Bauten oder Minispiele | Offizieller Eintrag |
+| Beworben | Bis zu 15 Spieler pro Server; erstellt 2026-09-14; aktualisiert 2026-10-14 | Offizieller Eintrag |
+| Beobachtung | Ungewöhnliches Klonverhalten wird von Spielern weithin berichtet | Drittanbieter-Anleitungen und Spielerdiskussionen |
+| Nicht dokumentiert | Units, Ausrüstung, Stufen, Gacha, Boss-Drops, Level, Maps, Codes | Fehlen auf der offiziellen Seite |
 
-### Warum Timing Masse schlägt
+Die Zeile "ständige Veränderung" ist wichtiger, als sie aussieht. Wenn ein Feature, das du letzte Woche gesehen hast, sich heute anders verhält, passt das zu einem Projekt, das die Entwickler als experimentell beschreiben. Drittanbieter-Anleitungen können nützlich sein, um eine Momentaufnahme des Verhaltens festzuhalten, aber sie altern schnell und sind keine Entwicklerdokumentation.
 
-Berichte aus der Community von Strategie- und Sandbox-Spielern weisen wiederholt auf dasselbe Muster hin: Der Gewinner ist selten die Person mit den meisten Klonen auf dem Bildschirm. Es ist die Person, deren Klone *online* waren, während des Fensters, in dem sie zählten.
+## Private Server, Servergröße und warum Skalierung alles verändert
 
-Ein Duplikat, das dreißig Sekunden zu spät erzeugt wird, kann schlimmer sein als gar kein Duplikat, weil es Ressourcen verbraucht hat, die in Verteidigung oder Einkommen hätten fließen können. Bevor du eine weitere Kopie in die Warteschlange stellst, stelle eine Frage: Was wird dieser Klon in der nächsten Minute tun? Wenn die Antwort „warten“ lautet, hast du ihn zu früh gebaut.
+Die offizielle Beschreibung empfiehlt ausdrücklich einen privaten Server für große Bauten und Minispiele. Das ist eine praktische Warnung, kein Verkaufsargument. Mit bis zu 15 Spielern pro Server kann sich eine öffentliche Sitzung mit Leuten füllen, die gleichzeitig ihre eigenen Klon-Experimente laufen lassen, und teilelastige Kreationen werden schwieriger zu handhaben, wenn andere Spieler zur selben Welt beitragen.
 
-Weitere Timing-Regeln, die du verinnerlichen solltest:
+Private Server helfen auf drei konkrete Weisen:
 
-- **Klonen vor einem Kampf, nicht währenddessen.** Produktion während des Kampfes bedeutet meist, dass deine Quelle exponiert ist.
-- **Fasse deine Kopien in Stapeln zusammen.** In Wellen zu klonen lässt dich Kostenspitzen abfedern und einen Upgrade-Zyklus beibehalten.
-- **Stoppe an der Obergrenze, nicht bei null.** Halte eine Reserve, damit eine verlorene Quelle deinen Run nicht beendet.
-- **Passe die Klonanzahl an deine Unterhaltskosten an.** Mehr Kopien, als du bezahlen kannst, sind ein langsamer Verlust, kein schneller.
+- **Saubererer Bauraum.** Weniger konkurrierende Bauten und weniger Teile, die um deine Aufmerksamkeit kämpfen.
+- **Wiederholbares Testen.** Wenn du verstehen willst, wie Klone auf eine bestimmte Idee reagieren, macht eine kontrollierte Umgebung Vergleiche aussagekräftig.
+- **Minispiel-Setups.** Da der Entwickler Minispiele ausdrücklich als Anwendungsfall für private Server nennt, ist das der dokumentierte Kontext für strukturierte Aktivitäten statt freies Bauen.
 
-## Klon-Wirtschaft: Kosten, Obergrenzen und Skalierung
+Es gibt keine dokumentierten Preis- oder Serverkonfigurationsdetails über diese Empfehlung hinaus, also schau im In-Game-Servermenü nach, was auf deinem Account tatsächlich verfügbar ist.
 
-Klonen in Clone-Buildern steht und fällt mit der Wirtschaft. Duplikation ist fast immer am Anfang günstig und später teuer, was eine Kurve erzeugt, die frühe Aggression belohnt und spätes Zögern bestraft.
+## Wie du mit Klon-Prompts nützliche Ergebnisse erzielst
 
-| Ressource | Warum sie das Klonen begrenzt | Priorität |
-|---|---|---|
-| Energie oder Mana | Begrenzt, wie viele Kopien gleichzeitig aktiv sein können | Hoch — zuerst darum herum planen |
-| Bevölkerungs- oder Versorgungsgrenze | Harte Obergrenze für alle Einheiten, geklont oder nicht | Hoch — upgraden, bevor du sie erreichst |
-| Rohstoffe | Bezahlen Struktur- und Bauplan-Klonen | Mittel — skalieren mit Kartenkontrolle |
-| Seltene Währung oder Abklingzeiten | Begrenzen Charakter-Klonen | Mittel — für hochwertige Kopien sparen |
-| Zeit | Die versteckte Kosten hinter jedem Klon | Höchste — die einzige Ressource, die du nicht farmen kannst |
+Da die offizielle Seite keine Prompt-Syntax, Kategorien oder Beispiele veröffentlicht, ist der ehrliche Rat, Prompting als Experimentieren zu behandeln. Dennoch gibt dir die beworbene Struktur einen vernünftigen Ansatz:
 
-Ein nützliches mentales Modell sind **Klon-Schulden**. Jedes Duplikat, das du erzeugst, fügt laufende Kosten hinzu: Unterhalt, Aufmerksamkeit oder Platz. Wenn die Leistung eines Klons seine Schulden nicht innerhalb eines angemessenen Zeitfensters übersteigt, ist er eine Belastung. Erfahrene Spieler prüfen ihr Roster regelmäßig und streichen die Kopien, die keine Miete mehr zahlen.
+- **Fang eng an.** Eine einzige klare Idee gibt dem strukturierten System etwas Konkretes zum Platzieren, Skalieren, Bewegen und Zusammensetzen.
+- **Beobachte die Abfolge, nicht nur das Ergebnis.** Weil das System als strukturiert beschrieben wird, verrät dir das Beobachten der Aktionsreihenfolge mehr über Klonverhalten als die Beurteilung des fertigen Baus allein.
+- **Ändere jeweils eine Sache.** Da Features als ständig wechselnd beschrieben werden, hilft das Isolieren von Variablen dabei, den Unterschied zwischen einem neuen Verhalten und einem zufälligen Ergebnis zu erkennen.
+- **Neu bauen statt reparieren.** Wenn Klone etwas Unbrauchbares zusammensetzen, ist ein Neustart mit einer klareren Idee meist schneller, als ein Teilelayout manuell zu reparieren.
 
-Es gibt außerdem eine Skalierungsfalle, die es wert ist, benannt zu werden. Viele Systeme bepreisen jeden neuen Klon etwas höher als den vorherigen. Das bedeutet, die zehnte Kopie kostet weit mehr als die zweite, obwohl sie dieselbe Aufgabe erfüllt. Die Lösung ist Diversifizierung: Statt einem weiteren Klon nachzujagen, upgrade die vorhandenen oder investiere in eine zweite Produktionsquelle.
+Nichts davon garantiert ein bestimmtes Ergebnis. Der Entwickler rahmt die Erfahrung als Testgelände, was bedeutet, dass deine Ergebnisse teilweise der Sinn des Experiments sind.
 
-## Build Orders, Rollen und Einheitentabellen, die Spiele gewinnen
+## Nicht dokumentierte Details selbst überprüfen
 
-Klonen in Clone-Buildern ohne Plan endet mit einem Haufen identischer Einheiten und keiner Antwort auf einen Gegenangriff. Rollen sind das, was Quantität in Strategie verwandelt.
+Mehrere gängige Suchbegriffe werden von der offiziellen Seite schlicht nicht beantwortet. Wenn du wissen willst, ob ein bestimmtes Feature existiert, überprüfe es in der Erfahrung selbst, statt einer Zusammenfassung zu vertrauen:
 
-| Klonrolle | Stärken | Schwächen | Wann bauen |
-|---|---|---|---|
-| Sammler | Finanziert alles andere; sicherste Kopie | Wehrlos; lädt zu Überfällen ein | Erste zwei oder drei Kopien |
-| Bauarbeiter | Erweitert Territorium und Produktion | Langsame Amortisation | Sobald das Einkommen stabil ist |
-| Brecher | Absorbiert Schaden; hält Engpässe | Teuer zu ersetzen | Vor deinem ersten echten Kampf |
-| Fernkampf oder Support | Bestraft Ansammlungen; bufft die Frontlinie | Zerbrechlich ohne Schutz | Zusammen mit deinem zweiten Brecher |
-| Späher oder Saboteur | Enthüllt Pläne; stört feindliches Klonen | Geringer Kampfwert | Vor jedem größeren Einsatz |
+1. Öffne die offizielle Seite und lies die aktuelle Beschreibung — sie ändert sich zusammen mit dem Projekt.
+2. Tritt der Erfahrung bei und prüfe die In-Game-Oberfläche auf alles, was einem Baumenü, Prompt-Feld oder Einstellungsbereich ähnelt.
+3. Teste das Verhalten direkt mit einer einfachen Idee und notiere, was die Klone tatsächlich tun.
+4. Für große Projekte richte einen privaten Server ein, wie der Entwickler empfiehlt.
 
-### Eine einfache Eröffnungs-Build-Order
-
-Nutze dies als Grundgerüst und passe es an das Tempo deines Spiels an:
-
-1. Baue eine Produktionsquelle und verteidige sie sofort.
-2. Erstelle zwei Sammler-Klone — die günstigsten Kopien, die du je bekommst.
-3. Füge einen Bauarbeiter-Klon hinzu, um Einkommen oder Kartenkontrolle auszubauen.
-4. Füge einen Brecher-Klon erst hinzu, wenn du etwas hast, das es wert ist, beschützt zu werden.
-5. Upgrade deine Quelle, bevor du Klon Nummer sechs erstellst.
-6. Füge Support- oder Fernkampfkopien hinzu, sobald die Frontlinie halten kann.
-
-Die Reihenfolge ist wichtiger als die Zahlen. Spieler, die einer solchen Abfolge folgen, erreichen ihren Midgame-Powerspike tendenziell früher als Spieler, die reaktiv klonen.
-
-## Häufige Fehler neuer Clone-Builder
-
-Die meisten Fehler in Klonsystemen sind vorhersehbar, was bedeutet, dass sie behebbar sind. Die folgende Tabelle ordnet das Symptom der zugrunde liegenden Gewohnheit zu.
-
-| Fehler | Symptom | Lösung |
-|---|---|---|
-| Zu früh klonen | Schwache Wirtschaft, ständige Verluste | Quelle fertigstellen und erstes Einkommens-Upgrade abschließen |
-| Identische Einheiten klonen | Keine Antwort auf Konter | Mindestens drei unterschiedliche Rollen zuweisen |
-| Obergrenze ignorieren | Produktion stockt mitten im Kampf | Kapazität upgraden, bevor du sie erreichst |
-| Klone horten | Untätige Einheiten, verschwendeter Unterhalt | Jeder Kopie einen Dauerbefehl geben |
-| Dem neuesten Klon nachjagen | Steigende Kosten, sinkende Effizienz | Vergleiche jede neue Kopie stattdessen mit einem Upgrade |
-| Kein Ersatzplan | Ein Überfall beendet den Run | Halte eine Ressourcenreserve für den Wiederaufbau |
-
-Zwei Gewohnheiten trennen starke Spieler von durchschnittlichen. Die erste ist eine **Vor-dem-Klonen-Checkliste**: Quelle verteidigt, Kapazität verfügbar, Rolle zugewiesen, Reserve intakt. Die zweite ist eine **Nach-dem-Spiel-Analyse**: Zähle, wie viele Klone du gebaut hast und wie viele tatsächlich etwas beigetragen haben. Die meisten Spieler entdecken, dass ein Drittel ihrer Kopien nie sinnvolle Arbeit geleistet hat.
+Wenn eine Mechanik nicht in der Beschreibung steht und nicht im Spiel sichtbar ist, ist es am sichersten anzunehmen, dass sie nicht dokumentiert ist, statt anzunehmen, dass sie irgendwo versteckt existiert.
 
 ## FAQ
 
-**Ist Klonen in Clone-Buildern immer die stärkste Strategie?**
-Nein. Duplikation ist ein Multiplikator, und Multiplikatoren zahlen sich nur aus, wenn es etwas zu multiplizieren gibt. Wenn dein Grundeinkommen oder deine Einheitenqualität schwach ist, skaliert Klonen nur eine schwache Position hoch. Baue zuerst das Fundament und dupliziere es dann.
+**Ist Clone Builders Roblox ein Fortschrittsspiel?**
+Nein. Die offizielle Beschreibung präsentiert es als Bau-Sandbox und Testgelände. Level, Stufen, Ausrüstung, Gacha und Boss-Drops sind nirgendwo auf der offiziellen Seite dokumentiert.
 
-**Wie viele Klone sollte ich gleichzeitig aktiv halten?**
-Nutze deine Unterhaltskosten und die Obergrenze als Richtlinie statt einer festen Zahl. Eine praktische Regel aus Spielererfahrung: Jeder aktive Klon sollte entweder Ressourcen erzeugen, Boden halten oder Druck ausüben. Wenn eine Kopie nichts davon tut, mustere sie aus und reinvestiere.
+**Gibt es Codes für Clone Builders Roblox?**
+Die offizielle Seite dokumentiert keine. Verlass dich bei dieser Erfahrung nicht auf Code-Listen von Drittanbietern.
 
-**Behalten geklonte Einheiten ihre Upgrades?**
-Das hängt ganz vom System ab. Manche Spiele kopieren den aktuellen Zustand einer Einheit, manche setzen Klone auf den Basiswert zurück, und manche kopieren Upgrades, aber keine temporären Buffs. Teste dies früh mit einem einzelnen günstigen Klon — es verändert deine gesamte Upgrade-Reihenfolge.
+**Wie viele Spieler passen in einen Server?**
+Bis zu 15 Spieler pro Server, laut offiziellem Eintrag. Für große Bauten oder Minispiele empfiehlt der Entwickler einen privaten Server.
 
-**Was ist der schnellste Weg, die Klonmechanik zu verbessern?**
-Führe dieselbe Eröffnungs-Build-Order mehrmals aus und notiere, wo sie zusammenbricht. Wiederholung bringt dir die Kostenkurve und die Zeitfenster schneller bei als das Lesen jedes Leitfadens, und sie macht den Moment, in dem deine Wirtschaft stockt, offensichtlich.
+**Warum verändert sich die Erfahrung ständig?**
+Weil Synoptic Interactive sie als Testgelände für ihre größeren klonbezogenen Projekte beschreibt, mit Experimenten, die in zukünftige Spiele einfließen können. Ständige Veränderung ist beworben, nicht versehentlich.
 
-Die Kurzfassung: Behandle Klonen in Clone-Buildern zuerst als Wirtschaftsproblem und erst danach als Kampfproblem. Schütze die Quelle, zahle die günstigsten Kosten früh, gib jeder Kopie eine Aufgabe und streiche alles, was aufhört, seinen Unterhalt zu verdienen.
+**Steht sie in Verbindung zu anderen NPC-Builder-Erfahrungen?**
+Die Entwickler nennen Resurrected_Doves NPC Builders als Inspiration, was ein nützlicher Bezugspunkt für das allgemeine Konzept von Klonen, die bauen, ist.
+
+Für die maßgeblichen, aktuellen Details prüfe immer https://www.roblox.com/games/98456203230140/CLONE-BUILDERS statt einer statischen Anleitung.

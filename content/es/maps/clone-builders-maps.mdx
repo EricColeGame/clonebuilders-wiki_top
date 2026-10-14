@@ -1,146 +1,80 @@
 export const metadata = {
-  title: "Mapas de Clone Builders: Guía completa para diseñar, probar y compartir niveles personalizados",
-  description: "Descubre cómo funcionan los mapas de clone builders: desde el diseño de cuadrícula y las rutas hasta las pruebas de juego y su publicación. Consejos prácticos para diseñar niveles personalizados que los jugadores adoren.",
+  title: "Clone Builders Roblox: Cómo funciona el sandbox de construcción de clones",
+  description: "Una guía práctica sobre Clone Builders en Roblox: cómo los clones NPC colocan, redimensionan y ensamblan piezas, además de lo que la página oficial documenta y lo que no.",
   category: "maps",
-  date: "2026-10-03",
-}
+  date: "2026-10-14",
+};
 
-## Por qué los mapas de clone builders merecen un esfuerzo de diseño serio
+La experiencia de Roblox listada como "[🏗️] CLONE BUILDERS!" (place 98456203230140) es un sandbox de construcción experimental del grupo Synoptic Interactive. En lugar de controlar un avatar cuadriculado que blande un pico o dispara un bláster, actúas más bien como un director. Le das una idea a los clones NPC, y ellos usan un sistema de construcción estructurado para colocar, redimensionar, mover y ensamblar piezas en creaciones dentro del mundo. Si has navegado por Roblox buscando "clone builders" esperando un juego de gestión de tropas o de progresión, esta página explica qué es realmente la experiencia, qué verifica el registro oficial y qué permanece sin documentar.
 
-Un solo mapa bien hecho puede mantener vivo un juego de construcción durante años después de su lanzamiento. Si alguna vez has abierto un editor de niveles, te has quedado mirando una cuadrícula vacía y te has preguntado por dónde empezar, esta guía sobre **mapas de clone builders** es para ti. El gran diseño de niveles no consiste en llenar espacio, sino en moldear decisiones, y eso empieza mucho antes de que coloques tu primer mosaico.
+## Qué es realmente Clone Builders
 
-Diseñar **mapas de clone builders** se sitúa en algún punto entre la arquitectura y el diseño de juegos. Estás decidiendo dónde aparecen los jugadores, con qué rapidez se expanden, qué rutas se sienten arriesgadas y qué atajos se sienten ingeniosos. Si aciertas con esas decisiones, tu mapa se convierte en un favorito de la comunidad que se rehace, se remezcla y se recomienda. Si fallas, los jugadores se marchan tras una sola partida, por muy pulido que sea tu apartado visual.
+La página oficial de Roblox es la autoridad sobre esta experiencia, y su descripción es inusualmente clara sobre su identidad: es un sandbox de construcción donde los clones construyen. El bucle central anunciado es simple: dale una idea a tus clones y observa cómo construyen. El sistema de construcción se describe como estructurado, lo que significa que las piezas se colocan, redimensionan, mueven y ensamblan mediante pasos definidos en lugar de aparecer instantáneamente como un modelo terminado.
 
-Esta guía cubre todo el proceso: planificación, blockouts, rutas, equilibrio, pruebas de juego y publicación. Todo lo que aparece aquí se aplica tanto si construyes en un editor sandbox, en un conjunto de herramientas basado en mosaicos o en una suite completa de modding.
+Ese enfoque importa. No es un juego de combate, ni un juego de colección, ni un simulador idle. Los desarrolladores lo describen como un campo de pruebas para sus proyectos más grandes relacionados con clones, por lo que la experiencia funciona también como un laboratorio en vivo. Los experimentos que funcionan bien pueden llegar eventualmente a los futuros juegos de los desarrolladores, según la descripción oficial. El cambio constante se anuncia como una característica: nuevas funciones aparecen con el tiempo, y el comportamiento inusual de los clones es parte del territorio en lugar de un informe de error en potencia.
 
-## ¿Qué son exactamente los mapas de clone builders?
+El registro oficial obtenido el 14 de octubre de 2026 muestra que el lugar fue creado el 14 de septiembre de 2026 y actualizado por última vez el 14 de octubre de 2026. Admite hasta 15 jugadores por servidor y había acumulado aproximadamente 4,2 millones de visitas para esa fecha. La descripción atribuye la inspiración a NPC Builders de Resurrected_Dove, lo cual es un contexto útil para cualquiera que haya visto construcción impulsada por NPC en otras experiencias de Roblox.
 
-Los mapas de clone builders son niveles personalizados creados dentro de juegos cuyo bucle principal implica generar, duplicar o comandar unidades y estructuras. El elemento "clone" es el corazón mecánico: produces unidades desde una base, un generador o una fábrica, y luego las impulsas a través del terreno hacia un objetivo. El mapa es lo que hace que ese bucle resulte interesante.
+Puedes ver la página oficial aquí: https://www.roblox.com/games/98456203230140/CLONE-BUILDERS
 
-Como gran parte del desafío proviene del flujo de unidades y no de los reflejos puros, la disposición importa más que el espectáculo. Un mapa limpio y legible con rutas sólidas casi siempre rendirá mejor que un mapa precioso que confunde a los jugadores.
+## Cómo funciona el bucle de construcción de clones
 
-| Elemento del mapa | Qué hace | Error común |
-|---|---|---|
-| Zona de aparición | Define dónde empiezan las unidades y los jugadores | Demasiado pequeña, lo que provoca aglomeraciones iniciales |
-| Ruta principal | La ruta principal que recorren las unidades o los jugadores | Tramos largos y sin rasgos distintivos |
-| Ruta secundaria | Ofrece una elección de riesgo frente a recompensa | Idéntica a la ruta principal |
-| Punto de estrangulamiento | Crea tensión y valor defensivo | Demasiados, lo que frena todo el impulso |
-| Nodos de recursos | Impulsa las decisiones de expansión y economía | Agrupados en un único rincón seguro |
-| Zona del objetivo | Da a la partida una línea de meta clara | Mal señalizada para los jugadores nuevos |
+Según las características anunciadas, el bucle tiene tres etapas generales.
 
-### La escala importa más de lo que crees
+Primero, le das una idea a tus clones. La descripción oficial usa esta frase directamente, lo que sugiere que los clones se dirigen mediante un prompt o una instrucción en lugar de un control manual pieza por pieza. Las opciones exactas de redacción, los formatos de prompt o los elementos de interfaz no están documentados en la página oficial, así que trata cualquier afirmación específica sobre "tipos de ideas" o "menús de prompt" como no verificada hasta que la veas en el juego.
 
-Una trampa habitual entre principiantes es construir demasiado grande. Los mapas de clone builders sobredimensionados se sienten vacíos porque los jugadores pasan la mayor parte del tiempo caminando en lugar de decidiendo. Los informes de la comunidad favorecen de forma consistente las disposiciones compactas en las que en cada pantalla ocurre algo.
+Segundo, los clones interpretan esa idea usando el sistema de construcción estructurado. Este sistema coloca piezas, las redimensiona, las mueve y las ensambla. En la práctica, eso significa que puedes ver a un clon colocar una base, ajustar dimensiones, desplazar una pieza hasta alinearla y luego conectar componentes en una estructura más grande. Ver ese proceso desarrollarse es una parte importante del atractivo: se parece más a observar a un equipo de construcción que a arrastrar bloques tú mismo.
 
-Una regla útil: si un jugador puede cruzar tu mapa en menos de quince segundos, probablemente sea demasiado pequeño. Si tarda más de noventa segundos sin ningún evento relevante por el camino, casi con seguridad es demasiado grande.
+Tercero, el resultado es una creación dentro del mundo. Como el sistema se describe como experimental, los resultados pueden variar. Un clon podría producir algo reconociblemente cercano a la idea, o algo inesperado que aún use las mismas mecánicas de construcción. El propio enfoque de los desarrolladores de describir la experiencia como un campo de pruebas respalda esto: la variación y la sorpresa son esperadas, no excepcionales.
 
-## Principios de diseño fundamentales para mapas jugables
+## Características anunciadas vs. detalles no documentados
 
-Antes de tocar un solo accesorio, decide qué emoción debe producir el mapa. ¿Tensión? ¿Caos? ¿Relajación y creatividad? Cada decisión de disposición debe servir a ese objetivo.
+Ayuda separar lo que la página oficial afirma de lo que los jugadores podrían suponer.
 
-| Principio | Por qué importa | Autoevaluación rápida |
-|---|---|---|
-| Legibilidad | Los jugadores deben ver al instante adónde ir | ¿Puede un recién llegado adivinar la ruta en 5 segundos? |
-| Ritmo | Alternar presión y alivio mantiene la concentración | ¿Hay momentos tranquilos entre los combates? |
-| Elección significativa | Las rutas deben diferir en riesgo y recompensa | ¿Elegiría un veterano de forma distinta a un novato? |
-| Equilibrio simétrico | Evita ventajas injustas según el punto de aparición | ¿Tienen ambos bandos el mismo acceso al terreno clave? |
-| Verticalidad | Añade profundidad táctica sin mosaicos adicionales | ¿Tienen el terreno alto y el bajo sus propias contrapartidas? |
-| Puntos de referencia claros | Ayuda a la orientación y a las llamadas | ¿Pueden los jugadores nombrar cinco zonas distintas? |
+| Categoría | Estado |
+|---|---|
+| Dar una idea a los clones y verlos construir | Anunciado |
+| Sistema estructurado: colocar, redimensionar, mover, ensamblar piezas | Anunciado |
+| Los experimentos pueden llegar a futuros juegos de Synoptic Interactive | Anunciado |
+| Cambio constante con nuevas funciones | Anunciado |
+| Servidores privados recomendados para construcciones grandes y minijuegos | Anunciado |
+| Inspirado en NPC Builders de Resurrected_Dove | Anunciado |
+| Unidades, equipo, niveles, gacha, drops de jefes, niveles de progresión | No documentado |
+| Mapas, mundos, desbloqueables, códigos | No documentado |
 
-### Simetría frente a asimetría
+Esa segunda mitad de la tabla es deliberada. La descripción oficial no documenta unidades, equipo, niveles, sistemas gacha, drops de jefes, niveles de progresión, mapas ni códigos. Tampoco anuncia códigos promocionales, y ninguno aparece listado en la página oficial. Si encuentras un video o artículo que afirme lo contrario, esa afirmación no está respaldada por el propio registro del desarrollador. Cuando un término de búsqueda implica una lista de mapas o una escala de progresión, la respuesta honesta es que la página oficial no documenta ninguna. La forma de comprobarlo es sencilla: abre la experiencia en Roblox, lee el texto de la interfaz dentro del juego y compáralo con la descripción oficial. Si una función no es visible en ninguno de los dos lugares, no está documentada.
 
-La simetría especular perfecta es el punto de partida más seguro para los mapas de clone builders competitivos. Elimina el sesgo de aparición y facilita mucho el equilibrio, porque cualquier cambio que hagas se aplica por igual a ambos bandos.
+## Servidores privados y escala
 
-La asimetría es más emocionante, pero más difícil de ajustar. Si eliges ese camino, mantén equilibrado el *coste de oportunidad* en lugar de la geometría. Un bando puede tener una ruta más rápida hacia el centro, mientras que el otro tiene un acceso más sencillo a los recursos. Herramientas distintas, valor total similar.
+Una de las pocas piezas de orientación práctica que dan los desarrolladores es una recomendación más que un requisito: se recomiendan servidores privados para construcciones grandes o minijuegos. Esa recomendación tiene sentido dada la estructura del sandbox. Un servidor público permite hasta 15 jugadores, y varios jugadores dirigiendo clones a la vez pueden llenar un espacio de construcción compartido. Un servidor privado elimina esa variable, dando a tus clones espacio para trabajar sin competir por espacio o atención.
 
-## Herramientas y flujo de trabajo: de la cuadrícula en blanco al mapa terminado
+Esto es un consejo, no una promesa de mejores resultados. Nada en la página oficial garantiza que un servidor privado produzca construcciones más limpias o una construcción más rápida. Simplemente refleja la propia opinión de los desarrolladores sobre dónde rinde mejor la experiencia para proyectos ambiciosos.
 
-La mayoría de los creadores de mapas sigue una secuencia similar independientemente del editor que utilice. Saltarse las primeras etapas es la forma más rápida de perder semanas en detalles que acabarás borrando de todos modos.
+## Observaciones de la comunidad y guías de terceros
 
-| Etapa | Objetivo | Proporción de tiempo habitual |
-|---|---|---|
-| Boceto en papel | Fijar el concepto de la disposición | 5% |
-| Blockout | Probar el flujo con formas provisionales | 25% |
-| Fase de rutas | Colocar rutas, apariciones y objetivos | 15% |
-| Fase de detalle | Añadir accesorios, cobertura y decoración | 30% |
-| Iluminación y ambiente | Definir el tono y la legibilidad | 10% |
-| Optimización | Reducir el desorden y el coste de carga | 10% |
-| Publicar e iterar | Recopilar comentarios y parchear | 5% |
+Como la descripción oficial se centra en el concepto más que en un manual, algunos jugadores recurren a guías de terceros para interpretarlo. Esas guías son observaciones secundarias, no documentación del desarrollador. Pueden ser útiles para detectar patrones —por ejemplo, señalar que la producción de los clones tiende a seguir etapas reconocibles de colocación y ensamblaje—, pero no deben tratarse como autoritativas sobre mecánicas, controles o listas de funciones.
 
-### Construye primero el blockout, siempre
+Un enfoque razonable es leer material de la comunidad para orientarte y luego verificar cualquier cosa específica cargando la experiencia y probándola tú mismo. Si una guía de terceros describe una función que la página oficial nunca menciona, la función puede ser experimental, puede haber cambiado o puede ser una suposición. Dado el compromiso declarado de los desarrolladores con el cambio constante, incluso las observaciones precisas pueden quedar obsoletas rápidamente.
 
-Un blockout utiliza cajas simples y colores planos para representar el terreno. Se ve feo, y de eso se trata. Quieres juzgar el flujo sin que el arte te distraiga.
+## Qué esperar de un banco de pruebas en evolución
 
-Juega tu blockout en solitario antes de añadir nada bonito. Recorre todas las rutas, cronometra cada una y anota dónde te aburres o te confundes. Arreglar problemas en esta etapa cuesta minutos. Arreglarlos después de la fase de detalle cuesta días.
+La mentalidad más útil para esta experiencia es la de un participante en un experimento en curso. Synoptic Interactive la describe como un campo de pruebas para proyectos más grandes relacionados con clones, lo que significa que los sistemas que aprendas hoy pueden refinarse o ampliarse mañana. El lugar fue actualizado por última vez en la misma fecha en que se obtuvo el registro oficial, el 14 de octubre de 2026, lo cual es coherente con un proyecto mantenido activamente.
 
-### Mantén un documento de diseño
-
-Incluso uno breve ayuda. Anota el número de jugadores previsto, la duración de la partida, el número de rutas y la condición de victoria. Cuando recibas comentarios más adelante, este documento te dirá si una queja es un error o una decisión de diseño deliberada.
-
-## Equilibrar la dificultad sin frustrar a los jugadores
-
-La dificultad en los mapas de clone builders proviene de la presión, no del castigo. Los jugadores deberían perder porque cometieron un error legible, no porque el mapa ocultara información o generara una oleada inevitable.
-
-| Palanca de dificultad | Súbela | Bájala |
-|---|---|---|
-| Densidad de oleadas o unidades | Más presión simultánea | Menos embestidas, más espaciadas |
-| Distancia de recorrido | Rutas más largas y expuestas | Carriles más cortos y seguros |
-| Escasez de recursos | Menos nodos, ingresos más lentos | Más nodos cerca de la aparición |
-| Líneas de visión | Pasillos cortos y propicios para emboscadas | Terreno abierto con vistas largas |
-| Opciones de recuperación | Reparación o reconstrucción limitadas | Posiciones de repliegue generosas |
-| Complejidad del objetivo | Varios objetivos simultáneos | Un único objetivo principal claro |
-
-Un enfoque práctico consiste en ajustar una palanca a la vez y registrar el resultado. Cambiar tres variables al mismo tiempo hace imposible saber cuál rompió el equilibrio.
-
-### Usa niveles de dificultad
-
-Muchos creadores de éxito publican el mismo mapa en variantes fácil, estándar y difícil. Esto cuesta mucho menos esfuerzo que construir tres mapas separados y permite que una sola disposición sirva a un público mucho más amplio.
-
-## Pruebas de juego, iteración y compartir tu trabajo
-
-Tu primera prueba de juego te hará bajar los humos. Es normal, y es la hora más valiosa que dedicarás a cualquier proyecto.
-
-| Señal en las pruebas | Qué suele significar | Solución sugerida |
-|---|---|---|
-| Los jugadores se quedan quietos al principio | La disposición no está clara | Añade puntos de referencia o señales de iluminación |
-| Todo el mundo toma una sola ruta | Las otras rutas no resultan gratificantes | Mejora las recompensas de las rutas ignoradas |
-| Las partidas terminan demasiado rápido | El objetivo está demasiado expuesto | Añade distancia o terreno defensivo |
-| Las partidas se alargan | El objetivo está demasiado fortificado | Reduce la cobertura o abre un flanco |
-| Los jugadores nuevos se pierden | La señalización es débil | Usa contraste de color, altura y luz |
-
-### Recluta probadores fuera de tu grupo de amigos
-
-Los amigos son educados. Los desconocidos son honestos. Publica tu trabajo en foros de la comunidad, servidores de Discord y subreddits de creación de mapas donde la gente dé comentarios realmente directos. Haz preguntas concretas como "¿Qué ruta tomaste y por qué?" en lugar de "¿Te gustó?".
-
-### Dónde publicar
-
-Compartir es el momento en que los mapas de clone builders dejan de ser un pasatiempo privado. Plataformas como [Steam Workshop](https://steamcommunity.com/workshop/) permiten a los creadores subir niveles, etiquetarlos, recopilar valoraciones y enviar actualizaciones a todos los suscriptores. Ese bucle de retroalimentación —publicar, observar, parchear, volver a publicar— es la forma en que los mapas amateur se convierten en mapas pulidos.
-
-## Errores comunes que hunden mapas que por lo demás son buenos
-
-- **Decorar antes de probar.** El arte oculta los defectos de la disposición en lugar de arreglarlos.
-- **Ignorar el rendimiento.** Cientos de accesorios únicos pueden hundir los fotogramas por segundo en hardware modesto.
-- **Exceso de señalización.** Si necesitas flechas por todas partes, el problema es la propia disposición.
-- **Ausencia de un espacio seguro de aprendizaje.** Los jugadores nuevos necesitan una zona de baja presión para entender las reglas.
-- **Abandonar tras el lanzamiento.** La mayoría de los mapas de clone builders mejoran drásticamente a lo largo de tres o cuatro parches públicos.
-- **Copiar exactamente una disposición popular.** Estudia qué funciona y luego adáptalo a las mecánicas de tu propio juego.
-
-Reutiliza recursos siempre que puedas. Una biblioteca pequeña y bien organizada de accesorios, texturas y piezas modulares hará que tu próximo mapa se construya más rápido y tenga un estilo más coherente.
+Para los jugadores, eso corta en ambos sentidos. Obtienes acceso temprano a un comportamiento de clones en evolución y la oportunidad de experimentar con ideas que podrían influir en futuros juegos. También obtienes asperezas ocasionales, comportamiento cambiante y funciones que aparecen o cambian sin un anuncio formal. Ninguno de los dos resultados es un defecto del diseño; ambos son parte de lo que los desarrolladores anuncian.
 
 ## Preguntas frecuentes
 
-### ¿Qué son exactamente los mapas de clone builders?
+**¿Clone Builders es un juego de lucha o de tropas?**
+No. La página oficial describe un sandbox de construcción donde los clones colocan, redimensionan, mueven y ensamblan piezas según una idea que tú les das. No documenta unidades, combate ni sistemas de progresión.
 
-Son niveles personalizados creados dentro de juegos que giran en torno a generar o duplicar unidades y estructuras. El mapa define el terreno, las rutas, los puntos de aparición y los objetivos, y moldea directamente cómo se desarrolla el bucle de clonación y construcción.
+**¿Hay códigos promocionales?**
+La página oficial no documenta ninguno. No confíes en listas de códigos de sitios de terceros para esta experiencia.
 
-### ¿Necesito experiencia en programación para hacer mapas de clone builders?
+**¿Cuántos jugadores hay en un servidor?**
+Hasta 15 jugadores por servidor, según el registro oficial.
 
-Normalmente no. La mayoría de los editores modernos son visuales y basados en nodos, así que puedes colocar terreno, definir puntos de aparición y configurar objetivos sin escribir código. La programación ayuda para activadores avanzados, pero rara vez es necesaria para un primer mapa sólido.
+**¿Debería usar un servidor privado?**
+Los desarrolladores recomiendan servidores privados para construcciones grandes o minijuegos. Es una recomendación, no un requisito.
 
-### ¿Cuánto se tarda en construir un buen mapa?
-
-Calcula varias semanas de trabajo a tiempo parcial para obtener un resultado pulido: uno o dos días de planificación, una semana de blockout y el resto para detalle, equilibrio y pruebas de juego. Ir con prisas en el blockout es la razón más común por la que los proyectos se estancan.
-
-### ¿Cómo consigo comentarios útiles sobre mapas de clone builders?
-
-Publica pronto con una descripción clara de tu intención y luego pregunta a los probadores cuestiones concretas sobre la elección de ruta, el ritmo y los puntos de confusión. Mira grabaciones si es posible: lo que hacen los jugadores es mucho más informativo que lo que dicen.
+**¿Cómo compruebo si existe una función de la que se rumorea?**
+Abre la página oficial en https://www.roblox.com/games/98456203230140/CLONE-BUILDERS y la experiencia en sí, y luego busca la función en ambos lugares. Si ninguno la documenta, no está verificada.

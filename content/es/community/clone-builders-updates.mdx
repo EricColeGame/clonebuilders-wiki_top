@@ -1,156 +1,90 @@
 export const metadata = {
-  title: "Actualizaciones de Clone Builders explicadas: notas de parche, cambios del meta y consejos para jugadores",
-  description: "Una guía práctica sobre las actualizaciones de Clone Builders: cómo se implementan los parches, qué cambios importan y cómo mantener competitivo tu ejército de clones.",
+  title: "Clone Builders en Roblox: Dentro del sandbox experimental de Synoptic Interactive",
+  description: "Una guía sobre Clone Builders en Roblox, el sandbox experimental de construcción con NPC de Synoptic Interactive: funciones oficiales, notas de la comunidad y preguntas abiertas.",
   category: "community",
-  date: "2026-10-02",
-}
+  date: "2026-10-14",
+};
 
-## Por qué las actualizaciones de Clone Builders importan más que nunca
+Clone Builders es una de esas experiencias de Roblox que suenan simples hasta que realmente entras y la ves ocurrir. Le das una idea a un grupo de clones NPC, y ellos empiezan a colocar partes. Ese es todo el planteamiento, y es algo extraño y satisfactorio de ver. La experiencia, listada oficialmente en Roblox como [🏗️] CLONE BUILDERS! del grupo Synoptic Interactive, ha acumulado discretamente alrededor de 4,2 millones de visitas desde su lanzamiento en septiembre de 2026, lo que sugiere que muchos jugadores han entrado a ver qué hacen los clones.
 
-Las actualizaciones de Clone Builders son el latido de cualquier juego en el que generas, duplicas y comandas un ejército de copias. Si te pierdes un solo ajuste de equilibrio, la secuencia de construcción que perfeccionaste el mes pasado puede dejar de funcionar sin que te des cuenta. Por eso importa seguir las actualizaciones de Clone Builders: los jugadores que leen las notas del parche el primer día suelen ser los que marcan el ritmo en la tabla de clasificación para el tercer día.
+Este artículo desglosa lo que la página oficial de Roblox realmente anuncia, lo que la comunidad ha observado y — igual de importante — lo que no está documentado en ninguna parte. Si has estado buscando códigos de clone builders, una tier list o una guía de mapas, vas a querer leer con atención las secciones intermedias, porque la mayor parte de eso no existe en ninguna forma verificable.
 
-El género recompensa la preparación. Un clone builder es en parte simulador económico, en parte estrategia en tiempo real y en parte progresión repetitiva. Tus clones cuestan recursos, tardan en producirse y escalan de forma distinta según las rutas de mejora que elijas. Cuando un desarrollador ajusta un costo de aparición o un enfriamiento, ese único número repercute en todo: tu juego temprano, tus empujes sincronizados de mitad de partida y tu escalado de final de partida.
+## Qué es realmente Clone Builders
 
-En resumen, las actualizaciones no son ruido de fondo. Son la conversación sobre el equilibrio del juego, mantenida en público, y todos los jugadores están invitados.
+Según la ficha oficial de Roblox, Clone Builders es un sandbox de construcción experimental. Le das una idea a tus clones, y ellos usan un sistema de construcción estructurado para colocar, redimensionar, mover y ensamblar partes en creaciones dentro del mundo. Ese es el bucle central tal como se anuncia — sin combate, sin escalera de progresión, sin farmeo de recursos descrito en la página.
 
-### ¿Qué cuenta como un Clone Builder?
+Algunos detalles verificados del registro oficial (consultado el 14 de octubre de 2026):
 
-Los informes de la comunidad usan el término de forma amplia, pero la mayoría de las experiencias de clone builder comparten algunos rasgos:
+| Dato | Información oficial |
+|---|---|
+| Creador | Synoptic Interactive (grupo de Roblox) |
+| Lugar creado | 14 de septiembre de 2026 |
+| Última actualización | 14 de octubre de 2026 |
+| Capacidad de jugadores | Hasta 15 jugadores por servidor |
+| Visitas | Alrededor de 4,2 millones |
 
-- **Duplicación como mecánica central**: creas copias de una unidad, trabajador o personaje en lugar de reclutar unidades únicas.
-- **Economías que escalan**: los ingresos, la tasa de aparición y la capacidad guían tus decisiones.
-- **Árboles de mejora**: la calidad, la velocidad o la especialización de rol de los clones se desbloquean con el tiempo.
-- **Capas de mando**: diriges grupos de clones en lugar de un único héroe.
+Los desarrolladores describen la experiencia como un campo de pruebas para proyectos más grandes relacionados con clones en los que están trabajando. Ese encuadre importa. Significa que la experiencia está intencionalmente en flujo — pueden aparecer experimentos, el comportamiento de los clones puede cambiar y las funciones pueden añadirse o ajustarse con el tiempo. La descripción oficial señala explícitamente "cambios constantes con nuevas funciones".
 
-Si un juego tiene las cuatro, su ciclo de actualizaciones casi siempre girará en torno a los mismos pocos sistemas.
+## Funciones anunciadas, directamente de la página
 
-## Cómo suelen implementarse las actualizaciones de Clone Builders
+Estas son las cosas que la descripción oficial de Roblox realmente promete:
 
-Los estudios rara vez lanzan un parche monolítico. La mayoría mantiene una escalera de tamaños de actualización, cada uno con un propósito distinto y un nivel de disrupción distinto. Saber en qué peldaño estás te dice cuánto de tu estrategia está en riesgo.
+- **Dale una idea a los clones y míralos construir.** La interacción central se basa en instrucciones, no en control directo.
+- **Un sistema de construcción estructurado.** Los clones colocan, redimensionan, mueven y ensamblan partes en lugar de soltar geometría aleatoria.
+- **Una conexión con proyectos futuros.** Los experimentos en esta experiencia "pueden llegar a los futuros juegos de los desarrolladores", según la descripción oficial.
+- **Cambio continuo.** Las nuevas funciones son lo esperado, no la excepción.
+- **Servidores privados recomendados para construcciones grandes o minijuegos.** Esta es una recomendación directa de los desarrolladores, y tiene sentido práctico dado el límite de 15 jugadores por servidor.
 
-| Tipo de actualización | Disparador típico | Qué suele tocar | Qué tan rápido reacciona el meta |
-|---|---|---|---|
-| Hotfix | Exploit, cierre inesperado, error de duplicación | Lógica de aparición, datos guardados, estabilidad del servidor | Horas |
-| Parche de equilibrio | Datos de tasa de victorias y comentarios de jugadores | Estadísticas de unidades, costos, enfriamientos | Días a una semana |
-| Actualización de contenido | Ciclo estacional o mensual | Nuevos niveles de clones, mapas, modos | Una a dos semanas |
-| Renovación mayor | Aniversario o hito del motor | Progresión, economía, interfaz | Meses |
+También vale la pena señalar el crédito de inspiración: los desarrolladores citan NPC Builders de Resurrected_Dove como influencia. Si has jugado esa experiencia, reconocerás la familia general de ideas, aunque Clone Builders tiene su propia estructura.
 
-Los hotfix son los sigilosos. Rara vez vienen con una publicación de marketing, y a menudo cierran un truco no intencionado que una parte de la comunidad estaba usando en silencio. Si tu estrategia favorita dependía de una peculiaridad cercana a un exploit, asume que ya no está.
+## Lo que la página oficial no documenta
 
-Los parches de equilibrio son donde ocurre la lectura real. Un desarrollador puede describir un cambio como "ajuste menor", pero un cambio del diez por ciento en la velocidad de producción de clones puede reordenar por completo qué aperturas son viables.
+Aquí es donde mucho del tráfico de búsqueda se equivoca, así que seamos directos. Según la página oficial de Roblox consultada el 14 de octubre de 2026, lo siguiente **no está documentado**:
 
-Las actualizaciones de contenido son las divertidas: nuevos juguetes, nuevos mapas, nuevas razones para reconstruir. Las renovaciones son las que reinician por completo tus suposiciones, así que trátalas como un comienzo desde cero y no como un parche.
+- **Códigos.** No se describe ningún sistema de códigos. No confíes en sitios que prometen "códigos activos" a menos que los desarrolladores los publiquen en algún lugar oficial.
+- **Unidades, equipo, tiers, gacha, drops de jefes, niveles, mapas o sistemas de progresión.** Nada de esto aparece en la descripción oficial. Clone Builders es un sandbox de construcción, no un juego de ejércitos o de colección.
+- **Una lista de mapas, lista de mundos o lista de desbloqueables.** La página no enumera ninguna.
+- **Estadísticas de personajes, tasas de drop o atajos de teclado.** No están publicados.
 
-### Por qué importa la cadencia
+Si ves una guía que afirma tener estadísticas detalladas o un listado completo de mapas, trátala como especulación de terceros en el mejor de los casos. Las guías de terceros son observaciones secundarias, no documentación de los desarrolladores, y deben atribuirse como tales cuando se usen.
 
-Una cadencia constante es buena señal. Los estudios que lanzan actualizaciones de Clone Builders predecibles tienden a tener comunidades más sanas porque los jugadores pueden planificar en torno a ellas. Los calendarios erráticos crean ciclos de rumores, y los ciclos de rumores crean malos consejos.
+**Cómo verificar cualquier cosa por tu cuenta:** abre la página de Roblox enlazada arriba y lee la descripción actual, luego revisa en el juego cualquier panel de interfaz o texto de tutorial. Como la experiencia se actualiza con frecuencia, la página y el propio juego son las únicas fuentes fiables.
 
-## Leer las notas del parche como un veterano
+## Cómo la aborda la comunidad
 
-La mayoría de los jugadores hojea las notas del parche. Los veteranos las leen en un orden específico, porque la estructura de una nota de parche te dice dónde espera el desarrollador que haya resistencia.
+Las observaciones de la comunidad, que son secundarias y no oficiales, tienden a agruparse en torno a algunos temas. Los jugadores informan que la experiencia es mejor cuando la tratas como un juguete creativo en lugar de un juego que hay que superar. La recomendación de los desarrolladores de usar un servidor privado encaja con eso: si quieres intentar una construcción grande, o jugar un minijuego pequeño con amigos, un servidor privado elimina la imprevisibilidad de los desconocidos en un servidor público de 15 plazas.
 
-| Sección | Qué suele significar | Qué deberías hacer |
-|---|---|---|
-| "Ajustado" | Números que se movieron sin una dirección indicada | Probar primero en una partida privada o casual |
-| "Se corrigió un problema por el que…" | Se cerró un comportamiento no intencionado | Retirar cualquier build que dependiera de ello |
-| "Calidad de vida" | Cambios de interfaz, atajos o menús | Nada urgente, pero revisa tu memoria muscular |
-| "Problemas conocidos" | Los desarrolladores ya lo están rastreando | No inundes el canal de reportes |
-| "Notas de diseño" | El razonamiento detrás de un cambio | Lee esto primero: predice cambios futuros |
+Un enfoque práctico que muchos jugadores adoptan:
 
-Las notas de diseño son la parte más subestimada de cualquier parche. Cuando un desarrollador explica que quiere que los ejércitos de clones se sientan "más deliberados", puedes esperar que las actualizaciones futuras ralenticen las tasas de aparición o añadan costos. Leer la intención te permite prepararte para el próximo parche antes de que llegue.
+1. **Empieza en pequeño.** Dale a tus clones una idea concreta y acotada antes de escalar.
+2. **Observa el ensamblaje, no solo el resultado.** Lo interesante suele ser cómo se colocan, redimensionan y mueven las partes.
+3. **Pásate a un servidor privado para cualquier cosa ambiciosa.** Este es el propio consejo de los desarrolladores.
+4. **Vuelve después de las actualizaciones.** La página se actualizó por última vez el mismo día que este artículo, y el cambio es la norma declarada.
 
-### Una rutina de lectura práctica
+Ninguno de estos pasos garantiza un resultado concreto — el comportamiento de los clones en un sandbox experimental puede ser impredecible, lo cual es discutiblemente el punto.
 
-1. Lee las notas de diseño y los cambios principales.
-2. Destaca todo lo que toque tu build principal.
-3. Revisa la lista de "corregidos" por exploits en los que puedas haberte apoyado.
-4. Hojea las reacciones de la comunidad, pero filtra con dureza.
-5. Prueba un cambio a la vez en lugar de reconstruir todo de golpe.
+## Por qué vale la pena seguirlo
 
-## Qué suele cambiar en una actualización de Clone Builders
+Clone Builders ocupa un lugar inusual. No es un lanzamiento pulido y completo en contenido; es explícitamente un campo de pruebas. Eso significa que la experiencia en la que entras hoy puede verse notablemente distinta en unas semanas, y las funciones probadas aquí podrían aparecer en los futuros proyectos de los desarrolladores. Para los jugadores que disfrutan la experimentación en sandbox y el comportamiento emergente, eso es una virtud y no un defecto. Para los jugadores que buscan un juego de progresión estructurado, la página oficial no describe ninguno, y ninguna cantidad de lectura de guías hará aparecer sistemas que nunca fueron documentados.
 
-En todo el género, los mismos sistemas se tocan una y otra vez. Aquí es donde debes centrar tu atención, clasificado por cuánto afectan a tus resultados.
+Si quieres ver de qué son capaces los clones actualmente, la respuesta más honesta es entrar a la experiencia y darles algo que construir. La ficha oficial está en [CLONE BUILDERS!](https://www.roblox.com/games/98456203230140/CLONE-BUILDERS) — empieza ahí y luego verifica en el juego.
 
-| Sistema | Cambio común | Impacto en tu build | Prioridad |
-|---|---|---|---|
-| Economía de aparición | Costo por clon, tasa de ingresos, límites de capacidad | Remodela todo el juego temprano | Alta |
-| Estadísticas de clones | Salud, daño, velocidad de movimiento, comportamiento de rol | Cambia cada cálculo de combate | Alta |
-| Árbol de mejoras | Nuevos niveles, requisitos previos, reglas de reasignación | Afecta la planificación a largo plazo | Media |
-| Diseño del mapa | Puntos de estrangulamiento, nodos de recursos, puntos de aparición | Altera el posicionamiento y el control del mapa | Media |
-| Controles e interfaz | Atajos, selección de grupos, menús | Sobre todo comodidad, ocasionalmente velocidad | Baja |
+## FAQ
 
-El patrón es simple: la economía y las estadísticas deciden si tu plan funciona, mientras que los árboles y los mapas deciden cómo llegas hasta ahí.
+**¿Clone Builders tiene códigos?**
+La página oficial de Roblox no documenta ningún sistema de códigos. Si alguna vez se añaden códigos, la página oficial o el grupo Synoptic Interactive serían el lugar para confirmarlo.
 
-### Señales de que se acerca un cambio de meta
+**¿Hay una tier list o un listado de unidades?**
+No. La descripción oficial no menciona unidades, tiers de equipo, gacha ni drops de jefes. Clone Builders se describe como un sandbox de construcción, no como un juego de ejércitos o de progresión.
 
-Los informes de la comunidad a menudo señalan un cambio antes de que las notas del parche lo confirmen. Estate atento a estas pistas:
+**¿Cuántos jugadores caben en un servidor?**
+Hasta 15 jugadores por servidor, según el registro oficial. Los desarrolladores recomiendan un servidor privado para construcciones grandes o minijuegos.
 
-- **Adelantos de los desarrolladores** en blogs o streams de desarrollo que insinúan trabajo de "calidad de vida".
-- **Nerfs repetidos** a una estrategia dominante a lo largo de varios parches.
-- **Contenido nuevo que contrarresta a un favorito existente**: un reequilibrio suave disfrazado.
-- **Cambios silenciosos de estadísticas** que nunca aparecen en la lista principal.
+**¿Mi construcción puede transferirse a otros juegos?**
+La descripción oficial dice que los experimentos "pueden llegar a los futuros juegos de los desarrolladores", pero no promete construcciones o partidas guardadas transferibles. Trata esa frase como una declaración de intención, no como una garantía.
 
-Si dos o más de estos aparecen a la vez, espera un cambio significativo en las próximas actualizaciones de Clone Builders.
+**¿Con qué frecuencia se actualiza?**
+El registro oficial muestra el lugar creado el 14 de septiembre de 2026 y actualizado por última vez el 14 de octubre de 2026, y la descripción promete cambios constantes. Consulta la página oficial para el estado de actualización actual.
 
-## Informes de la comunidad y experiencia de jugador: qué dicen los foros
-
-La experiencia de jugador es una fuente de datos legítima, pero necesita filtrado. Las anécdotas de un solo jugador de alto rango no son lo mismo que un patrón reportado por docenas de jugadores de rango medio.
-
-| Señal | Fiabilidad | Por qué |
-|---|---|---|
-| Notas oficiales del parche | Alta | Autoritarias y fechadas |
-| Historial de ediciones de la wiki | Media-alta | Los editores suelen verificar los cambios |
-| Listas de niveles de la comunidad | Media | Reflejan las salas y los sesgos de un solo jugador |
-| Rumores de chat | Baja | Frecuentemente desactualizados o malinterpretados |
-| Compilaciones de clips | Media | Muestran resultados reales pero carecen de contexto |
-
-Un hábito útil es comprobar cuándo se publicó una afirmación. Los consejos escritos antes de las últimas actualizaciones de Clone Builders pueden ser activamente dañinos, especialmente si dependen de una sincronización de aparición que ya no existe.
-
-### Cómo probar afirmaciones de la comunidad
-
-- Reproduce la afirmación en una partida de bajo riesgo.
-- Compárala con tu build anterior en las mismas condiciones.
-- Cambia una variable a la vez.
-- Registra los resultados durante al menos unas cuantas partidas antes de confiar en un patrón.
-
-Esto convierte el parloteo vago de los foros en algo más cercano a evidencia.
-
-## Una rutina semanal para mantenerte al día
-
-No necesitas leer cada hilo. Necesitas una rutina repetible que capture los cambios que te importan.
-
-| Cuándo | Tarea | Tiempo necesario |
-|---|---|---|
-| Día del parche | Leer notas de diseño y cambios principales | 15 minutos |
-| Día del parche +1 | Ver o leer un análisis de un creador | 10 minutos |
-| Día del parche +3 | Hojear listas de niveles de la comunidad y ediciones de la wiki | 10 minutos |
-| Fin de semana | Probar dos builds revisadas | 45 minutos |
-| Mensual | Revisar tus elecciones de ruta de mejoras | 20 minutos |
-
-Eso es aproximadamente una hora y media por ciclo, y te mantiene por delante de la mayor parte de la base de jugadores.
-
-### Crear un registro personal de parches
-
-Mantén un documento simple con tres columnas: qué cambió, qué esperabas y qué ocurrió en realidad. Después de unos cuantos ciclos, notarás qué tipos de actualizaciones de Clone Builders afectan más a tu estilo de juego, y cuáles puedes ignorar sin problema.
-
-Para una visión más amplia de dónde viven muchas experiencias de creación de clones y cómo sus creadores publican registros de cambios, la [página oficial de la plataforma Roblox](https://www.roblox.com/) es un buen punto de partida, ya que una gran parte de los juegos de creación de clones se alojan y actualizan allí.
-
-## Preguntas frecuentes
-
-### ¿Con qué frecuencia salen las actualizaciones de Clone Builders?
-
-Varía mucho según el estudio. Los equipos pequeños suelen lanzar hotfixes horas después de un informe de bug y parches de equilibrio con un ritmo semanal o quincenal, mientras que los proyectos más grandes pueden agrupar cambios en lanzamientos mensuales o estacionales. La cadencia importa menos que la consistencia: los calendarios predecibles facilitan la planificación de tus builds.
-
-### ¿Las actualizaciones de Clone Builders alguna vez reinician el progreso?
-
-La mayoría de los parches de equilibrio y contenido conservan tu progreso y solo cambian números. Los reinicios completos son raros y normalmente están ligados a renovaciones mayores, reconstrucciones de la economía o fases de prueba previas al lanzamiento. Revisa siempre las secciones de "problemas conocidos" y notas de diseño, que suelen indicar claramente si los datos guardados se ven afectados.
-
-### ¿Dónde puedo encontrar información confiable sobre próximos cambios?
-
-Empieza con las notas oficiales del parche y las publicaciones de los desarrolladores, luego contrasta con historiales de ediciones de la wiki y guías comunitarias bien documentadas. Trata los rumores de chat y los videos sin fecha como pistas en lugar de hechos, y verifica cualquier cosa importante por tu cuenta antes de reconstruir toda tu estrategia en torno a ello.
-
-### ¿Debería reconstruir mi ejército de clones después de cada cambio de equilibrio?
-
-No. La mayoría de los cambios son lo bastante pequeños como para que tu plan principal siga funcionando. Reconstruye solo cuando un sistema de alta prioridad —economía de aparición, estadísticas de clones o diseño del mapa— cambie de forma significativa. De lo contrario, ajusta uno o dos pasos de tu orden de construcción y sigue probando.
-
-En resumen: las actualizaciones de Clone Builders no son obstáculos que haya que esquivar. Son la conversación continua del juego, y los jugadores que escuchan con atención son los que siguen ganando.
+**¿Dónde verifico las funciones sobre las que leo en otros sitios?**
+Siempre contra la página oficial de Roblox y la interfaz dentro del juego. Las guías de terceros son observaciones, no documentación, y deben tratarse con la debida cautela.

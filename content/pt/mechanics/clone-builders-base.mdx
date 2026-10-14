@@ -1,120 +1,89 @@
 export const metadata = {
-  title: "Guia da Base com Construtores Clones: Como as Mecânicas de Clonagem Aceleram a Construção de Bases",
-  description: "Aprenda como funcionam as mecânicas de base com construtores clones, desde a atribuição de unidades e o layout até a escalada da produção e a evitação de erros comuns em jogos de estratégia.",
+  title: "Clone Builders Roblox: Como Funciona o Sandbox de Construção com NPCs",
+  description: "Um guia fundamentado sobre Clone Builders no Roblox: como os clones NPC pegam uma ideia, posicionam e redimensionam peças, e o que a página oficial documenta e não documenta.",
   category: "mechanics",
-  date: "2026-10-02",
-}
+  date: "2026-10-14",
+};
 
-## Por Que os Construtores Clones Mudam Tudo na Construção de Bases
+Se você já passou algum tempo em jogos de construção do Roblox, já conhece a dinâmica: pegue uma peça, arraste, rotacione, repita até que algo pareça certo. O [Clone Builders](https://www.roblox.com/games/98456203230140/CLONE-BUILDERS) inverte esse ciclo. Em vez de posicionar cada tijolo você mesmo, você entrega uma instrução a um clone NPC e observa ele executar a construção para você, peça por peça, dentro de um mundo compartilhado.
 
-Se você já observou uma única unidade trabalhadora transformar um terreno vazio em uma fortaleza imponente, você já entende por que as mecânicas de base com construtores clones são tão importantes nos jogos de estratégia modernos. A ideia é simples: em vez de esperar por um único trabalhador, você o duplica — e, de repente, sua fila de construção, o fluxo de recursos e a cobertura defensiva crescem todos ao mesmo tempo. Dominar o ciclo da base com construtores clones costuma ser a diferença entre uma base que trava no meio do jogo e outra que se multiplica até virar um motor de produção imparável.
+Este artigo se atém ao que a página oficial do Roblox para a experiência realmente afirma, separa isso do que os jogadores relatam e é honesto sobre as muitas coisas que a página simplesmente não documenta. É um sandbox de construção com um toque experimental, não é um jogo de exército, não é uma progressão por grind e não é uma experiência de caça a códigos.
 
-Essa é a promessa da clonagem como mecânica. Não se trata de ter o maior exército ou o herói mais chamativo. Trata-se de mão de obra — a velocidade com que você converte recursos em estruturas e quantas tarefas consegue executar ao mesmo tempo.
+## O Que É o Clone Builders, Segundo a Página Oficial
 
-## O Que Conta como Construtor Clone em Jogos de Construção de Base
+A experiência está listada no Roblox sob o place ID 98456203230140, com o título "[🏗️] CLONE BUILDERS!" e publicada pelo grupo Synoptic Interactive. O registro oficial mostra que o lugar foi criado em 14/09/2026, foi atualizado pela última vez em 14/10/2026, suporta até 15 jogadores por servidor e acumulou aproximadamente 4,2 milhões de visitas.
 
-Um construtor clone é qualquer unidade, estrutura ou habilidade que cria cópias adicionais de trabalhadores para a sua base. Em alguns títulos, é um tanque de clonagem literal que produz duplicatas em um temporizador. Em outros, é um feitiço, uma melhoria de quartel, um fabricante de drones ou uma construção autorreplicante que se divide em duas versões mais fracas de si mesma. Qualquer que seja a aparência visual, a mecânica subjacente é idêntica: você paga um custo único ou contínuo e recebe uma força de trabalho que se multiplica.
+A descrição oficial anuncia uma interação específica: você dá uma ideia aos seus clones, e eles a constroem. Essa ideia é expressa por meio do que os desenvolvedores chamam de sistema de construção estruturado, que posiciona, redimensiona, move e monta peças para transformar a instrução em algo que fica de pé no mundo. A página também afirma que o projeto é um campo de testes para o trabalho maior dos desenvolvedores relacionado a clones, que experimentos desta experiência podem chegar aos jogos futuros deles e que novos recursos chegam de forma contínua. Os desenvolvedores recomendam um servidor privado para construções grandes ou minigames.
 
-Isso importa porque a maioria dos jogos de construção de base limita o progresso pelo tempo de construção. Um construtor significa uma estrutura por vez. Uma base funcional com construtores clones quebra esse gargalo ao executar várias ordens de construção em paralelo — o que se acumula, pois cada nova estrutura libera mais recursos, que por sua vez financiam mais clones.
+Esse é todo o quadro anunciado. É deliberadamente amplo, porque a experiência é apresentada como um sandbox e um campo de testes, e não como uma campanha finalizada.
 
-Um esclarecimento que confunde os jogadores mais novos: duplicatas cosméticas não são construtores clones. Skins alternativas, cartas de herói duplicadas ou unidades com aparência alterada que ainda ocupam um único espaço de trabalhador não se qualificam. A mecânica só conta quando a cópia realmente executa trabalho.
+## Como o Ciclo de Construção Realmente Funciona
 
-| Variante | Como funciona | Fase mais forte |
+Vale a pena destrinchar lentamente as mecânicas anunciadas, porque "dê uma ideia aos seus clones" pode soar mais mágico do que realmente é.
+
+- Posicionar: os clones colocam peças individuais no mundo como parte de uma construção.
+- Redimensionar: as peças podem ser escaladas, ou seja, o resultado de um clone não está preso a um tamanho fixo de bloco.
+- Mover: as peças podem ser reposicionadas, então os posicionamentos iniciais não são necessariamente finais.
+- Montar: as peças são combinadas em uma criação finalizada, em vez de ficarem como peças soltas.
+
+A nuance importante é que a página oficial apresenta isso como um sistema estruturado, não como improvisação livre. Isso sugere um conjunto definido de operações que os clones seguem, o que é consistente com a experiência ser descrita como um campo de testes onde comportamentos e recursos podem mudar.
+
+### O Que a Página Não Documenta
+
+Não há menção a unidades, equipamentos, tiers, gacha, drops de boss, níveis, mapas ou códigos em nenhum lugar da descrição oficial. Se você viu um guia descrevendo listas de personagens, tabelas de raridade, soros de mutação, multiplicadores de renda ou sistemas de prestígio, esse conteúdo não é respaldado pela página oficial e deve ser tratado como equivocado ou inventado. Da mesma forma, a página oficial não documenta nenhum código promocional. Se códigos forem adicionados algum dia, a forma confiável de descobrir é verificar a própria página da experiência, e não uma lista de terceiros.
+
+## Raciocínio Prático para Novos Jogadores
+
+Como a experiência é um sandbox com um núcleo experimental, a abordagem inteligente é tratar suas primeiras sessões como calibração, e não como conquista.
+
+Primeiro, comece pequeno. Dê aos seus clones uma instrução simples e concreta e observe como o sistema de construção estruturado a traduz em peças posicionadas, redimensionadas, movidas e montadas. Observar a sequência ensina mais sobre o comportamento do sistema do que ler qualquer descrição, já que a página não detalha cada operação.
+
+Segundo, espere mudanças. Os desenvolvedores afirmam que a experiência é constantemente atualizada e que experimentos podem migrar para os jogos futuros deles. Isso significa que uma técnica que funciona hoje pode se comportar de forma diferente após uma atualização, e um comportamento incomum dos clones faz parte do design, e não é um bug esperando para ser reportado.
+
+Terceiro, aumente a escala apenas quando precisar. Os desenvolvedores recomendam um servidor privado para construções grandes e minigames. Se o seu objetivo é uma criação extensa ou uma sessão organizada com amigos, essa recomendação é um sinal direto de que um servidor público de 15 jogadores pode não ser o lugar certo.
+
+Quarto, verifique no jogo qualquer coisa sobre a qual você tenha dúvidas. Como a página oficial não documenta mapas, mundos, níveis ou desbloqueáveis, não há nenhuma lista de verificação externa autoritativa para consultar. Abra a experiência, inspecione o que a interface realmente oferece e trate isso como sua referência.
+
+| Afirmação | Status | Como verificar |
 |---|---|---|
-| Clonagem por geração | Um clonador produz uma cópia de um trabalhador existente em um temporizador | Expansão inicial |
-| Câmara de duplicação | Cópias baseadas em fila com limite fixo de espaços | Escala no meio do jogo |
-| Construtor autorreplicante | Um construtor se divide em dois construtores mais fracos | Rush de abertura |
-| Híbrido com manutenção | Os clones persistem, mas drenam recursos por ciclo | Economia do fim do jogo |
+| Clones constroem a partir de uma ideia usando um sistema estruturado | Anunciado na página oficial | Leia a descrição da experiência |
+| Posiciona, redimensiona, move, monta peças | Anunciado na página oficial | Observe um clone completar uma construção |
+| Existem códigos | Não documentado | Verifique a página oficial; não confie em listas de códigos |
+| Mapas, níveis, desbloqueáveis | Não documentado | Inspecione a interface no jogo |
+| Construções grandes funcionam melhor em servidores privados | Recomendado pelos desenvolvedores | Compare uma sessão pública e uma privada |
 
-## O Ciclo Principal: Clonar, Atribuir, Construir, Defender
+## Observações da Comunidade vs. Documentação dos Desenvolvedores
 
-Toda base com construtores clones funciona no mesmo ciclo repetitivo. Entender a ordem importa mais do que memorizar ordens de construção, porque o ciclo indica o que corrigir quando algo dá errado.
+Existem guias de terceiros e posts da comunidade sobre o Clone Builders, e alguns deles descrevem comportamentos que não estão na página oficial. Quando você lê esses conteúdos, aplique um filtro simples: declarações dos desenvolvedores são autoritativas, e guias de terceiros são observações secundárias que podem refletir uma versão mais antiga, uma interpretação pessoal ou pura especulação.
 
-| Fase | O que você faz | Falha comum |
-|---|---|---|
-| Explorar | Verificar terreno, pontos de estrangulamento e nós de recursos | Construir antes de ler o mapa |
-| Clonar | Enfileirar seus primeiros trabalhadores duplicados | Clonar em excesso sem tarefas prontas |
-| Atribuir | Designar cada clone a uma tarefa específica | Deixar clones ociosos no ponto de surgimento |
-| Construir | Executar construções paralelas em estruturas-chave | Construir tudo de uma vez e não terminar nada |
-| Defender | Dispor defesas baratas em camadas ao redor da produção | Ignorar a defesa até ser atacado |
-| Melhorar | Aprimorar a produção e a velocidade dos clones | Melhorar cosméticos em vez do rendimento |
+A postura mais segura é tratar textos da comunidade como pistas a serem testadas no jogo, e não como fatos. Se um guia afirma que uma mecânica existe e a página oficial não a menciona, e você não consegue reproduzi-la por conta própria, presuma que não é verificada. Isso importa mais do que o normal aqui porque a experiência é explicitamente um campo de testes, então até observações precisas podem ficar desatualizadas após uma atualização.
 
-O erro mais frequente nos relatos de experiência dos jogadores é pular a etapa de atribuição. Os jogadores desbloqueiam uma estrutura de clonagem, veem a contagem de trabalhadores subir e depois se perguntam por que o progresso parece estagnado. Clones ociosos são piores do que nenhum clone — eles custam manutenção, ocupam espaço e dão uma falsa sensação de impulso.
+Você também pode avaliar a intenção dos desenvolvedores diretamente: a descrição vincula o conceito ao NPC Builders de Resurrected_Dove como inspiração e enquadra esta experiência como base para projetos maiores relacionados a clones. Isso mostra para onde o design está caminhando filosoficamente, mesmo que não prometa nenhum recurso específico.
 
-### Lendo o Ciclo em Busca de Sinais
+## Escolhendo o Tipo de Sessão Certo
 
-Se a sua base parece travada, o ciclo faz o diagnóstico rapidamente:
+Escolher entre um servidor público e um privado é a decisão prática mais consequente que um jogador toma, e a página oficial dá uma orientação clara.
 
-- **Clones se acumulando no ponto de surgimento?** Seu sistema de atribuição é manual demais — adicione automação ou rotas de tarefas predefinidas.
-- **Construções terminando, mas recursos estagnados?** Você clonou construtores quando precisava de coletores.
-- **Ataques constantes destruindo a produção?** Você pulou a defesa na fase de construção.
-- **Ficando para trás nas melhorias?** Sua lista de prioridades de melhoria está errada, não a sua contagem de clones.
+Servidores públicos têm limite de 15 jogadores, o que é pequeno o suficiente para que a colaboração seja realista, mas grande o suficiente para que construções sobrepostas possam ficar confusas. Servidores privados são a recomendação dos próprios desenvolvedores para construções grandes ou minigames, o que faz sentido para um sandbox: menos instruções concorrentes significa comportamento mais limpo dos clones e menos chance de construções interferirem umas nas outras.
 
-## Layout da Base com Construtores Clones: O Posicionamento Vence Partidas
+Se você quer experimentar livremente, um servidor privado é a escolha com menos atrito. Se você quer ver como os clones se comportam ao redor das ideias de outros jogadores, uma sessão pública é o lugar natural para observar isso.
 
-O layout é onde o conceito de base com construtores clones fica interessante, porque os clones são ao mesmo tempo seu maior trunfo e sua maior vulnerabilidade. Um agrupamento compacto de estruturas de clonagem é eficiente de defender e rápido de reforçar. Um disperso é rápido de expandir, mas trivial de destruir.
+## FAQ
 
-Os relatos da comunidade favorecem consistentemente um núcleo de produção compacto cercado por um anel externo escalonado. O núcleo abriga seu clonador, seu armazenamento principal e suas estruturas de maior valor. O anel abriga defesas baratas e descartáveis e nós de recursos que você pode perder sem grandes prejuízos.
+**Preciso posicionar as peças sozinho?**
+Não. A premissa anunciada é que você dá uma ideia aos seus clones e eles cuidam de posicionar, redimensionar, mover e montar. A divisão exata de trabalho entre você e os clones não é documentada em detalhes, então teste no jogo.
 
-| Estágio do jogo | Pegada do núcleo | Anel externo | Prioridade |
-|---|---|---|---|
-| Inicial | 3–5 tiles, um único clonador | Mínimo, uma rota de entrada | Velocidade em vez de segurança |
-| Médio | 6–10 tiles, 2–3 clonadores | Muros escalonados, 2–3 torres | Crescimento equilibrado |
-| Final | 12+ tiles, clonadores distribuídos | Anéis em camadas, cobertura sobreposta | Redundância |
+**Existem códigos para o Clone Builders?**
+A página oficial não documenta nenhum. Trate qualquer lista de códigos como não verificada até que a própria página da experiência diga o contrário.
 
-O hábito de layout mais valioso é manter seu clonador a no máximo um tile da zona de construção ativa. Cada passo que um clone dá para chegar a um canteiro de obras é tempo que não é gasto construindo. Ao longo de dezenas de ordens de construção, essa distância percorrida se transforma em uma lacuna de produção real — e é invisível, a menos que você procure especificamente por ela.
+**Tem níveis, mapas ou tiers?**
+A descrição oficial não documenta níveis, mapas, tiers, unidades, equipamentos, gacha ou drops de boss. Para verificar se algum desses existe, abra a experiência e olhe a interface real.
 
-## Funções das Unidades e Atribuição de Tarefas
+**É um jogo de exército ou de progressão?**
+Não. Tudo o que está documentado aponta para um sandbox de construção e um campo de testes experimental, não para um sistema de progressão.
 
-Os clones não são intercambiáveis. A maioria dos jogos que apresentam construtores clones dá às cópias atributos ligeiramente diferentes ou permite especializá-las por meio de melhorias. Tratar cada clone como um construtor genérico desperdiça seu potencial.
+**Por que o comportamento dos clones às vezes parece inconsistente?**
+Os desenvolvedores descrevem a experiência como em constante mudança e explicitamente experimental, então comportamentos variáveis são esperados, e não anômalos.
 
-| Função | Tarefa | Proporção ideal de clones |
-|---|---|---|
-| Coletor | Reúne recursos brutos | 40–50% |
-| Construtor | Constrói e melhora | 25–30% |
-| Reparador | Restaura estruturas danificadas | 10–15% |
-| Defensor | Opera torres ou patrulha | 10–15% |
-| Transportador | Move recursos entre nós | O restante |
-
-A experiência dos jogadores sugere que os coletores devem quase sempre superar em número os construtores no início. Uma base com cinco construtores e um coletor ficará sem materiais antes de ficar sem espaços de construção. Inverta a proporção quando sua renda de recursos se estabilizar e, então, invista pesado em construtores durante as janelas de expansão.
-
-A automação é o objetivo final aqui. Assim que um jogo oferecer predefinições de tarefas ou regras de roteamento, use-as. Reatribuir clones manualmente a cada poucos minutos é a maneira mais rápida de se esgotar com uma mecânica que deveria funcionar sozinha.
-
-## Escalando: De Um Clonador a uma Linha de Montagem
-
-Escalar uma base com construtores clones não é adicionar clonadores indefinidamente. É alinhar a produção de clones aos seus gargalos reais. Adicione um clonador quando sua fila de construção estiver permanentemente cheia. Pare de adicionar clonadores quando sua renda de recursos não conseguir acompanhar o ritmo de construção.
-
-| Prioridade de melhoria | Por que importa | Quando adotá-la |
-|---|---|---|
-| Velocidade de produção dos clones | Encurta diretamente cada ordem de construção | Primeiro, sempre |
-| Espaços de automação de tarefas | Elimina o microgerenciamento manual | Antes do seu terceiro clonador |
-| Capacidade de armazenamento | Evita ciclos de coleta desperdiçados | Quando os limites de armazenamento forem atingidos |
-| Durabilidade dos clones | Mantém os trabalhadores vivos durante ataques | Assim que os ataques começarem |
-| Velocidade de deslocamento/rota | Reduz o tempo de caminhada entre tarefas | Depois que o layout se estabilizar |
-
-Uma regra prática útil das discussões da comunidade: nunca deixe sua contagem de clones exceder o dobro do número de tipos de tarefas ativas. Se você tem três tarefas distintas e oito clones, pelo menos dois não estão fazendo nada produtivo.
-
-Para um contexto mais amplo sobre como os jogos de estratégia estruturam esses sistemas, o [hub de jogos de estratégia da Steam](https://store.steampowered.com/tags/en/Strategy/) é um ótimo lugar para navegar por títulos comparáveis e ver como diferentes desenvolvedores lidam com economias de trabalhadores.
-
-## Erros Comuns Que Travam uma Base com Construtores Clones
-
-- **Clonar antes de explorar.** Você não pode atribuir tarefas que ainda não identificou.
-- **Ignorar a manutenção.** Clones gratuitos geralmente não são gratuitos — verifique o custo por ciclo.
-- **Espalhar clonadores pelo mapa.** A redundância ajuda no fim do jogo; no início, ela apenas divide sua defesa.
-- **Melhorar o dano antes do rendimento.** Um construtor mais forte que constrói devagar continua sendo lento.
-- **Nunca reavaliar a proporção.** A divisão entre coletores e construtores que venceu o início do jogo perderá o fim do jogo.
-- **Microgerenciamento manual para sempre.** Se o jogo oferece automação, use-a e dedique sua atenção ao layout.
-
-## Perguntas Frequentes
-
-**O que exatamente é uma base com construtores clones?**
-É uma base construída em torno de mecânicas de clonagem — estruturas ou habilidades que duplicam unidades trabalhadoras para que várias tarefas de construção e coleta ocorram ao mesmo tempo. Em vez de um construtor fazendo tudo sequencialmente, você opera uma força de trabalho paralela.
-
-**Devo clonar construtores ou coletores primeiro?**
-Coletores primeiro, na maioria dos jogos. Construtores sem materiais ficam travados, enquanto coletores extras financiam os construtores que você clonará em seguida. Mude a proporção para mais construtores quando sua renda estiver estável.
-
-**Quantos clones são clones demais?**
-Quando sua contagem de clones excede aproximadamente o dobro do número de tipos distintos de tarefas, você está produzindo em excesso. Reduza ou adicione novas categorias de tarefas antes de adicionar outro clonador.
-
-**A estratégia de base com construtores clones é viável no jogo competitivo?**
-Os relatos da comunidade sugerem que sim, mas apenas com forte disciplina de layout. A estratégia recompensa jogadores que automatizam cedo e pune quem deixa clones ociosos ou agrupados em um único ponto vulnerável.
+**Onde devo construir algo grande?**
+Os desenvolvedores recomendam um servidor privado para construções grandes e minigames, então esse é o ponto de partida documentado.

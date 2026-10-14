@@ -1,133 +1,90 @@
 export const metadata = {
-  title: "IA de creadores de clones explicada: cómo funcionan realmente las mecánicas de unidades duplicadas",
-  description: "Cómo funciona la IA de creadores de clones: mecánicas de unidades duplicadas, consejos de gestión de clones y las métricas que separan las builds fuertes de las débiles.",
+  title: "Clone Builders Roblox: Cómo funciona el sandbox de construcción con clones",
+  description: "Una guía práctica sobre Clone Builders en Roblox: cómo los clones NPC colocan, redimensionan, mueven y ensamblan piezas, además de lo que la página oficial documenta y lo que no.",
   category: "mechanics",
-  date: "2026-10-02",
-}
+  date: "2026-10-14",
+};
 
-## ¿Qué cuenta como un creador de clones?
+Si has pasado algún tiempo en los juegos de construcción de Roblox, ya conoces el ritmo: eliges una pieza, la arrastras, la redimensionas, repites hasta que algo se ve bien. Clone Builders en Roblox toma ese bucle y le entrega el trabajo pesado a clones NPC. En lugar de colocar cada pared tú mismo, le das una idea a un grupo de clones, y ellos usan un sistema de construcción estructurado para armar las piezas en el mundo. El resultado es menos "tycoon de supervivencia" y más "mirar a un equipo de robots serviciales discutir con la geometría".
 
-Un creador de clones parece sencillo sobre el papel: haz copias, asígnales tareas, observa cómo suben los números. Luego chocas con un límite de recursos, la mitad de tus copias se quedan inactivas y toda la maquinaria se detiene en seco. Esa brecha entre la fantasía y la ejecución es donde vive la IA de creadores de clones: la capa de comportamiento que decide qué duplicado hace qué, cuándo y en qué orden. Si aciertas con esa capa, una configuración modesta de IA de creadores de clones puede producir más que una build que lleva el triple de unidades brutas.
+Este artículo cubre lo que realmente está documentado sobre la experiencia, cómo parece funcionar el bucle de construcción central, dónde los informes de terceros añaden color, y qué suposiciones populares simplemente no están respaldadas por la página oficial.
 
-El rasgo que define la mecánica no es la copia. Es la delegación. Creas el duplicado, le asignas una tarea y confías en que siga haciéndola mientras piensas en otra cosa.
+## Qué es realmente Clone Builders
 
-Eso separa a los creadores de clones de dos mecánicas parecidas. Los invocadores generan unidades temporales que solo existen para un combate. Los multiplicadores pasivos crean bonificaciones sin ningún cuerpo asociado. Los creadores de clones se sitúan entre ambos: copias persistentes, cargas de trabajo reales y una capa de gestión que el jugador tiene que diseñar activamente.
+El registro oficial de Roblox identifica la experiencia como "[🏗️] CLONE BUILDERS!" (place 98456203230140), creada por el grupo Synoptic Interactive. El lugar se creó el 14 de septiembre de 2026, y se actualizó por última vez el 14 de octubre de 2026. Admite hasta 15 jugadores por servidor y había acumulado aproximadamente 4,2 millones de visitas según el registro de octubre de 2026.
 
-La mayoría de los clones también heredan algo de su fuente: estadísticas, habilidades, equipo o una fracción de los tres. Esa herencia es la verdadera palanca de la mecánica, porque decide si un clon es un par de manos desechable o un auténtico segundo personaje.
+El detalle clave es la intención. Los desarrolladores lo describen como un campo de pruebas experimental para sus proyectos más grandes relacionados con clones. Ese enfoque importa más que cualquier lista de características. Significa que se espera que la experiencia cambie, que el comportamiento inusual de los clones es parte del objetivo, y que los experimentos que se ejecutan aquí pueden eventualmente aparecer en los futuros juegos del equipo. Si buscas un producto terminado y estable con un pipeline de contenido bloqueado, esto no es eso — y los desarrolladores lo admiten abiertamente.
 
-### Los cuatro arquetipos de clones
+Puedes ver la página oficial aquí: [CLONE BUILDERS! en Roblox](https://www.roblox.com/games/98456203230140/CLONE-BUILDERS).
 
-| Arquetipo | Cómo se comportan los clones | Uso más potente | Coste principal |
-|---|---|---|---|
-| Clonador de enjambre | Muchas copias débiles, rápidas de producir, de vida corta | Recolección, cobertura del mapa, exploración | Micromanagement intenso, carga de rendimiento |
-| Clonador de élite | Pocas copias poderosas, arranque lento | Combates contra jefes, defensa, tareas de precisión | Inicio lento, alta inversión por unidad |
-| Clonador estructural | Las copias son edificios, torretas o instalaciones | Expansión de base, cadenas de automatización | Espacio, mantenimiento, planificación del trazado |
-| Híbrido | Niveles mezclados con roles distintos | Transiciones de mitad a final de partida | Complejidad, fatiga de decisiones |
+## El bucle de construcción anunciado
 
-Saber en qué arquetipo se apoya tu build importa más que cualquier mejora individual. Un jugador de enjambre que optimiza para la calidad de un solo clon está luchando contra su propio conjunto de herramientas.
+Según la descripción oficial, el bucle central funciona así:
 
-## Cómo funciona realmente la IA de creadores de clones
+- Le das una idea a tus clones.
+- Los clones la construyen usando un sistema de construcción estructurado.
+- Ese sistema se basa en cuatro verbos: colocar, redimensionar, mover y ensamblar piezas.
 
-Bajo el capó, la IA de creadores de clones no es un solo sistema. Es una pila de pequeñas decisiones que se ejecutan en cada tick, y cada capa puede fallar de forma independiente. Entender las capas hace que depurar sea mucho más rápido que adivinar.
+Esos cuatro verbos son todo el vocabulario mecánico documentado del juego. No hay mención de planos, listas de materiales, presupuestos o costos de recursos en la página oficial. El énfasis está en que el clon haga el trabajo de construcción mientras tú diriges el concepto.
 
-| Capa de IA | Pregunta que responde | Síntoma de fallo |
+Una tabla práctica ayuda a separar lo que está documentado de lo que no:
+
+| Característica | Estado oficial | Notas |
 |---|---|---|
-| Selección de tareas | ¿Qué debería hacer este clon ahora mismo? | Clones inactivos junto a nodos de recursos llenos |
-| Pila de prioridades | ¿Qué tarea gana cuando dos entran en conflicto? | Varios clones disputándose el mismo objetivo |
-| Búsqueda de rutas | ¿Cómo llega el clon hasta allí? | Clones atascados en la geometría o en las puertas |
-| Coordinación | ¿Cómo evitan los clones solaparse? | Amontonamiento, daño desperdiciado, cuellos de botella bloqueados |
-| Comportamiento de reserva | ¿Qué pasa cuando ninguna tarea es válida? | Clones congelados en el sitio indefinidamente |
+| Dar una idea a los clones | Documentado | Interacción central anunciada |
+| Colocar / redimensionar / mover / ensamblar piezas | Documentado | El "sistema de construcción estructurado" |
+| Actualizaciones y experimentos constantes | Documentado | Los desarrolladores lo llaman campo de pruebas |
+| Servidores privados recomendados | Documentado | Sugeridos para construcciones grandes y minijuegos |
+| Unidades, equipo, niveles, gacha, jefes | No documentado | No esperes esto en la página oficial |
+| Códigos promocionales | No documentado | Ninguno aparece en el registro oficial |
+| Mapas, mundos, niveles, desbloqueables | No documentado | Verifica en el juego si tienes curiosidad |
 
-La capa de selección de tareas es donde la mayoría de las builds pierden eficiencia en silencio. Si la lista de prioridades de un clon está mal ordenada, pasará tranquilamente junto a una tarea cercana para llegar a una lejana que puntuó más alto. La experiencia de los jugadores con estrategias cargadas de clones apunta siempre a la misma solución: acorta la lista de prioridades y pon la tarea de mayor valor arriba, en lugar de la más interesante.
+Esa última fila merece énfasis. Si una página de terceros promete una lista de mapas, un ranking de niveles o un calendario de códigos, trátalo como no verificado. La página oficial no documenta nada de eso.
 
-La coordinación es el segundo gran punto de fallo. Cuando varios clones comparten un objetivo, la mayoría de las implementaciones no reparten el trabajo automáticamente: se apilan unos encima de otros. Los informes de la comunidad en títulos de estrategia y supervivencia describen el mismo síntoma: un muro de clones machacando un nodo mientras tres nodos idénticos permanecen intactos a dos casillas de distancia. La asignación de zonas o las órdenes manuales de dispersión lo solucionan, pero solo si detectas el problema a tiempo.
+## Por qué se recomiendan los servidores privados
 
-### Por qué existen los límites de clones
+La descripción oficial recomienda explícitamente los servidores privados para construcciones grandes o minijuegos. El razonamiento es sencillo incluso sin detalles adicionales: con hasta 15 jugadores por servidor compartiendo el mismo mundo, una construcción a gran escala puede volverse abarrotada. Las piezas son colocadas, redimensionadas, movidas y ensambladas por los clones de varios jugadores a la vez, y eso puede crear interferencias o desorden visual.
 
-Todo creador de clones acaba topando con un techo, y normalmente es deliberado, no un error. Motivos habituales:
+Un servidor privado te da un sandbox más tranquilo. Si tu objetivo es probar si una idea particular se traduce bien en geometría construida por clones, o ejecutar un pequeño minijuego sobre tu creación, el entorno más tranquilo elimina variables. Esta es una recomendación de los desarrolladores, no un requisito de pago para el juego básico — la experiencia base está abierta.
 
-- **Límites de rendimiento.** Cada clon consume tiempo de procesamiento, así que los motores limitan la cantidad para mantener estable la tasa de fotogramas.
-- **Escalado del mantenimiento.** Los clones suelen costar recursos por ciclo, así que una fuerza grande puede drenar más rápido de lo que produce.
-- **Techos suaves.** La eficiencia por clon cae pasado un umbral, lo que hace que las copias extra valgan menos que las mejoras.
-- **Presupuestos de tick de la IA.** Las actualizaciones de comportamiento se ejecutan según un calendario, así que los grupos muy grandes reciben decisiones con menos frecuencia.
+## Inspirado por NPC Builders
 
-La conclusión práctica: encuentra tu límite antes de construir hacia él. Construir más allá de un techo suave desperdicia recursos que las mejoras habrían aprovechado mucho mejor.
+Los desarrolladores acreditan a NPC Builders de Resurrected_Dove como inspiración. Vale la pena saberlo porque te dice en qué tradición se sitúa el juego: sistemas donde los personajes no jugadores se encargan de la construcción en lugar de que el jugador coloque cada ladrillo directamente. Clone Builders extiende ese linaje con su propio sistema estructurado y un mayor énfasis en la experimentación.
 
-## La economía de la duplicación
+Si has jugado antes experiencias de construcción impulsadas por NPC, el ajuste es principalmente mental. Eres menos un albañil y más un director. Tu trabajo es la idea y la corrección; los clones se encargan de la ejecución.
 
-Los creadores de clones son mecánicas de acumulación, lo que significa que las decisiones interesantes ocurren pronto. Cada clon cuesta recursos y tiempo, y solo se amortiza después de haber trabajado lo suficiente. Esa ventana de retorno —a veces llamada deuda de clones— es el número más importante de todo el sistema.
+## Observaciones de la comunidad y guías de terceros
 
-| Fase | Cantidad típica de clones | Qué deberías estar haciendo | Trampa común |
-|---|---|---|---|
-| Inicial | 1–5 | Asignación manual, aprender las prioridades de tareas | Invertir en exceso en cantidad de clones antes de que los ingresos lo sostengan |
-| Media | 5–30 | Automatizar reglas de tareas, establecer zonas | Ignorar al personaje constructor original |
-| Tardía | 30+ | Delegación, gestión del límite, mejoras de nivel | Microgestionar clones individuales |
+Las guías de terceros han descrito Clone Builders como accesible para recién llegados porque el clon hace el tedioso trabajo de colocación, y como caótico en grupos grandes porque muchos clones construyendo simultáneamente pueden producir resultados que no pretendías. Esas son observaciones secundarias, no documentación oficial de los desarrolladores, y deben tratarse como tal.
 
-En la fase inicial, un clon bien colocado supera a tres mal dirigidos. En la fase media, el cuello de botella pasa de la producción a la logística: los clones existen, pero el trabajo no está bien distribuido. En la fase tardía, el cuello de botella suele ser tu propia atención.
+La conclusión práctica de los informes de la comunidad es consistente con el enfoque oficial: esto es un sandbox, no un juego de progresión. No busques curvas de nivelación, árboles de desbloqueo o sistemas de moneda. Si existen, la página oficial no los documenta, y la forma más rápida de confirmarlo es cargar la experiencia y revisar la interfaz tú mismo.
 
-Esa progresión es la razón por la que los jugadores veteranos tratan a los creadores de clones como una mecánica de gestión de la atención disfrazada de mecánica de producción. La jugada ganadora casi siempre consiste en reducir el número de decisiones que tienes que tomar tú mismo por minuto.
+## Qué no está documentado
 
-## Consejos prácticos para mejores builds de clones
+Varios patrones populares de contenido de Roblox no aparecen en ningún lugar del registro oficial de esta experiencia:
 
-1. **Asigna zonas, no clones individuales.** Las reglas por zonas sobreviven a la pérdida de unidades y no requieren volver a hacer clic cuando muere un clon.
-2. **Pon tu tarea de mayor rendimiento en la parte superior de la lista de prioridades.** El orden gana a la cantidad bruta de clones casi siempre.
-3. **Dispersa antes de apilar.** Reparte los clones entre varios objetivos antes de añadir más clones a uno que ya existe.
-4. **Mejora la fuente, no solo las copias.** Como los clones heredan de su origen, una mejora en la fuente se multiplica por todo el grupo.
-5. **Vigila la tasa de inactividad, no la cantidad de clones.** Los clones inactivos son la señal más clara de que tus reglas están mal.
-6. **Construye un nivel por delante de tus ingresos.** Los clones que cuestan más de lo que producen crean una espiral de deuda.
-7. **Ten siempre a mano una anulación manual.** La automatización se encarga del trabajo rutinario; tú te encargas de las excepciones.
+- Sin unidades, equipo o niveles
+- Sin sistemas de gacha o tiradas
+- Sin drops de jefes o sueros de mutación
+- Sin multiplicadores de ingresos o sistemas de prestigio
+- Sin códigos promocionales
+- Sin lista publicada de mapas, mundos o niveles
 
-### Errores comunes y sus soluciones
-
-| Error | Cómo se ve | Solución |
-|---|---|---|
-| Lista de prioridades demasiado larga | Clones vagando entre tareas | Redúcela a tres o cuatro tareas ordenadas |
-| Sin tarea de reserva | Clones que se congelan cuando se acaba el trabajo | Establece una orden por defecto de recolección o patrulla |
-| Clones uniformes | Cada copia hace todo de forma aceptable | Especializa los clones por zona o rol |
-| Ignorar la búsqueda de rutas | Clones atascados en una puerta | Ensancha la ruta o añade un segundo carril |
-| Construir más allá del techo suave | Ingresos planos a pesar de tener más clones | Redirige el gasto a mejoras |
-
-## Métricas que separan una buena IA de creadores de clones de una excelente
-
-No puedes mejorar lo que no mides. Estas son las señales que merece la pena seguir y cómo se ve una versión saludable de cada una en la práctica. Las <a href="https://store.steampowered.com/" rel="nofollow">categorías de estrategia y simulación de la tienda de Steam</a> están llenas de títulos construidos por completo en torno a estos bucles, y las mismas métricas se aplican a casi todos ellos.
-
-| Métrica | Qué mide | Cómo se ve una buena cifra |
-|---|---|---|
-| Tasa de inactividad | Proporción de clones sin tarea activa | Baja y estable durante el juego normal |
-| Solapamiento de tareas | Clones que se disputan el mismo objetivo | Poco frecuente salvo en fuego concentrado deliberado |
-| Tiempo de amortización | Tiempo que tarda un clon en ganar lo que costó | Más corto que la duración de la fase actual |
-| Ratio de mejoras frente a clones | Reparto del gasto entre calidad y cantidad | Equilibrado, inclinándose a la calidad cerca de los límites |
-| Velocidad de recuperación | Qué tan rápido se reconstruye la build tras las pérdidas | Suficientemente rápida para sobrevivir a una mala pelea |
-
-Regla general de la comunidad: si tu tasa de inactividad se dispara justo después de añadir clones, los añadiste demasiado rápido. El sistema necesita que las reglas se actualicen al mismo ritmo que el número de unidades.
-
-## Clon único frente a enjambre: elegir una identidad de build
-
-Las dos identidades dominantes tiran en direcciones opuestas, y mezclarlas sin cuidado produce lo peor de ambas.
-
-| | Clon de élite único | Build de enjambre |
-|---|---|---|
-| Arranque | Lento, caro | Rápido, barato |
-| Techo de habilidad | Micro por unidad elevado | Macro a nivel de sistema elevado |
-| Modo de fallo | Una sola pérdida te deja cojo | Muerte por mil pérdidas |
-| Mejor con | Objetivos precisos y de alto valor | Cargas de trabajo amplias y repetitivas |
-| Lo que exige la IA de creadores de clones | Control ágil y reservas limpias | Fuerte coordinación y gestión de zonas |
-
-La mayoría de las builds exitosas se comprometen con una identidad durante los dos primeros tercios de una partida y luego añaden una capa fina de la otra cuando su economía puede absorberla.
+Si ves una página que afirme cualquiera de estas cosas, asume que el autor está confundiendo este juego con otro o inventando contenido. Para verificar algo específico, abre la experiencia, revisa la interfaz del juego y cualquier enlace oficial, y contrasta con la página de Roblox. Los desarrolladores han dicho que el juego cambia constantemente, así que una característica que no existía el mes pasado puede existir ahora — que es exactamente por lo que comprobar en el juego supera a confiar en una lista obsoleta.
 
 ## Preguntas frecuentes
 
-**¿Qué significa "IA de creadores de clones" en los videojuegos?**
-Se refiere al sistema de comportamiento que controla las unidades duplicadas: las reglas que deciden qué hace cada clon, en qué orden y cómo evitan los clones entrar en conflicto entre sí. Una capa sólida de IA de creadores de clones hace que una fuerza pequeña parezca organizada; una débil hace que una fuerza grande parezca caótica.
+**¿Clone Builders es gratis?**
+El registro oficial de Roblox no indica un precio, y las experiencias de Roblox de este tipo suelen ser de acceso gratuito. Los servidores privados son una consideración aparte y se recomiendan para construcciones grandes.
 
-**¿Cuántos clones debería construir?**
-Construye hasta tu techo suave, no más allá. Si añadir un clon no aumenta visiblemente la producción, ese recurso pertenece a una mejora.
+**¿Cuántos jugadores caben en un servidor?**
+Hasta 15 jugadores por servidor, según el registro oficial.
 
-**¿Por qué mis clones se quedan inactivos?**
-Nueve de cada diez veces, la causa es una tarea de reserva ausente o una lista de prioridades sin ninguna entrada válida una vez terminado el trabajo principal. Establece una orden por defecto y la inactividad suele desaparecer.
+**¿Tiene códigos?**
+No hay códigos promocionales documentados en la página oficial. No confíes en listas de códigos de fuentes no oficiales.
 
-**¿Funcionan las mecánicas de creador de clones en multijugador?**
-Sí, aunque la coordinación importa más. En cooperativo, asignar una zona a cada jugador evita que los clones dupliquen trabajo y mantiene predecible el rendimiento global del grupo.
+**¿Está terminado?**
+No. Los desarrolladores lo describen como un campo de pruebas experimental para proyectos más grandes relacionados con clones, con cambios constantes y nuevas características con el tiempo.
 
-**¿Los creadores de clones son solo una trampa de micromanagement?**
-Solo si tú los tratas así. La mecánica recompensa a los jugadores que diseñan reglas y delegan, y castiga a los que insisten en hacer clic en cada unidad a mano.
+**¿Por dónde empiezo?**
+Abre la [página oficial de Clone Builders](https://www.roblox.com/games/98456203230140/CLONE-BUILDERS), únete a un servidor, dale primero una idea sencilla a tus clones y observa cómo responde el sistema de colocación y redimensionamiento antes de comprometerte con algo ambicioso. Si quieres una construcción grande o un minijuego, considera un servidor privado.
